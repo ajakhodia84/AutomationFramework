@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test name="Test(failed)">
+    <classes>
+      <class name="publicisSapient.VerifyNavBarPresentTest">
+        <methods>
+          <include name="getUrl"/>
+        </methods>
+      </class> <!-- publicisSapient.VerifyNavBarPresentTest -->
+      <class name="publicisSapient.VerifyTitleTest">
+        <methods>
+          <include name="basePageNavigation"/>
+          <include name="getUrl"/>
+        </methods>
+      </class> <!-- publicisSapient.VerifyTitleTest -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
