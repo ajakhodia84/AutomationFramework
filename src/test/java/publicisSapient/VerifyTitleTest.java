@@ -34,12 +34,14 @@ public class VerifyTitleTest extends TestBase {
 
 		LandingPage landingPage = new LandingPage(driver);
 		LoginPage loginPage = new LoginPage(driver);		
-		String expectedTitle = "QA Click Academy | Selenium,Jmeter,SoapUI,Appium,Database testing,QA Training Academyasfsfa";
+		String expectedTitle = "QA Click Academy | Selenium,Jmeter,SoapUI,Appium,Database testing,QA Training Academy";
 		String actualTitle = driver.getTitle();
 		Assert.assertEquals(actualTitle, expectedTitle);
 		landingPage.popupClose();
 		System.out.println("VerifyTitleTestPassed");
 		log.info("Title is verified");
+		landingPage.clickLogin();
+		loginPage.login("sasdf@gmail.com", "asdf", "waste");
 		Assert.assertTrue(false);
 	}
 	

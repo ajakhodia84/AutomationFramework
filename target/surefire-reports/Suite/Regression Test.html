@@ -1,51 +1,113 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="2" total="4" passed="2">
-  <reporter-output>
-  </reporter-output>
-  <suite name="Suite" duration-ms="164173" started-at="2020-04-24T11:54:53Z" finished-at="2020-04-24T11:57:37Z">
-    <groups>
-    </groups>
-    <test name="Regression Test" duration-ms="164173" started-at="2020-04-24T11:54:53Z" finished-at="2020-04-24T11:57:37Z">
-      <class name="publicisSapient.VerifyNavBarPresentTest">
-        <test-method status="PASS" signature="getUrl()[pri:0, instance:publicisSapient.VerifyNavBarPresentTest@33bc72d1]" name="getUrl" is-config="true" duration-ms="12623" started-at="2020-04-24T17:25:35Z" finished-at="2020-04-24T17:25:47Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getUrl -->
-        <test-method status="PASS" signature="verifyNavBarIsPresent()[pri:0, instance:publicisSapient.VerifyNavBarPresentTest@33bc72d1]" name="verifyNavBarIsPresent" duration-ms="8967" started-at="2020-04-24T17:25:47Z" finished-at="2020-04-24T17:25:56Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyNavBarIsPresent -->
-        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:publicisSapient.VerifyNavBarPresentTest@33bc72d1]" name="closeBrowser" is-config="true" duration-ms="7850" started-at="2020-04-24T17:25:56Z" finished-at="2020-04-24T17:26:04Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeBrowser -->
-      </class> <!-- publicisSapient.VerifyNavBarPresentTest -->
-      <class name="publicisSapient.VerifyTitleTest">
-        <test-method status="PASS" signature="getUrl()[pri:0, instance:publicisSapient.VerifyTitleTest@273444fe]" name="getUrl" is-config="true" duration-ms="23090" started-at="2020-04-24T17:24:53Z" finished-at="2020-04-24T17:25:16Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getUrl -->
-        <test-method status="FAIL" signature="VerifyTitleHeader()[pri:0, instance:publicisSapient.VerifyTitleTest@273444fe]" name="VerifyTitleHeader" duration-ms="10678" started-at="2020-04-24T17:25:16Z" finished-at="2020-04-24T17:25:27Z">
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[Unable to locate element: [id='user_email']
+<html>
+<head>
+<title>TestNG:  Regression Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Regression Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>2/2/0</td>
+</tr><tr>
+<td>Started on:</td><td>Fri Apr 24 17:24:53 IST 2020</td>
+</tr>
+<tr><td>Total time:</td><td>164 seconds (164173 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='publicisSapient.VerifyTitleTest.VerifyTitleHeader()'><b>VerifyTitleHeader</b><br>Test class: publicisSapient.VerifyTitleTest</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: [id=&apos;user_email&apos;]
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'WKWIN6024718', ip: '192.168.31.244', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_171'
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;WKWIN6024718&apos;, ip: &apos;192.168.31.244&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_171&apos;
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
 Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 75.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200403170909, moz:geckodriverVersion: 0.26.0, moz:headless: false, moz:processID: 19368, moz:profile: C:\Users\anujakho\AppData\L..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
 Session ID: 24a22f2a-421f-4872-8a31-79cf9e4d3e4e
-*** Element info: {Using=css selector, value=[id='user_email']}]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to locate element: [id='user_email']
+*** Element info: {Using=css selector, value=[id=&apos;user_email&apos;]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:420)
+	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:431)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy24.sendKeys(Unknown Source)
+	at publicisSapient.pageObjects.LoginPage.login(LoginPage.java:27)
+	at publicisSapient.VerifyTitleTest.VerifyTitleHeader(VerifyTitleTest.java:43)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1659309731", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1659309731'><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: [id=&apos;user_email&apos;]
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'WKWIN6024718', ip: '192.168.31.244', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_171'
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;WKWIN6024718&apos;, ip: &apos;192.168.31.244&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_171&apos;
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
 Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 75.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200403170909, moz:geckodriverVersion: 0.26.0, moz:headless: false, moz:processID: 19368, moz:profile: C:\Users\anujakho\AppData\L..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
 Session ID: 24a22f2a-421f-4872-8a31-79cf9e4d3e4e
-*** Element info: {Using=css selector, value=[id='user_email']}
+*** Element info: {Using=css selector, value=[id=&apos;user_email&apos;]}
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -93,60 +155,43 @@ Session ID: 24a22f2a-421f-4872-8a31-79cf9e4d3e4e
 	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:138)
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:465)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:451)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- VerifyTitleHeader -->
-        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:publicisSapient.VerifyTitleTest@273444fe]" name="closeBrowser" is-config="true" duration-ms="7324" started-at="2020-04-24T17:25:27Z" finished-at="2020-04-24T17:25:35Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeBrowser -->
-      </class> <!-- publicisSapient.VerifyTitleTest -->
-      <class name="publicisSapient.HomePageTest">
-        <test-method status="PASS" signature="getUrl()[pri:0, instance:publicisSapient.HomePageTest@1a75e76a]" name="getUrl" is-config="true" duration-ms="32799" started-at="2020-04-24T17:26:04Z" finished-at="2020-04-24T17:26:37Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getUrl -->
-        <test-method status="FAIL" signature="verifyLogin(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:publicisSapient.HomePageTest@1a75e76a]" name="verifyLogin" duration-ms="15578" started-at="2020-04-24T17:26:37Z" data-provider="getData" finished-at="2020-04-24T17:26:53Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[nonrestricted@gmail.com]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[12344]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[nonrestricted]]>
-              </value>
-            </param>
-          </params>
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[Unable to locate element: [id='user_email']
+</pre></div></td>
+<td>10</td>
+<td>publicisSapient.VerifyTitleTest@273444fe</td></tr>
+<tr>
+<td title='publicisSapient.HomePageTest.verifyLogin()'><b>verifyLogin</b><br>Test class: publicisSapient.HomePageTest<br>Parameters: nonrestricted@gmail.com, 12344, nonrestricted</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: [id=&apos;user_email&apos;]
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'WKWIN6024718', ip: '192.168.31.244', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_171'
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;WKWIN6024718&apos;, ip: &apos;192.168.31.244&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_171&apos;
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
 Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 75.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200403170909, moz:geckodriverVersion: 0.26.0, moz:headless: false, moz:processID: 21372, moz:profile: C:\Users\anujakho\AppData\L..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
 Session ID: 2f1075f4-fa2f-4172-bbe1-96c129af4740
-*** Element info: {Using=css selector, value=[id='user_email']}]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to locate element: [id='user_email']
+*** Element info: {Using=css selector, value=[id=&apos;user_email&apos;]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:420)
+	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:431)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy24.sendKeys(Unknown Source)
+	at publicisSapient.pageObjects.LoginPage.login(LoginPage.java:27)
+	at publicisSapient.HomePageTest.verifyLogin(HomePageTest.java:41)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace537265886", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace537265886'><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: [id=&apos;user_email&apos;]
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'WKWIN6024718', ip: '192.168.31.244', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_171'
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;WKWIN6024718&apos;, ip: &apos;192.168.31.244&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_171&apos;
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
 Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 75.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200403170909, moz:geckodriverVersion: 0.26.0, moz:headless: false, moz:processID: 21372, moz:profile: C:\Users\anujakho\AppData\L..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
 Session ID: 2f1075f4-fa2f-4172-bbe1-96c129af4740
-*** Element info: {Using=css selector, value=[id='user_email']}
+*** Element info: {Using=css selector, value=[id=&apos;user_email&apos;]}
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -194,46 +239,27 @@ Session ID: 2f1075f4-fa2f-4172-bbe1-96c129af4740
 	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:138)
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:465)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:451)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyLogin -->
-        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:publicisSapient.HomePageTest@1a75e76a]" name="closeBrowser" is-config="true" duration-ms="2099" started-at="2020-04-24T17:26:53Z" finished-at="2020-04-24T17:26:55Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeBrowser -->
-        <test-method status="PASS" signature="getUrl()[pri:0, instance:publicisSapient.HomePageTest@1a75e76a]" name="getUrl" is-config="true" duration-ms="12637" started-at="2020-04-24T17:26:55Z" finished-at="2020-04-24T17:27:07Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getUrl -->
-        <test-method status="PASS" signature="verifyLogin(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:publicisSapient.HomePageTest@1a75e76a]" name="verifyLogin" duration-ms="19334" started-at="2020-04-24T17:27:07Z" data-provider="getData" finished-at="2020-04-24T17:27:27Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[restricted@gmail.com]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[232312344]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[restricted]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyLogin -->
-        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:publicisSapient.HomePageTest@1a75e76a]" name="closeBrowser" is-config="true" duration-ms="10310" started-at="2020-04-24T17:27:27Z" finished-at="2020-04-24T17:27:37Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeBrowser -->
-      </class> <!-- publicisSapient.HomePageTest -->
-    </test> <!-- Regression Test -->
-  </suite> <!-- Suite -->
-</testng-results>
+</pre></div></td>
+<td>15</td>
+<td>publicisSapient.HomePageTest@1a75e76a</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='publicisSapient.HomePageTest.verifyLogin()'><b>verifyLogin</b><br>Test class: publicisSapient.HomePageTest<br>Parameters: restricted@gmail.com, 232312344, restricted</td>
+<td></td>
+<td>19</td>
+<td>publicisSapient.HomePageTest@1a75e76a</td></tr>
+<tr>
+<td title='publicisSapient.VerifyNavBarPresentTest.verifyNavBarIsPresent()'><b>verifyNavBarIsPresent</b><br>Test class: publicisSapient.VerifyNavBarPresentTest</td>
+<td></td>
+<td>8</td>
+<td>publicisSapient.VerifyNavBarPresentTest@33bc72d1</td></tr>
+</table><p>
+</body>
+</html>

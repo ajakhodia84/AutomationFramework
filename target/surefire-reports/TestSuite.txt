@@ -1,28 +1,28 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 4, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 88.042 s <<< FAILURE! - in TestSuite
-publicisSapient.VerifyTitleTest.basePageNavigation  Time elapsed: 10.123 s  <<< FAILURE!
-java.lang.NullPointerException
-	at publicisSapient.VerifyTitleTest.basePageNavigation(VerifyTitleTest.java:36)
-
-publicisSapient.HomePageTest.basePageNavigation  Time elapsed: 32.128 s  <<< FAILURE!
-org.openqa.selenium.WebDriverException: 
-Reached error page: about:neterror?e=dnsNotFound&u=http%3A//qaclickacademy.com/&c=UTF-8&f=regular&d=We%20can%E2%80%99t%20connect%20to%20the%20server%20at%20qaclickacademy.com.
+Tests run: 4, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 165.979 s <<< FAILURE! - in TestSuite
+publicisSapient.VerifyTitleTest.VerifyTitleHeader  Time elapsed: 10.688 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+Unable to locate element: [id='user_email']
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'WKWIN6024718', ip: '10.102.127.11', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_171'
+System info: host: 'WKWIN6024718', ip: '192.168.31.244', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_171'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 75.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200403170909, moz:geckodriverVersion: 0.26.0, moz:headless: false, moz:processID: 29036, moz:profile: C:\Users\anujakho\AppData\L..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 628e1615-d0a2-4b9b-9de0-485abd73c582
-	at publicisSapient.HomePageTest.basePageNavigation(HomePageTest.java:27)
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 75.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200403170909, moz:geckodriverVersion: 0.26.0, moz:headless: false, moz:processID: 19368, moz:profile: C:\Users\anujakho\AppData\L..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 24a22f2a-421f-4872-8a31-79cf9e4d3e4e
+*** Element info: {Using=css selector, value=[id='user_email']}
+	at publicisSapient.VerifyTitleTest.VerifyTitleHeader(VerifyTitleTest.java:43)
 
-publicisSapient.HomePageTest.basePageNavigation  Time elapsed: 9.205 s  <<< FAILURE!
-org.openqa.selenium.WebDriverException: 
-Reached error page: about:neterror?e=dnsNotFound&u=http%3A//qaclickacademy.com/&c=UTF-8&f=regular&d=We%20can%E2%80%99t%20connect%20to%20the%20server%20at%20qaclickacademy.com.
+publicisSapient.HomePageTest.verifyLogin  Time elapsed: 15.581 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+Unable to locate element: [id='user_email']
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'WKWIN6024718', ip: '10.102.127.11', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_171'
+System info: host: 'WKWIN6024718', ip: '192.168.31.244', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_171'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 75.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200403170909, moz:geckodriverVersion: 0.26.0, moz:headless: false, moz:processID: 29532, moz:profile: C:\Users\anujakho\AppData\L..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: c6359b53-2454-4e67-afd4-18a5933f7284
-	at publicisSapient.HomePageTest.basePageNavigation(HomePageTest.java:27)
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 75.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200403170909, moz:geckodriverVersion: 0.26.0, moz:headless: false, moz:processID: 21372, moz:profile: C:\Users\anujakho\AppData\L..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 2f1075f4-fa2f-4172-bbe1-96c129af4740
+*** Element info: {Using=css selector, value=[id='user_email']}
+	at publicisSapient.HomePageTest.verifyLogin(HomePageTest.java:41)
 

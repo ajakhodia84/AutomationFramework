@@ -1,43 +1,66 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" total="2" passed="1">
+<testng-results skipped="0" failed="1" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="51011" started-at="2020-04-24T05:14:10Z" finished-at="2020-04-24T05:15:01Z">
+  <suite name="Default suite" duration-ms="45276" started-at="2020-04-24T11:51:03Z" finished-at="2020-04-24T11:51:48Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="51011" started-at="2020-04-24T05:14:10Z" finished-at="2020-04-24T05:15:01Z">
+    <test name="Default test" duration-ms="45276" started-at="2020-04-24T11:51:03Z" finished-at="2020-04-24T11:51:48Z">
       <class name="publicisSapient.VerifyNavBarPresentTest">
-        <test-method status="PASS" signature="getUrl()[pri:0, instance:publicisSapient.VerifyNavBarPresentTest@671a5887]" name="getUrl" is-config="true" duration-ms="11382" started-at="2020-04-24T10:44:35Z" finished-at="2020-04-24T10:44:47Z">
+        <test-method status="PASS" signature="getUrl()[pri:0, instance:publicisSapient.VerifyNavBarPresentTest@22ef9844]" name="getUrl" is-config="true" duration-ms="21181" started-at="2020-04-24T17:21:03Z" finished-at="2020-04-24T17:21:24Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getUrl -->
-        <test-method status="PASS" signature="verifyNavBarIsPresent()[pri:0, instance:publicisSapient.VerifyNavBarPresentTest@671a5887]" name="verifyNavBarIsPresent" duration-ms="8974" started-at="2020-04-24T10:44:47Z" finished-at="2020-04-24T10:44:56Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyNavBarIsPresent -->
-        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:publicisSapient.VerifyNavBarPresentTest@671a5887]" name="closeBrowser" is-config="true" duration-ms="5781" started-at="2020-04-24T10:44:56Z" finished-at="2020-04-24T10:45:01Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeBrowser -->
-      </class> <!-- publicisSapient.VerifyNavBarPresentTest -->
-      <class name="publicisSapient.VerifyTitleTest">
-        <test-method status="PASS" signature="getUrl()[pri:0, instance:publicisSapient.VerifyTitleTest@87a85e1]" name="getUrl" is-config="true" duration-ms="18694" started-at="2020-04-24T10:44:10Z" finished-at="2020-04-24T10:44:29Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getUrl -->
-        <test-method status="FAIL" signature="VerifyTitleHeader()[pri:0, instance:publicisSapient.VerifyTitleTest@87a85e1]" name="VerifyTitleHeader" duration-ms="72" started-at="2020-04-24T10:44:29Z" finished-at="2020-04-24T10:44:29Z">
-          <exception class="java.lang.AssertionError">
+        <test-method status="FAIL" signature="verifyNavBarIsPresent()[pri:0, instance:publicisSapient.VerifyNavBarPresentTest@22ef9844]" name="verifyNavBarIsPresent" duration-ms="20107" started-at="2020-04-24T17:21:24Z" finished-at="2020-04-24T17:21:44Z">
+          <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[expected [QA Click Academy | Selenium,Jmeter,SoapUI,Appium,Database testing,QA Training Academyasfsfa] but found [QA Click Academy | Selenium,Jmeter,SoapUI,Appium,Database testing,QA Training Academy]]]>
+              <![CDATA[Unable to locate element: //div[contains(@class,'close-button')]
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'WKWIN6024718', ip: '192.168.31.244', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_251'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 75.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200403170909, moz:geckodriverVersion: 0.26.0, moz:headless: false, moz:processID: 25576, moz:profile: C:\Users\anujakho\AppData\L..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: a3f3c2f3-9bb4-4fbe-bd7d-83936c3d0850
+*** Element info: {Using=xpath, value=//div[contains(@class,'close-button')]}]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [QA Click Academy | Selenium,Jmeter,SoapUI,Appium,Database testing,QA Training Academyasfsfa] but found [QA Click Academy | Selenium,Jmeter,SoapUI,Appium,Database testing,QA Training Academy]
-	at org.testng.Assert.fail(Assert.java:94)
-	at org.testng.Assert.failNotEquals(Assert.java:496)
-	at org.testng.Assert.assertEquals(Assert.java:125)
-	at org.testng.Assert.assertEquals(Assert.java:178)
-	at org.testng.Assert.assertEquals(Assert.java:188)
-	at publicisSapient.VerifyTitleTest.VerifyTitleHeader(VerifyTitleTest.java:39)
+              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to locate element: //div[contains(@class,'close-button')]
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'WKWIN6024718', ip: '192.168.31.244', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_251'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 75.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200403170909, moz:geckodriverVersion: 0.26.0, moz:headless: false, moz:processID: 25576, moz:profile: C:\Users\anujakho\AppData\L..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: a3f3c2f3-9bb4-4fbe-bd7d-83936c3d0850
+*** Element info: {Using=xpath, value=//div[contains(@class,'close-button')]}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy25.getWrappedElement(Unknown Source)
+	at org.openqa.selenium.remote.internal.WebElementToJsonConverter.apply(WebElementToJsonConverter.java:50)
+	at java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
+	at java.util.Spliterators$ArraySpliterator.forEachRemaining(Unknown Source)
+	at java.util.stream.AbstractPipeline.copyInto(Unknown Source)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
+	at java.util.stream.ReduceOps$ReduceOp.evaluateSequential(Unknown Source)
+	at java.util.stream.AbstractPipeline.evaluate(Unknown Source)
+	at java.util.stream.ReferencePipeline.collect(Unknown Source)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:484)
+	at publicisSapient.resources.TestBase.click(TestBase.java:63)
+	at publicisSapient.pageObjects.LandingPage.popupClose(LandingPage.java:33)
+	at publicisSapient.VerifyNavBarPresentTest.verifyNavBarIsPresent(VerifyNavBarPresentTest.java:40)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -64,15 +87,15 @@
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- VerifyTitleHeader -->
-        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:publicisSapient.VerifyTitleTest@87a85e1]" name="closeBrowser" is-config="true" duration-ms="5366" started-at="2020-04-24T10:44:30Z" finished-at="2020-04-24T10:44:35Z">
+        </test-method> <!-- verifyNavBarIsPresent -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:publicisSapient.VerifyNavBarPresentTest@22ef9844]" name="closeBrowser" is-config="true" duration-ms="3964" started-at="2020-04-24T17:21:44Z" finished-at="2020-04-24T17:21:48Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
-      </class> <!-- publicisSapient.VerifyTitleTest -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+      </class> <!-- publicisSapient.VerifyNavBarPresentTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

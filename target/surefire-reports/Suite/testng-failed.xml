@@ -1,24 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [Suite]">
-  <test name="Test(failed)">
+  <listeners>
+    <listener class-name="publicisSapient.listeners.listeners"/>
+  </listeners>
+  <test name="Regression Test(failed)">
     <classes>
+      <class name="publicisSapient.HomePageTest">
+        <methods>
+          <include name="verifyLogin" invocation-numbers="0"/>
+          <include name="closeBrowser"/>
+          <include name="getUrl"/>
+        </methods>
+      </class> <!-- publicisSapient.HomePageTest -->
       <class name="publicisSapient.VerifyTitleTest">
         <methods>
-          <include name="basePageNavigation"/>
+          <include name="VerifyTitleHeader"/>
           <include name="getUrl"/>
+          <include name="closeBrowser"/>
         </methods>
       </class> <!-- publicisSapient.VerifyTitleTest -->
       <class name="publicisSapient.VerifyNavBarPresentTest">
         <methods>
           <include name="getUrl"/>
+          <include name="closeBrowser"/>
         </methods>
       </class> <!-- publicisSapient.VerifyNavBarPresentTest -->
-      <class name="publicisSapient.HomePageTest">
-        <methods>
-          <include name="basePageNavigation" invocation-numbers="0 1"/>
-        </methods>
-      </class> <!-- publicisSapient.HomePageTest -->
     </classes>
-  </test> <!-- Test(failed) -->
+  </test> <!-- Regression Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

@@ -2,16 +2,22 @@ package publicisSapient.pageObjects;
 
 import java.io.IOException;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
+
+import publicisSapient.HomePageTest;
 import publicisSapient.resources.TestBase;
 
 
 
 public class LandingPage extends TestBase{
+	
+	public static Logger log=LogManager.getLogger(HomePageTest.class.getName());
 	
 	public WebDriver driver;
 	
@@ -30,7 +36,12 @@ public class LandingPage extends TestBase{
 	}
 
 	public void popupClose() throws IOException{
-		click(popupClose);
+		try{
+			click(popupClose);
+			log.info("Pop up displayed and closed");
+		}catch(Exception e){
+			log.info("Pop up not displayed and step skipped");
+		}		
 	}
 	
 	public void verifyNavBar(){

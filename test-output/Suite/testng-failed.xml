@@ -4,7 +4,7 @@
   <listeners>
     <listener class-name="publicisSapient.listeners.listeners"/>
   </listeners>
-  <test name="Test(failed)">
+  <test name="Regression Test(failed)">
     <classes>
       <class name="publicisSapient.VerifyTitleTest">
         <methods>
@@ -19,6 +19,13 @@
           <include name="closeBrowser"/>
         </methods>
       </class> <!-- publicisSapient.VerifyNavBarPresentTest -->
+      <class name="publicisSapient.HomePageTest">
+        <methods>
+          <include name="verifyLogin" invocation-numbers="0"/>
+          <include name="closeBrowser"/>
+          <include name="getUrl"/>
+        </methods>
+      </class> <!-- publicisSapient.HomePageTest -->
     </classes>
-  </test> <!-- Test(failed) -->
+  </test> <!-- Regression Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

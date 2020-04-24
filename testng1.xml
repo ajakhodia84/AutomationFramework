@@ -4,7 +4,7 @@
 	<listeners>
 		<listener class-name="publicisSapient.listeners.listeners" />
 	</listeners>
-	<test thread-count="2" name="Test">
+	<test thread-count="5" name="Regression Test">
 		<classes>
 			<class name="publicisSapient.VerifyTitleTest" />
 			<class name="publicisSapient.VerifyNavBarPresentTest" />

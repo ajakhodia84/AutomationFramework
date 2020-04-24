@@ -55,6 +55,7 @@ public class listeners implements ITestListener {
 			log.error("driver is not initialized");
 		}*/
 
+		threadLocal.get().log(Status.FATAL, "Test Case with Name: " + testName.getMethod().getMethodName()+" is failed with FATAL status");
 		try {
 			path = testBase.getScreenshots(testName.getName());
 			threadLocal.get().addScreenCaptureFromPath(path, testName.getMethod().getMethodName());
@@ -79,6 +80,7 @@ public class listeners implements ITestListener {
 
 		}
 */
+		threadLocal.get().log(Status.SKIP, "Test case with name: " + testName.getMethod().getMethodName()+" is skipped");
 		try {
 			path = testBase.getScreenshots(testName.getName());
 			threadLocal.get().addScreenCaptureFromPath(path, testName.getMethod().getMethodName());
@@ -105,6 +107,7 @@ public class listeners implements ITestListener {
 
 		}
 */
+		threadLocal.get().log(Status.FAIL, "Test case with name: " + testName.getMethod().getMethodName()+" is failed within success percentage");
 		try {
 			path = testBase.getScreenshots(testName.getName());
 			threadLocal.get().addScreenCaptureFromPath(path, testName.getMethod().getMethodName());
