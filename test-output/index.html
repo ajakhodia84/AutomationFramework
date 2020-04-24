@@ -101,7 +101,7 @@
                     <div class="method-list-content failed suite-Suite">
                       <span>
                         <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="publicisSapient.VerifyTitleTest" hash-for-method="basePageNavigation">basePageNavigation</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="publicisSapient.VerifyTitleTest" hash-for-method="VerifyTitleHeader">VerifyTitleHeader</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Suite -->
@@ -115,7 +115,7 @@
                     <div class="method-list-content passed suite-Suite">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="publicisSapient.VerifyNavBarPresentTest" hash-for-method="basePageNavigation">basePageNavigation</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="publicisSapient.VerifyNavBarPresentTest" hash-for-method="verifyNavBarIsPresent">verifyNavBarIsPresent</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -138,14 +138,12 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="basePageNavigation">
-                  </a> <!-- basePageNavigation -->
-                  <span class="method-name">basePageNavigation</span>
-                  <div class="stack-trace">java.lang.NullPointerException
-	at publicisSapient.resources.testBase.click(testBase.java:56)
-	at publicisSapient.pageObjects.LandingPage.popupClose(LandingPage.java:33)
-	at publicisSapient.VerifyTitleTest.basePageNavigation(VerifyTitleTest.java:36)
-... Removed 24 stack frames
+                  <a name="VerifyTitleHeader">
+                  </a> <!-- VerifyTitleHeader -->
+                  <span class="method-name">VerifyTitleHeader</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [QA Click Academy | Selenium,Jmeter,SoapUI,Appium,Database testing,QA Training Academyasfsfa] but found [QA Click Academy | Selenium,Jmeter,SoapUI,Appium,Database testing,QA Training Academy]
+	at publicisSapient.VerifyTitleTest.VerifyTitleHeader(VerifyTitleTest.java:39)
+... Removed 29 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
@@ -159,9 +157,9 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="basePageNavigation">
-                  </a> <!-- basePageNavigation -->
-                  <span class="method-name">basePageNavigation</span>
+                  <a name="verifyNavBarIsPresent">
+                  </a> <!-- verifyNavBarIsPresent -->
+                  <span class="method-name">verifyNavBarIsPresent</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -176,6 +174,9 @@
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Suite&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;publicisSapient.listeners.listeners&quot;/&gt;
+  &lt;/listeners&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;publicisSapient.VerifyTitleTest&quot;/&gt;
@@ -221,18 +222,18 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(2);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'basePageNavigation')
-data.setCell(0, 2, 'publicisSapient.VerifyTitleTest')
-data.setCell(0, 3, 10146);
+data.setCell(0, 1, 'verifyNavBarIsPresent')
+data.setCell(0, 2, 'publicisSapient.VerifyNavBarPresentTest')
+data.setCell(0, 3, 8974);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'basePageNavigation')
-data.setCell(1, 2, 'publicisSapient.VerifyNavBarPresentTest')
-data.setCell(1, 3, 487);
+data.setCell(1, 1, 'VerifyTitleHeader')
+data.setCell(1, 2, 'publicisSapient.VerifyTitleTest')
+data.setCell(1, 3, 72);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 10 seconds</span>
+              <span class="suite-total-time">Total running time: 9 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -258,31 +259,36 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">publicisSapient.VerifyNavBarPresentTest</div> <!-- chronological-class-name -->
-              <div class="configuration-test before">
+              <div class="chronological-class-name">publicisSapient.VerifyTitleTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
                 <span class="method-name">getUrl</span>
                 <span class="method-start">0 ms</span>
-              </div> <!-- configuration-test before -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">publicisSapient.VerifyTitleTest</div> <!-- chronological-class-name -->
-              <div class="configuration-test before">
-                <span class="method-name">getUrl</span>
-                <span class="method-start">18030 ms</span>
-              </div> <!-- configuration-test before -->
+              </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">basePageNavigation</span>
-                <span class="method-start">33316 ms</span>
+                <span class="method-name">VerifyTitleHeader</span>
+                <span class="method-start">18694 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeBrowser</span>
+                <span class="method-start">19492 ms</span>
+              </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">publicisSapient.VerifyNavBarPresentTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">getUrl</span>
+                <span class="method-start">24859 ms</span>
+              </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">basePageNavigation</span>
-                <span class="method-start">43467 ms</span>
+                <span class="method-name">verifyNavBarIsPresent</span>
+                <span class="method-start">36241 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeBrowser</span>
+                <span class="method-start">45217 ms</span>
+              </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->

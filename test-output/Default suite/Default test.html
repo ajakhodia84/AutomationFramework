@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>1/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>3/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Wed Apr 22 21:13:38 IST 2020</td>
+<td>Started on:</td><td>Fri Apr 24 10:19:12 IST 2020</td>
 </tr>
-<tr><td>Total time:</td><td>78 seconds (78892 ms)</td>
+<tr><td>Total time:</td><td>135 seconds (135455 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,34 +75,14 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='publicisSapient.HomePageTest.basePageNavigation()'><b>basePageNavigation</b><br>Test class: publicisSapient.HomePageTest<br>Parameters: restricted@gmail.com, 232312344, restricted</td>
-<td><div><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: [id=&apos;user_email&apos;]
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;WKWIN6024718&apos;, ip: &apos;10.102.127.11&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_251&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 75.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200403170909, moz:geckodriverVersion: 0.26.0, moz:headless: false, moz:processID: 27792, moz:profile: C:\Users\anujakho\AppData\L..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: ee50c50f-09e1-491a-9550-88fa29286378
-*** Element info: {Using=css selector, value=[id=&apos;user_email&apos;]}
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:420)
-	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:431)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy12.sendKeys(Unknown Source)
-	at publicisSapient.pageObjects.LoginPage.login(LoginPage.java:27)
-	at publicisSapient.HomePageTest.basePageNavigation(HomePageTest.java:34)
+<td title='publicisSapient.VerifyTitleTest.VerifyTitleHeader()'><b>VerifyTitleHeader</b><br>Test class: publicisSapient.VerifyTitleTest</td>
+<td><div><pre>java.lang.AssertionError: expected [QA Click Academy | Selenium,Jmeter,SoapUI,Appium,Database testing,QA Training Academyasfsfa] but found [QA Click Academy | Selenium,Jmeter,SoapUI,Appium,Database testing,QA Training Academy]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:496)
+	at org.testng.Assert.assertEquals(Assert.java:125)
+	at org.testng.Assert.assertEquals(Assert.java:178)
+	at org.testng.Assert.assertEquals(Assert.java:188)
+	at publicisSapient.VerifyTitleTest.VerifyTitleHeader(VerifyTitleTest.java:39)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -127,34 +107,14 @@ Session ID: ee50c50f-09e1-491a-9550-88fa29286378
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace611289995", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace611289995'><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: [id=&apos;user_email&apos;]
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;WKWIN6024718&apos;, ip: &apos;10.102.127.11&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_251&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 75.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200403170909, moz:geckodriverVersion: 0.26.0, moz:headless: false, moz:processID: 27792, moz:profile: C:\Users\anujakho\AppData\L..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: ee50c50f-09e1-491a-9550-88fa29286378
-*** Element info: {Using=css selector, value=[id=&apos;user_email&apos;]}
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:420)
-	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:431)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy12.sendKeys(Unknown Source)
-	at publicisSapient.pageObjects.LoginPage.login(LoginPage.java:27)
-	at publicisSapient.HomePageTest.basePageNavigation(HomePageTest.java:34)
+</pre></div><a href='#' onClick='toggleBox("stack-trace937277082", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace937277082'><pre>java.lang.AssertionError: expected [QA Click Academy | Selenium,Jmeter,SoapUI,Appium,Database testing,QA Training Academyasfsfa] but found [QA Click Academy | Selenium,Jmeter,SoapUI,Appium,Database testing,QA Training Academy]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:496)
+	at org.testng.Assert.assertEquals(Assert.java:125)
+	at org.testng.Assert.assertEquals(Assert.java:178)
+	at org.testng.Assert.assertEquals(Assert.java:188)
+	at publicisSapient.VerifyTitleTest.VerifyTitleHeader(VerifyTitleTest.java:39)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -180,8 +140,8 @@ Session ID: ee50c50f-09e1-491a-9550-88fa29286378
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>40</td>
-<td>publicisSapient.HomePageTest@1189dd52</td></tr>
+<td>0</td>
+<td>publicisSapient.VerifyTitleTest@747ddf94</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -191,10 +151,20 @@ Session ID: ee50c50f-09e1-491a-9550-88fa29286378
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='publicisSapient.HomePageTest.basePageNavigation()'><b>basePageNavigation</b><br>Test class: publicisSapient.HomePageTest<br>Parameters: nonrestricted@gmail.com, 12344, nonrestricted</td>
+<td title='publicisSapient.HomePageTest.verifyLogin()'><b>verifyLogin</b><br>Test class: publicisSapient.HomePageTest<br>Parameters: nonrestricted@gmail.com, 12344, nonrestricted</td>
 <td></td>
-<td>38</td>
-<td>publicisSapient.HomePageTest@1189dd52</td></tr>
+<td>20</td>
+<td>publicisSapient.HomePageTest@35e2d654</td></tr>
+<tr>
+<td title='publicisSapient.HomePageTest.verifyLogin()'><b>verifyLogin</b><br>Test class: publicisSapient.HomePageTest<br>Parameters: restricted@gmail.com, 232312344, restricted</td>
+<td></td>
+<td>18</td>
+<td>publicisSapient.HomePageTest@35e2d654</td></tr>
+<tr>
+<td title='publicisSapient.VerifyNavBarPresentTest.verifyNavBarIsPresent()'><b>verifyNavBarIsPresent</b><br>Test class: publicisSapient.VerifyNavBarPresentTest</td>
+<td></td>
+<td>9</td>
+<td>publicisSapient.VerifyNavBarPresentTest@2f9f7dcf</td></tr>
 </table><p>
 </body>
 </html>

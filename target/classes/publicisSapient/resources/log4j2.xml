@@ -5,7 +5,7 @@
 	</Properties>
  
   <Appenders>
-      <RollingFile name="File" fileName="${basePath}/infoLogs.log" filePattern="${basePath}/infoLogs-%d{yyyy-MM-dd}.log">
+      <RollingFile name="File" fileName="${basePath}/infoLogs-%d{yyyy-MM-dd}.log" filePattern="${basePath}/infoLogs-%d{yyyy-MM-dd}.log">
      <PatternLayout pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n"/>
       <SizeBasedTriggeringPolicy size="500" />
           </RollingFile>

@@ -7,9 +7,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import publicisSapient.resources.testBase;
+import publicisSapient.resources.TestBase;
 
-public class LoginPage extends testBase{
+public class LoginPage extends TestBase{
 	
 	public WebDriver driver;
 	

@@ -6,25 +6,32 @@ import java.io.IOException;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 import publicisSapient.pageObjects.LandingPage;
 import publicisSapient.pageObjects.LoginPage;
-import publicisSapient.resources.testBase;
+import publicisSapient.resources.TestBase;
 
-public class HomePageTest extends testBase {
+public class HomePageTest extends TestBase {
 	
 	public static Logger log=LogManager.getLogger(HomePageTest.class.getName());
-
-	@Test(dataProvider="getData")
-	public void basePageNavigation(String email, String password, String text) throws IOException {
-
+	
+	@BeforeMethod
+	public void getUrl() throws IOException{
 		driver = initializeDriver();
 		log.info("Driver is Initialized");
+		driver.get(prop.getProperty("url"));
+	}
+
+	@Test(dataProvider="getData")
+	public void verifyLogin(String email, String password, String text) throws IOException {
+		
 		LandingPage landingPage = new LandingPage(driver);
 		LoginPage loginPage = new LoginPage(driver);
-		driver.get(prop.getProperty("url"));
 		log.info("Navigated to homepage");
 		String expectedTitle = "QA Click Academy | Selenium,Jmeter,SoapUI,Appium,Database testing,QA Training Academy";
 		String actualTitle = driver.getTitle();
@@ -47,6 +54,13 @@ public class HomePageTest extends testBase {
 		data[1][1]="232312344";
 		data[1][2]="restricted";
 		return data;
+	}
+	
+	@AfterMethod
+	public void closeBrowser()
+	{
+		driver.close();
+		driver=null;
 	}
 
 }

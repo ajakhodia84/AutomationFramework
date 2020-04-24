@@ -2,32 +2,42 @@
 <testng-results skipped="0" failed="1" total="2" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="43964" started-at="2020-04-22T16:52:24Z" finished-at="2020-04-22T16:53:08Z">
+  <suite name="Suite" duration-ms="51011" started-at="2020-04-24T05:14:10Z" finished-at="2020-04-24T05:15:01Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="43964" started-at="2020-04-22T16:52:24Z" finished-at="2020-04-22T16:53:08Z">
+    <test name="Test" duration-ms="51011" started-at="2020-04-24T05:14:10Z" finished-at="2020-04-24T05:15:01Z">
       <class name="publicisSapient.VerifyNavBarPresentTest">
-        <test-method status="PASS" signature="getUrl()[pri:0, instance:publicisSapient.VerifyNavBarPresentTest@56cdfb3b]" name="getUrl" is-config="true" duration-ms="18030" started-at="2020-04-22T22:22:24Z" finished-at="2020-04-22T22:22:42Z">
+        <test-method status="PASS" signature="getUrl()[pri:0, instance:publicisSapient.VerifyNavBarPresentTest@671a5887]" name="getUrl" is-config="true" duration-ms="11382" started-at="2020-04-24T10:44:35Z" finished-at="2020-04-24T10:44:47Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getUrl -->
-        <test-method status="PASS" signature="getUrl()[pri:0, instance:publicisSapient.VerifyTitleTest@4229bb3f]" name="getUrl" is-config="true" duration-ms="15272" started-at="2020-04-22T22:22:42Z" finished-at="2020-04-22T22:22:58Z">
+        <test-method status="PASS" signature="verifyNavBarIsPresent()[pri:0, instance:publicisSapient.VerifyNavBarPresentTest@671a5887]" name="verifyNavBarIsPresent" duration-ms="8974" started-at="2020-04-24T10:44:47Z" finished-at="2020-04-24T10:44:56Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- getUrl -->
-        <test-method status="PASS" signature="basePageNavigation()[pri:0, instance:publicisSapient.VerifyNavBarPresentTest@56cdfb3b]" name="basePageNavigation" duration-ms="487" started-at="2020-04-22T22:23:08Z" finished-at="2020-04-22T22:23:08Z">
+        </test-method> <!-- verifyNavBarIsPresent -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:publicisSapient.VerifyNavBarPresentTest@671a5887]" name="closeBrowser" is-config="true" duration-ms="5781" started-at="2020-04-24T10:44:56Z" finished-at="2020-04-24T10:45:01Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- basePageNavigation -->
+        </test-method> <!-- closeBrowser -->
       </class> <!-- publicisSapient.VerifyNavBarPresentTest -->
       <class name="publicisSapient.VerifyTitleTest">
-        <test-method status="FAIL" signature="basePageNavigation()[pri:0, instance:publicisSapient.VerifyTitleTest@4229bb3f]" name="basePageNavigation" duration-ms="10146" started-at="2020-04-22T22:22:58Z" finished-at="2020-04-22T22:23:08Z">
-          <exception class="java.lang.NullPointerException">
+        <test-method status="PASS" signature="getUrl()[pri:0, instance:publicisSapient.VerifyTitleTest@87a85e1]" name="getUrl" is-config="true" duration-ms="18694" started-at="2020-04-24T10:44:10Z" finished-at="2020-04-24T10:44:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getUrl -->
+        <test-method status="FAIL" signature="VerifyTitleHeader()[pri:0, instance:publicisSapient.VerifyTitleTest@87a85e1]" name="VerifyTitleHeader" duration-ms="72" started-at="2020-04-24T10:44:29Z" finished-at="2020-04-24T10:44:29Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [QA Click Academy | Selenium,Jmeter,SoapUI,Appium,Database testing,QA Training Academyasfsfa] but found [QA Click Academy | Selenium,Jmeter,SoapUI,Appium,Database testing,QA Training Academy]]]>
+            </message>
             <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException
-	at publicisSapient.resources.testBase.click(testBase.java:56)
-	at publicisSapient.pageObjects.LandingPage.popupClose(LandingPage.java:33)
-	at publicisSapient.VerifyTitleTest.basePageNavigation(VerifyTitleTest.java:36)
+              <![CDATA[java.lang.AssertionError: expected [QA Click Academy | Selenium,Jmeter,SoapUI,Appium,Database testing,QA Training Academyasfsfa] but found [QA Click Academy | Selenium,Jmeter,SoapUI,Appium,Database testing,QA Training Academy]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:496)
+	at org.testng.Assert.assertEquals(Assert.java:125)
+	at org.testng.Assert.assertEquals(Assert.java:178)
+	at org.testng.Assert.assertEquals(Assert.java:188)
+	at publicisSapient.VerifyTitleTest.VerifyTitleHeader(VerifyTitleTest.java:39)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -54,10 +64,14 @@
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- basePageNavigation -->
+        </test-method> <!-- VerifyTitleHeader -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:publicisSapient.VerifyTitleTest@87a85e1]" name="closeBrowser" is-config="true" duration-ms="5366" started-at="2020-04-24T10:44:30Z" finished-at="2020-04-24T10:44:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
       </class> <!-- publicisSapient.VerifyTitleTest -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->

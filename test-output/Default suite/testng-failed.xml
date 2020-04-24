@@ -5,9 +5,23 @@
     <classes>
       <class name="publicisSapient.HomePageTest">
         <methods>
-          <include name="basePageNavigation" invocation-numbers="1"/>
+          <include name="closeBrowser"/>
+          <include name="getUrl"/>
         </methods>
       </class> <!-- publicisSapient.HomePageTest -->
+      <class name="publicisSapient.VerifyTitleTest">
+        <methods>
+          <include name="VerifyTitleHeader"/>
+          <include name="getUrl"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- publicisSapient.VerifyTitleTest -->
+      <class name="publicisSapient.VerifyNavBarPresentTest">
+        <methods>
+          <include name="getUrl"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- publicisSapient.VerifyNavBarPresentTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
