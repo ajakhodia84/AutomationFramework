@@ -1,0 +1,7 @@
+11:03:49.622 [main] INFO  publicisSapient.HomePageTest - Nav bar verified
+11:03:58.775 [main] INFO  publicisSapient.HomePageTest - Driver is Initialized
+11:04:21.571 [main] INFO  publicisSapient.HomePageTest - Navigated to homepage
+11:04:41.615 [main] INFO  publicisSapient.HomePageTest - Pop up not displayed and step skipped
+11:04:53.434 [main] INFO  publicisSapient.HomePageTest - Credentials are passed
+11:05:07.734 [main] INFO  publicisSapient.HomePageTest - Driver is Initialized
+11:05:30.426 [main] INFO  publicisSapient.HomePageTest - Navigated to homepage

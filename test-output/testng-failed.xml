@@ -1,8 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
-  <test name="Default test(failed)">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <listeners>
+    <listener class-name="publicisSapient.listeners.listeners"/>
+  </listeners>
+  <test name="Smoke Test(failed)">
     <classes>
+      <class name="publicisSapient.VerifyTitleTest">
+        <methods>
+          <include name="VerifyTitleHeader"/>
+          <include name="getUrl"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- publicisSapient.VerifyTitleTest -->
       <class name="publicisSapient.VerifyNavBarPresentTest">
         <methods>
           <include name="getUrl"/>
@@ -11,5 +21,5 @@
         </methods>
       </class> <!-- publicisSapient.VerifyNavBarPresentTest -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- Smoke Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

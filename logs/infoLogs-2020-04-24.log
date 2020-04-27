@@ -1,7 +1,7 @@
-17:25:56.777 [main] INFO  publicisSapient.HomePageTest - Pop up displayed and closed
-17:25:56.890 [main] INFO  publicisSapient.HomePageTest - Nav bar verified
-17:26:10.803 [main] INFO  publicisSapient.HomePageTest - Driver is Initialized
-17:26:37.543 [main] INFO  publicisSapient.HomePageTest - Navigated to homepage
-17:26:37.849 [main] INFO  publicisSapient.HomePageTest - Pop up displayed and closed
-17:27:01.396 [main] INFO  publicisSapient.HomePageTest - Driver is Initialized
-17:27:07.955 [main] INFO  publicisSapient.HomePageTest - Navigated to homepage
+18:13:36.202 [main] INFO  publicisSapient.HomePageTest - Nav bar verified
+18:13:50.952 [main] INFO  publicisSapient.HomePageTest - Driver is Initialized
+18:14:17.883 [main] INFO  publicisSapient.HomePageTest - Navigated to homepage
+18:14:37.937 [main] INFO  publicisSapient.HomePageTest - Pop up not displayed and step skipped
+18:14:57.339 [main] INFO  publicisSapient.HomePageTest - Credentials are passed
+18:15:10.973 [main] INFO  publicisSapient.HomePageTest - Driver is Initialized
+18:15:16.216 [main] INFO  publicisSapient.HomePageTest - Navigated to homepage

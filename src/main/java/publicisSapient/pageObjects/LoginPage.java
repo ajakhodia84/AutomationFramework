@@ -13,9 +13,9 @@ public class LoginPage extends TestBase{
 	
 	public WebDriver driver;
 	
-	@FindBy (css="[id='user_email']") WebElement email;
-	@FindBy (css="[id='user_password']") WebElement password;
-	@FindBy (css="[type='submit']") WebElement submit;
+	@FindBy (css="[id='user_email']") private WebElement email;
+	@FindBy (css="[id='user_password']") private WebElement password;
+	@FindBy (css="[type='submit']") private WebElement submit;
 	
 	public LoginPage(WebDriver driver) {           
 		this.driver = driver; 

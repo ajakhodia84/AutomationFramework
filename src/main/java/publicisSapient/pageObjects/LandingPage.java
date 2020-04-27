@@ -21,9 +21,9 @@ public class LandingPage extends TestBase{
 	
 	public WebDriver driver;
 	
-	@FindBy (css="a[href*='sign_in']") WebElement loginLink;
-	@FindBy (xpath="//div[contains(@class,'close-button')]") WebElement popupClose;
-	@FindBy (css=".navbar-nav") WebElement navBar;
+	@FindBy (css="a[href*='sign_in']") private WebElement loginLink;
+	@FindBy (xpath="//div[contains(@class,'close-button')]") private WebElement popupClose;
+	@FindBy (css=".navbar-nav") private WebElement navBar;
 	
 	public LandingPage(WebDriver driver) {           
 		this.driver = driver; 

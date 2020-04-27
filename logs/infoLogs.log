@@ -1,2 +1,2 @@
-17:27:17.349 [main] INFO  publicisSapient.HomePageTest - Pop up displayed and closed
-17:27:27.289 [main] INFO  publicisSapient.HomePageTest - Credentials are passed
+11:05:50.505 [main] INFO  publicisSapient.HomePageTest - Pop up not displayed and step skipped
+11:06:05.945 [main] INFO  publicisSapient.HomePageTest - Credentials are passed
