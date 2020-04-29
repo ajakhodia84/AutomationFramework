@@ -1,45 +1,133 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="4" passed="4">
+<testng-results skipped="0" failed="1" total="4" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="256982" started-at="2020-04-27T05:24:49Z" finished-at="2020-04-27T05:29:06Z">
+  <suite name="Suite" duration-ms="616296" started-at="2020-04-29T12:02:13Z" finished-at="2020-04-29T12:12:29Z">
     <groups>
     </groups>
-    <test name="Regression Test" duration-ms="256982" started-at="2020-04-27T05:24:49Z" finished-at="2020-04-27T05:29:06Z">
+    <test name="Regression Test" duration-ms="616296" started-at="2020-04-29T12:02:13Z" finished-at="2020-04-29T12:12:29Z">
       <class name="publicisSapient.VerifyNavBarPresentTest">
-        <test-method status="PASS" signature="getUrl()[pri:0, instance:publicisSapient.VerifyNavBarPresentTest@609db43b]" name="getUrl" is-config="true" duration-ms="29029" started-at="2020-04-27T10:56:04Z" finished-at="2020-04-27T10:56:33Z">
+        <test-method status="PASS" signature="getUrl()[pri:0, instance:publicisSapient.VerifyNavBarPresentTest@53976f5c]" name="getUrl" is-config="true" duration-ms="85466" started-at="2020-04-29T17:40:45Z" finished-at="2020-04-29T17:42:11Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getUrl -->
-        <test-method status="PASS" signature="verifyNavBarIsPresent()[pri:0, instance:publicisSapient.VerifyNavBarPresentTest@609db43b]" name="verifyNavBarIsPresent" duration-ms="20114" started-at="2020-04-27T10:56:33Z" finished-at="2020-04-27T10:56:53Z">
+        <test-method status="PASS" signature="verifyNavBarIsPresent()[pri:0, instance:publicisSapient.VerifyNavBarPresentTest@53976f5c]" name="verifyNavBarIsPresent" duration-ms="13387" started-at="2020-04-29T17:42:11Z" finished-at="2020-04-29T17:42:24Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyNavBarIsPresent -->
-        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:publicisSapient.VerifyNavBarPresentTest@609db43b]" name="closeBrowser" is-config="true" duration-ms="2443" started-at="2020-04-27T10:56:53Z" finished-at="2020-04-27T10:56:56Z">
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:publicisSapient.VerifyNavBarPresentTest@53976f5c]" name="closeBrowser" is-config="true" duration-ms="4771" started-at="2020-04-29T17:42:24Z" finished-at="2020-04-29T17:42:29Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
       </class> <!-- publicisSapient.VerifyNavBarPresentTest -->
       <class name="publicisSapient.VerifyTitleTest">
-        <test-method status="PASS" signature="getUrl()[pri:0, instance:publicisSapient.VerifyTitleTest@3c947bc5]" name="getUrl" is-config="true" duration-ms="40346" started-at="2020-04-27T10:54:49Z" finished-at="2020-04-27T10:55:29Z">
+        <test-method status="PASS" signature="getUrl()[pri:0, instance:publicisSapient.VerifyTitleTest@4e7912d8]" name="getUrl" is-config="true" duration-ms="90166" started-at="2020-04-29T17:37:11Z" finished-at="2020-04-29T17:38:41Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getUrl -->
-        <test-method status="PASS" signature="VerifyTitleHeader()[pri:0, instance:publicisSapient.VerifyTitleTest@3c947bc5]" name="VerifyTitleHeader" duration-ms="31088" started-at="2020-04-27T10:55:29Z" finished-at="2020-04-27T10:56:00Z">
+        <test-method status="FAIL" signature="VerifyTitleHeader()[pri:0, instance:publicisSapient.VerifyTitleTest@4e7912d8]" name="VerifyTitleHeader" duration-ms="121088" started-at="2020-04-29T17:38:41Z" finished-at="2020-04-29T17:40:42Z">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"asdfs"}
+  (Session info: chrome=66.0.3359.158)
+  (Driver info: chromedriver=2.39.562718 (9a2698cba08cf5a471a29d30c8b3e12becabb0e9),platform=Windows NT 10.0.17134 x86_64)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'WKWIN6024718', ip: '10.102.116.38', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_251'
+Driver info: io.appium.java_client.AppiumDriver
+Capabilities {appActivity: com.google.android.apps.chr..., appPackage: com.android.chrome, browserName: chrome, chromedriverExecutable: C:\Users\anujakho\Desktop\G..., databaseEnabled: false, desired: {browserName: chrome, chromedriverExecutable: C:\Users\anujakho\Desktop\G..., deviceName: Demo, platformName: android, platformVersion: 9.0}, deviceApiLevel: 28, deviceManufacturer: Google, deviceModel: Android SDK built for x86, deviceName: emulator-5554, deviceScreenDensity: 560, deviceScreenSize: 1440x2560, deviceUDID: emulator-5554, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 3.5, platform: LINUX, platformName: Android, platformVersion: 9, statBarHeight: 84, takesScreenshot: true, viewportRect: {height: 2308, left: 0, top: 84, width: 1440}, warnings: {}, webStorageEnabled: false}
+Session ID: d42382a3-c9f8-4815-b9d7-2d3f76de2d74
+*** Element info: {Using=css selector, value=asdfs}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"asdfs"}
+  (Session info: chrome=66.0.3359.158)
+  (Driver info: chromedriver=2.39.562718 (9a2698cba08cf5a471a29d30c8b3e12becabb0e9),platform=Windows NT 10.0.17134 x86_64)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'WKWIN6024718', ip: '10.102.116.38', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_251'
+Driver info: io.appium.java_client.AppiumDriver
+Capabilities {appActivity: com.google.android.apps.chr..., appPackage: com.android.chrome, browserName: chrome, chromedriverExecutable: C:\Users\anujakho\Desktop\G..., databaseEnabled: false, desired: {browserName: chrome, chromedriverExecutable: C:\Users\anujakho\Desktop\G..., deviceName: Demo, platformName: android, platformVersion: 9.0}, deviceApiLevel: 28, deviceManufacturer: Google, deviceModel: Android SDK built for x86, deviceName: emulator-5554, deviceScreenDensity: 560, deviceScreenSize: 1440x2560, deviceUDID: emulator-5554, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 3.5, platform: LINUX, platformName: Android, platformVersion: 9, statBarHeight: 84, takesScreenshot: true, viewportRect: {height: 2308, left: 0, top: 84, width: 1440}, warnings: {}, webStorageEnabled: false}
+Session ID: d42382a3-c9f8-4815-b9d7-2d3f76de2d74
+*** Element info: {Using=css selector, value=asdfs}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:61)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:420)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElementByCssSelector(DefaultGenericMobileDriver.java:138)
+	at io.appium.java_client.AppiumDriver.findElementByCssSelector(AppiumDriver.java:1)
+	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:431)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy14.getWrappedElement(Unknown Source)
+	at org.openqa.selenium.remote.internal.WebElementToJsonConverter.apply(WebElementToJsonConverter.java:50)
+	at java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
+	at java.util.Spliterators$ArraySpliterator.forEachRemaining(Unknown Source)
+	at java.util.stream.AbstractPipeline.copyInto(Unknown Source)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
+	at java.util.stream.ReduceOps$ReduceOp.evaluateSequential(Unknown Source)
+	at java.util.stream.AbstractPipeline.evaluate(Unknown Source)
+	at java.util.stream.ReferencePipeline.collect(Unknown Source)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:484)
+	at publicisSapient.resources.TestBase.click(TestBase.java:118)
+	at publicisSapient.pageObjects.LoginPage.toFail(LoginPage.java:44)
+	at publicisSapient.VerifyTitleTest.VerifyTitleHeader(VerifyTitleTest.java:50)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1191)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)
+	at org.testng.TestNG.run(TestNG.java:1024)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifyTitleHeader -->
-        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:publicisSapient.VerifyTitleTest@3c947bc5]" name="closeBrowser" is-config="true" duration-ms="4086" started-at="2020-04-27T10:56:00Z" finished-at="2020-04-27T10:56:04Z">
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:publicisSapient.VerifyTitleTest@4e7912d8]" name="closeBrowser" is-config="true" duration-ms="2880" started-at="2020-04-29T17:40:42Z" finished-at="2020-04-29T17:40:45Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
       </class> <!-- publicisSapient.VerifyTitleTest -->
       <class name="publicisSapient.HomePageTest">
-        <test-method status="PASS" signature="getUrl()[pri:0, instance:publicisSapient.HomePageTest@55f616cf]" name="getUrl" is-config="true" duration-ms="29108" started-at="2020-04-27T10:56:56Z" finished-at="2020-04-27T10:57:25Z">
+        <test-method status="PASS" signature="getUrl()[pri:0, instance:publicisSapient.HomePageTest@696da30b]" name="getUrl" is-config="true" duration-ms="72983" started-at="2020-04-29T17:32:13Z" finished-at="2020-04-29T17:33:26Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getUrl -->
-        <test-method status="PASS" signature="verifyLogin(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:publicisSapient.HomePageTest@55f616cf]" name="verifyLogin" duration-ms="31119" started-at="2020-04-27T10:57:25Z" data-provider="getData" finished-at="2020-04-27T10:57:56Z">
+        <test-method status="PASS" signature="verifyLogin(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:publicisSapient.HomePageTest@696da30b]" name="verifyLogin" duration-ms="65878" started-at="2020-04-29T17:33:26Z" data-provider="getData" finished-at="2020-04-29T17:34:32Z">
           <params>
             <param index="0">
               <value>
@@ -60,15 +148,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyLogin -->
-        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:publicisSapient.HomePageTest@55f616cf]" name="closeBrowser" is-config="true" duration-ms="4494" started-at="2020-04-27T10:57:56Z" finished-at="2020-04-27T10:58:01Z">
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:publicisSapient.HomePageTest@696da30b]" name="closeBrowser" is-config="true" duration-ms="2568" started-at="2020-04-29T17:34:32Z" finished-at="2020-04-29T17:34:34Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
-        <test-method status="PASS" signature="getUrl()[pri:0, instance:publicisSapient.HomePageTest@55f616cf]" name="getUrl" is-config="true" duration-ms="29124" started-at="2020-04-27T10:58:01Z" finished-at="2020-04-27T10:58:30Z">
+        <test-method status="PASS" signature="getUrl()[pri:0, instance:publicisSapient.HomePageTest@696da30b]" name="getUrl" is-config="true" duration-ms="79883" started-at="2020-04-29T17:34:34Z" finished-at="2020-04-29T17:35:54Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getUrl -->
-        <test-method status="PASS" signature="verifyLogin(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:publicisSapient.HomePageTest@55f616cf]" name="verifyLogin" duration-ms="31484" started-at="2020-04-27T10:58:30Z" data-provider="getData" finished-at="2020-04-27T10:59:01Z">
+        <test-method status="PASS" signature="verifyLogin(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:publicisSapient.HomePageTest@696da30b]" name="verifyLogin" duration-ms="73744" started-at="2020-04-29T17:35:54Z" data-provider="getData" finished-at="2020-04-29T17:37:08Z">
           <params>
             <param index="0">
               <value>
@@ -89,7 +177,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyLogin -->
-        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:publicisSapient.HomePageTest@55f616cf]" name="closeBrowser" is-config="true" duration-ms="4493" started-at="2020-04-27T10:59:01Z" finished-at="2020-04-27T10:59:06Z">
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:publicisSapient.HomePageTest@696da30b]" name="closeBrowser" is-config="true" duration-ms="3398" started-at="2020-04-29T17:37:08Z" finished-at="2020-04-29T17:37:11Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->

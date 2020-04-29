@@ -4,8 +4,14 @@
   <listeners>
     <listener class-name="publicisSapient.listeners.listeners"/>
   </listeners>
-  <test name="Smoke Test(failed)">
+  <test name="Regression Test(failed)">
     <classes>
+      <class name="publicisSapient.VerifyNavBarPresentTest">
+        <methods>
+          <include name="getUrl"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- publicisSapient.VerifyNavBarPresentTest -->
       <class name="publicisSapient.VerifyTitleTest">
         <methods>
           <include name="VerifyTitleHeader"/>
@@ -13,13 +19,12 @@
           <include name="closeBrowser"/>
         </methods>
       </class> <!-- publicisSapient.VerifyTitleTest -->
-      <class name="publicisSapient.VerifyNavBarPresentTest">
+      <class name="publicisSapient.HomePageTest">
         <methods>
-          <include name="getUrl"/>
           <include name="closeBrowser"/>
-          <include name="verifyNavBarIsPresent"/>
+          <include name="getUrl"/>
         </methods>
-      </class> <!-- publicisSapient.VerifyNavBarPresentTest -->
+      </class> <!-- publicisSapient.HomePageTest -->
     </classes>
-  </test> <!-- Smoke Test(failed) -->
+  </test> <!-- Regression Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

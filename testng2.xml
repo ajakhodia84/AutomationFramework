@@ -5,9 +5,9 @@
 	<listener class-name="publicisSapient.listeners.listeners" />
 </listeners>
   <test thread-count="5" name="Smoke Test">
-    <classes>
-      <class name="publicisSapient.VerifyTitleTest"/>
+    <classes>      
       <class name="publicisSapient.VerifyNavBarPresentTest"/>
+      <class name="publicisSapient.VerifyTitleTest"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

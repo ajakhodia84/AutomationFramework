@@ -1,0 +1,10 @@
+# Created at 2020-04-29T13:20:54.095
+An unknown server-side error occurred while processing the command. Original error: chrome not reachable
+  (Session info: chrome=66.0.3359.158)
+  (Driver info: chromedriver=2.39.562718 (9a2698cba08cf5a471a29d30c8b3e12becabb0e9),platform=Windows NT 10.0.17134 x86_64)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'WKWIN6024718', ip: '10.102.126.63', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_171'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {appActivity: com.google.android.apps.chr..., appPackage: com.android.chrome, browserName: chrome, chromedriverExecutable: C:\Users\anujakho\Desktop\G..., databaseEnabled: false, desired: {browserName: chrome, chromedriverExecutable: C:\Users\anujakho\Desktop\G..., deviceName: Demo, platformName: android, platformVersion: 9.0}, deviceApiLevel: 28, deviceManufacturer: Google, deviceModel: Android SDK built for x86, deviceName: emulator-5554, deviceScreenDensity: 560, deviceScreenSize: 1440x2560, deviceUDID: emulator-5554, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 3.5, platform: LINUX, platformName: Android, platformVersion: 9, statBarHeight: 84, takesScreenshot: true, viewportRect: {height: 2308, left: 0, top: 84, width: 1440}, warnings: {}, webStorageEnabled: false}
+Session ID: 6a357669-6e36-4c3e-a257-cdc9f53be404
+

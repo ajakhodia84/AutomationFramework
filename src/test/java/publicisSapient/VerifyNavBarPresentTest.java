@@ -24,9 +24,15 @@ public class VerifyNavBarPresentTest extends TestBase {
 
 	@BeforeMethod
 	public void getUrl() throws IOException {
-		driver = initializeDriver();
-		log.info("Driver is Initialized");
-		driver.get(prop.getProperty("url"));
+		driver = null;
+		if (getPropertyValue("viewPort").contains("Desktop")) {
+			driver = initializeDriver();
+			log.info("Desktop Driver is Initialized");
+		} else if (getPropertyValue("viewPort").contains("Mobile")) {
+			driver = initializeAppiumDriver();
+			log.info("Mobile Driver is Initialized");
+		}
+		driver.get(getPropertyValue("url"));
 	}
 
 	@Test

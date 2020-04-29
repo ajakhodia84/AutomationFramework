@@ -6,9 +6,9 @@
 	</listeners>
 	<test thread-count="5" name="Regression Test">
 		<classes>
+			<class name="publicisSapient.HomePageTest" />			
 			<class name="publicisSapient.VerifyTitleTest" />
-			<class name="publicisSapient.VerifyNavBarPresentTest" />
-			<class name="publicisSapient.HomePageTest" />
+			<class name="publicisSapient.VerifyNavBarPresentTest" />			
 		</classes>
 	</test> <!-- Test -->
 </suite> <!-- Suite -->

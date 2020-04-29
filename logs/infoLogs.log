@@ -1,2 +1,5 @@
-11:05:50.505 [main] INFO  publicisSapient.HomePageTest - Pop up not displayed and step skipped
-11:06:05.945 [main] INFO  publicisSapient.HomePageTest - Credentials are passed
+18:20:50.895 [main] INFO  publicisSapient.HomePageTest - Pop up displayed and closed
+18:21:12.433 [main] INFO  publicisSapient.HomePageTest - Clicking on unavailable element to fail test case
+18:21:59.454 [main] INFO  publicisSapient.HomePageTest - Desktop Driver is Initialized
+18:22:19.055 [main] INFO  publicisSapient.HomePageTest - Pop up displayed and closed
+18:22:19.142 [main] INFO  publicisSapient.HomePageTest - Nav bar verified

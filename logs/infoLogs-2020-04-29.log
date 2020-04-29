@@ -1,0 +1,6 @@
+18:19:12.610 [main] INFO  publicisSapient.HomePageTest - Credentials are passed
+18:19:29.805 [main] INFO  publicisSapient.HomePageTest - Desktop Driver is Initialized
+18:19:45.596 [main] INFO  publicisSapient.HomePageTest - Navigated to homepage
+18:19:49.157 [main] INFO  publicisSapient.HomePageTest - Pop up displayed and closed
+18:20:02.821 [main] INFO  publicisSapient.HomePageTest - Credentials are passed
+18:20:29.335 [main] INFO  publicisSapient.HomePageTest - Desktop Driver is Initialized

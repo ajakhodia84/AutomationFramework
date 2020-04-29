@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [Suite]">
+  <listeners>
+    <listener class-name="publicisSapient.listeners.listeners"/>
+  </listeners>
+  <test name="Regression Test(failed)">
+    <classes>
+      <class name="publicisSapient.HomePageTest">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="getUrl"/>
+        </methods>
+      </class> <!-- publicisSapient.HomePageTest -->
+      <class name="publicisSapient.VerifyTitleTest">
+        <methods>
+          <include name="VerifyTitleHeader"/>
+          <include name="getUrl"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- publicisSapient.VerifyTitleTest -->
+      <class name="publicisSapient.VerifyNavBarPresentTest">
+        <methods>
+          <include name="getUrl"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- publicisSapient.VerifyNavBarPresentTest -->
+    </classes>
+  </test> <!-- Regression Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

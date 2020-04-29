@@ -39,26 +39,32 @@ public class listeners implements ITestListener {
 	public void onTestFailure(ITestResult testName) {
 
 		String path;
-		/*WebDriver driver = null;
-		System.out.println("wedriver is null");*/
+		/*
+		 * WebDriver driver = null; System.out.println("wedriver is null");
+		 */
 		threadLocal.get().fail(testName.getThrowable());
-	/*	System.out.println("thread local");
-		Object testMethodObject = testName.getInstance();		
-		System.out.println(testName.getInstance().toString());
-		Class clazz = testName.getTestClass().getRealClass();		
-		System.out.println(testName.getTestClass().getRealClass().toString());
-		try {
-			driver = (WebDriver) clazz.getDeclaredField("driver").get(testMethodObject);
-			System.out.println("driver is initialized");
-		} catch (Exception e1) {
-			System.out.println("driver is not initialized1");
-			log.error("driver is not initialized");
-		}*/
+		/*
+		 * System.out.println("thread local"); Object testMethodObject =
+		 * testName.getInstance();
+		 * System.out.println(testName.getInstance().toString()); Class clazz =
+		 * testName.getTestClass().getRealClass();
+		 * System.out.println(testName.getTestClass().getRealClass().toString())
+		 * ; try { driver = (WebDriver)
+		 * clazz.getDeclaredField("driver").get(testMethodObject);
+		 * System.out.println("driver is initialized"); } catch (Exception e1) {
+		 * System.out.println("driver is not initialized1");
+		 * log.error("driver is not initialized"); }
+		 */
 
-		threadLocal.get().log(Status.FATAL, "Test Case with Name: " + testName.getMethod().getMethodName()+" is failed with FATAL status");
+		threadLocal.get().log(Status.FATAL,
+				"Test Case with Name: " + testName.getMethod().getMethodName() + " is failed with FATAL status");
 		try {
-			path = testBase.getScreenshots(testName.getName());
-			threadLocal.get().addScreenCaptureFromPath(path, testName.getMethod().getMethodName());
+			if (testBase.getPropertyValue("viewPort").contains("Desktop")) {
+				path = testBase.getScreenshotsDesktop(testName.getName());
+				threadLocal.get().addScreenCaptureFromPath(path, testName.getMethod().getMethodName());
+			} else if (testBase.getPropertyValue("viewPort").contains("Mobile")) {
+				log.info("Framework is not able to capture screenshot for mobile");
+			}
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			log.error("Application failed to take screenshot");
@@ -69,21 +75,27 @@ public class listeners implements ITestListener {
 
 	public void onTestSkipped(ITestResult testName) {
 		String path;
-		/*WebDriver driver = null;*/
+		/* WebDriver driver = null; */
 		threadLocal.get().fail(testName.getThrowable());
-		/*Object testMethodObject = testName.getInstance();
-		Class clazz = testName.getTestClass().getRealClass();
-
+		/*
+		 * Object testMethodObject = testName.getInstance(); Class clazz =
+		 * testName.getTestClass().getRealClass();
+		 * 
+		 * try { driver = (WebDriver)
+		 * clazz.getDeclaredField("driver").get(testMethodObject); } catch
+		 * (Exception e1) {
+		 * 
+		 * }
+		 */
+		threadLocal.get().log(Status.SKIP,
+				"Test case with name: " + testName.getMethod().getMethodName() + " is skipped");
 		try {
-			driver = (WebDriver) clazz.getDeclaredField("driver").get(testMethodObject);
-		} catch (Exception e1) {
-
-		}
-*/
-		threadLocal.get().log(Status.SKIP, "Test case with name: " + testName.getMethod().getMethodName()+" is skipped");
-		try {
-			path = testBase.getScreenshots(testName.getName());
-			threadLocal.get().addScreenCaptureFromPath(path, testName.getMethod().getMethodName());
+			if (testBase.getPropertyValue("viewPort").contains("Desktop")) {
+				path = testBase.getScreenshotsDesktop(testName.getName());
+				threadLocal.get().addScreenCaptureFromPath(path, testName.getMethod().getMethodName());
+			} else if (testBase.getPropertyValue("viewPort").contains("Mobile")) {
+				log.info("Framework is not able to capture screenshot for mobile");
+			}
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			log.error("Application failed to take screenshot");
@@ -95,21 +107,30 @@ public class listeners implements ITestListener {
 
 	public void onTestFailedButWithinSuccessPercentage(ITestResult testName) {
 		threadLocal.get().fail(testName.getThrowable());
-		String path;
-		/*WebDriver driver = null;
-		threadLocal.get().fail(testName.getThrowable());
-		Object testMethodObject = testName.getInstance();
-		Class clazz = testName.getTestClass().getRealClass();
-
+		String path=null;
+		/*
+		 * WebDriver driver = null;
+		 * threadLocal.get().fail(testName.getThrowable()); Object
+		 * testMethodObject = testName.getInstance(); Class clazz =
+		 * testName.getTestClass().getRealClass();
+		 * 
+		 * try { driver = (WebDriver)
+		 * clazz.getDeclaredField("driver").get(testMethodObject); } catch
+		 * (Exception e1) {
+		 * 
+		 * }
+		 */
+		threadLocal.get().log(Status.FAIL, "Test case with name: " + testName.getMethod().getMethodName()
+				+ " is failed within success percentage");
 		try {
-			driver = (WebDriver) clazz.getDeclaredField("driver").get(testMethodObject);
-		} catch (Exception e1) {
-
-		}
-*/
-		threadLocal.get().log(Status.FAIL, "Test case with name: " + testName.getMethod().getMethodName()+" is failed within success percentage");
-		try {
-			path = testBase.getScreenshots(testName.getName());
+			if (testBase.getPropertyValue("viewPort").contains("Desktop")) {
+				path = testBase.getScreenshotsDesktop(testName.getName());
+				
+			} else if (testBase.getPropertyValue("viewPort").contains("Mobile")) {
+				path = testBase.getScreenshotsMobile(testName.getName());
+				
+				log.info("Framework is not able to capture screenshot for mobile");
+			}
 			threadLocal.get().addScreenCaptureFromPath(path, testName.getMethod().getMethodName());
 		} catch (IOException e) {
 			// TODO Auto-generated catch block

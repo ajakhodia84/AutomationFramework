@@ -1,6 +1,9 @@
 package publicisSapient.pageObjects;
 
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.util.Properties;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -24,6 +27,8 @@ public class LandingPage extends TestBase{
 	@FindBy (css="a[href*='sign_in']") private WebElement loginLink;
 	@FindBy (xpath="//div[contains(@class,'close-button')]") private WebElement popupClose;
 	@FindBy (css=".navbar-nav") private WebElement navBar;
+	@FindBy (css="button[class='navbar-toggle']") private WebElement navButtonMobile;
+	
 	
 	public LandingPage(WebDriver driver) {           
 		this.driver = driver; 
@@ -32,7 +37,9 @@ public class LandingPage extends TestBase{
 	
 
 	public void clickLogin() throws IOException{
+		String webElementName=loginLink.getText();
 		click(loginLink);
+		System.out.println(webElementName+" option is clicked");
 	}
 
 	public void popupClose() throws IOException{
@@ -44,7 +51,11 @@ public class LandingPage extends TestBase{
 		}		
 	}
 	
-	public void verifyNavBar(){
+	public void verifyNavBar() throws IOException{
+		System.out.println(getPropertyValue("viewPort"));
+		if(getPropertyValue("viewPort").contains("Mobile")){
+			click(navButtonMobile);
+		}
 		Assert.assertTrue(navBar.isDisplayed());
 	}
 }
