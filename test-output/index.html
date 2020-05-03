@@ -53,7 +53,7 @@
                 </li>
                 <li>
                   <a href="#" class="navigator-link " panel-name="testlist-Suite">
-                    <span class="test-stats">1 test</span>
+                    <span class="test-stats">3 tests</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -151,34 +151,24 @@
                   <a name="VerifyTitleHeader">
                   </a> <!-- VerifyTitleHeader -->
                   <span class="method-name">VerifyTitleHeader</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;asdfs&quot;}
-  (Session info: chrome=66.0.3359.158)
-  (Driver info: chromedriver=2.39.562718 (9a2698cba08cf5a471a29d30c8b3e12becabb0e9),platform=Windows NT 10.0.17134 x86_64)
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: Unable to locate element: asdfs
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;WKWIN6024718&apos;, ip: &apos;10.102.116.38&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_251&apos;
-Driver info: io.appium.java_client.AppiumDriver
-Capabilities {appActivity: com.google.android.apps.chr..., appPackage: com.android.chrome, browserName: chrome, chromedriverExecutable: C:\Users\anujakho\Desktop\G..., databaseEnabled: false, desired: {browserName: chrome, chromedriverExecutable: C:\Users\anujakho\Desktop\G..., deviceName: Demo, platformName: android, platformVersion: 9.0}, deviceApiLevel: 28, deviceManufacturer: Google, deviceModel: Android SDK built for x86, deviceName: emulator-5554, deviceScreenDensity: 560, deviceScreenSize: 1440x2560, deviceUDID: emulator-5554, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 3.5, platform: LINUX, platformName: Android, platformVersion: 9, statBarHeight: 84, takesScreenshot: true, viewportRect: {height: 2308, left: 0, top: 84, width: 1440}, warnings: {}, webStorageEnabled: false}
-Session ID: d42382a3-c9f8-4815-b9d7-2d3f76de2d74
+System info: host: &apos;WKWIN6024718&apos;, ip: &apos;192.168.31.244&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_251&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 75.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200403170909, moz:geckodriverVersion: 0.26.0, moz:headless: false, moz:processID: 10528, moz:profile: C:\Users\anujakho\AppData\L..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 47f59aca-8494-4034-9d34-5663cef3ef26
 *** Element info: {Using=css selector, value=asdfs}
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
-	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:61)
-	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:420)
-	at io.appium.java_client.DefaultGenericMobileDriver.findElementByCssSelector(DefaultGenericMobileDriver.java:138)
-	at io.appium.java_client.AppiumDriver.findElementByCssSelector(AppiumDriver.java:1)
 	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:431)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
-	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
 	at com.sun.proxy.$Proxy14.getWrappedElement(Unknown Source)
@@ -191,30 +181,18 @@ Session ID: d42382a3-c9f8-4815-b9d7-2d3f76de2d74
 	at java.util.stream.AbstractPipeline.evaluate(Unknown Source)
 	at java.util.stream.ReferencePipeline.collect(Unknown Source)
 	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:484)
-	at publicisSapient.resources.TestBase.click(TestBase.java:118)
+	at publicisSapient.helper.JavaScriptHelper.executeScript(JavaScriptHelper.java:41)
+	at publicisSapient.helper.JavaScriptHelper.scrollIntoView(JavaScriptHelper.java:70)
+	at publicisSapient.helper.JavaScriptHelper.scrollIntoViewAndClick(JavaScriptHelper.java:78)
+	at publicisSapient.helper.TestBase.click(TestBase.java:124)
 	at publicisSapient.pageObjects.LoginPage.toFail(LoginPage.java:44)
-	at publicisSapient.VerifyTitleTest.VerifyTitleHeader(VerifyTitleTest.java:50)
+	at publicisSapient.VerifyTitleTest.VerifyTitleHeader(VerifyTitleTest.java:39)
 ... Removed 28 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Suite-class-failed -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">publicisSapient.VerifyNavBarPresentTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifyNavBarIsPresent">
-                  </a> <!-- verifyNavBarIsPresent -->
-                  <span class="method-name">verifyNavBarIsPresent</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -239,6 +217,21 @@ Session ID: d42382a3-c9f8-4815-b9d7-2d3f76de2d74
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">publicisSapient.VerifyNavBarPresentTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyNavBarIsPresent">
+                  </a> <!-- verifyNavBarIsPresent -->
+                  <span class="method-name">verifyNavBarIsPresent</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -250,15 +243,23 @@ Session ID: d42382a3-c9f8-4815-b9d7-2d3f76de2d74
 &lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Suite&quot;&gt;
   &lt;listeners&gt;
-    &lt;listener class-name=&quot;publicisSapient.listeners.listeners&quot;/&gt;
+    &lt;listener class-name=&quot;publicisSapient.listeners.Listeners&quot;/&gt;
   &lt;/listeners&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;Regression Test&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Regression Test for Class 1&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;publicisSapient.HomePageTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Regression Test for Class 1 --&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Regression Test for Class 3&quot;&gt;
+    &lt;classes&gt;
       &lt;class name=&quot;publicisSapient.VerifyTitleTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Regression Test for Class 3 --&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Regression Test for Class 2&quot;&gt;
+    &lt;classes&gt;
       &lt;class name=&quot;publicisSapient.VerifyNavBarPresentTest&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Regression Test --&gt;
+  &lt;/test&gt; &lt;!-- Regression Test for Class 2 --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -270,7 +271,13 @@ Session ID: d42382a3-c9f8-4815-b9d7-2d3f76de2d74
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Regression Test (3 classes)</span>
+                <span class="test-name">Regression Test for Class 1 (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Regression Test for Class 3 (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Regression Test for Class 2 (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -300,24 +307,24 @@ data.addRows(4);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'VerifyTitleHeader')
 data.setCell(0, 2, 'publicisSapient.VerifyTitleTest')
-data.setCell(0, 3, 121088);
+data.setCell(0, 3, 66719);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'verifyLogin')
 data.setCell(1, 2, 'publicisSapient.HomePageTest')
-data.setCell(1, 3, 73744);
+data.setCell(1, 3, 54072);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'verifyLogin')
 data.setCell(2, 2, 'publicisSapient.HomePageTest')
-data.setCell(2, 3, 65878);
+data.setCell(2, 3, 27202);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'verifyNavBarIsPresent')
 data.setCell(3, 2, 'publicisSapient.VerifyNavBarPresentTest')
-data.setCell(3, 3, 13387);
+data.setCell(3, 3, 9489);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 4 minutes</span>
+              <span class="suite-total-time">Total running time: 2 minutes</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -344,62 +351,54 @@ return data;
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
               <div class="chronological-class-name">publicisSapient.HomePageTest</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
+              <div class="configuration-test before">
                 <span class="method-name">getUrl</span>
                 <span class="method-start">0 ms</span>
-              </div> <!-- configuration-method before -->
+              </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">verifyLogin(nonrestricted@gmail.com, 12344, nonrestricted)</span>
-                <span class="method-start">72983 ms</span>
+                <span class="method-start">14399 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">closeBrowser</span>
-                <span class="method-start">138904 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">getUrl</span>
-                <span class="method-start">141472 ms</span>
-              </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyLogin(restricted@gmail.com, 232312344, restricted)</span>
-                <span class="method-start">221355 ms</span>
+                <span class="method-start">41608 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-method after">
+              <div class="configuration-test after">
                 <span class="method-name">closeBrowser</span>
-                <span class="method-start">295102 ms</span>
-              </div> <!-- configuration-method after -->
+                <span class="method-start">95685 ms</span>
+              </div> <!-- configuration-test after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">publicisSapient.VerifyTitleTest</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
+              <div class="configuration-test before">
                 <span class="method-name">getUrl</span>
-                <span class="method-start">298503 ms</span>
-              </div> <!-- configuration-method before -->
+                <span class="method-start">99327 ms</span>
+              </div> <!-- configuration-test before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">VerifyTitleHeader</span>
-                <span class="method-start">388669 ms</span>
+                <span class="method-start">111200 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-method after">
+              <div class="configuration-test after">
                 <span class="method-name">closeBrowser</span>
-                <span class="method-start">509768 ms</span>
-              </div> <!-- configuration-method after -->
+                <span class="method-start">178105 ms</span>
+              </div> <!-- configuration-test after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">publicisSapient.VerifyNavBarPresentTest</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
+              <div class="configuration-test before">
                 <span class="method-name">getUrl</span>
-                <span class="method-start">512649 ms</span>
-              </div> <!-- configuration-method before -->
+                <span class="method-start">180602 ms</span>
+              </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">verifyNavBarIsPresent</span>
-                <span class="method-start">598115 ms</span>
+                <span class="method-start">192999 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-method after">
+              <div class="configuration-test after">
                 <span class="method-name">closeBrowser</span>
-                <span class="method-start">611504 ms</span>
-              </div> <!-- configuration-method after -->
+                <span class="method-start">202489 ms</span>
+              </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->

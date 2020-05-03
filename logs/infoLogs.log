@@ -1,5 +1,1 @@
-18:20:50.895 [main] INFO  publicisSapient.HomePageTest - Pop up displayed and closed
-18:21:12.433 [main] INFO  publicisSapient.HomePageTest - Clicking on unavailable element to fail test case
-18:21:59.454 [main] INFO  publicisSapient.HomePageTest - Desktop Driver is Initialized
-18:22:19.055 [main] INFO  publicisSapient.HomePageTest - Pop up displayed and closed
-18:22:19.142 [main] INFO  publicisSapient.HomePageTest - Nav bar verified
+10:51:32.007 [main] INFO  publicisSapient.VerifyNavBarPresentTest - Verification completed for class: publicisSapient.VerifyNavBarPresentTest

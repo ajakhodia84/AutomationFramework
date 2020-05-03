@@ -1,37 +1,26 @@
 package publicisSapient;
 
-import static org.testng.Assert.assertEquals;
-
 import java.io.IOException;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.testng.Assert;
-import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterTest;
-import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeTest;
-import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
+import publicisSapient.helper.TestBase;
 import publicisSapient.pageObjects.LandingPage;
 import publicisSapient.pageObjects.LoginPage;
-import publicisSapient.resources.TestBase;
 
 public class VerifyTitleTest extends TestBase {
 
-	public static Logger log = LogManager.getLogger(HomePageTest.class.getName());
+	public static Logger log = LogManager.getLogger(VerifyTitleTest.class);
 
-	@BeforeMethod
+	@BeforeTest
 	public void getUrl() throws IOException {
-		driver = null;
-		if (getPropertyValue("viewPort").contains("Desktop")) {
-			driver = initializeDriver();
-			log.info("Desktop Driver is Initialized");
-		} else if (getPropertyValue("viewPort").contains("Mobile")) {
-			driver = initializeAppiumDriver();
-			log.info("Mobile Driver is Initialized");
-		}
+		driver=null;
+		driver = initializeDriver();
 		driver.get(getPropertyValue("url"));
 		// driver.get("www.facebook.com");
 	}
@@ -50,10 +39,11 @@ public class VerifyTitleTest extends TestBase {
 		loginPage.toFail();
 	}
 
-	@AfterMethod
+	@AfterTest
 	public void closeBrowser() {
+		System.out.println("Verification completed for class: "+VerifyTitleTest.class.getName());
+		log.info("Verification completed for class: "+VerifyTitleTest.class.getName());
 		driver.close();
-		driver = null;
-		System.out.println("Test Exected for given call file:");
+		driver=null;
 	}
 }

@@ -2,13 +2,22 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Suite">
 	<listeners>
-		<listener class-name="publicisSapient.listeners.listeners" />
+		<listener class-name="publicisSapient.listeners.Listeners" />
+		<!-- <listener class-name="publicisSapient.listeners.RetryListener" /> -->
 	</listeners>
-	<test thread-count="5" name="Regression Test">
+	<test thread-count="5" name="Regression Test for Class 1">
 		<classes>
-			<class name="publicisSapient.HomePageTest" />			
+			<class name="publicisSapient.HomePageTest" />
+		</classes>
+	</test> <!-- Test -->
+	<test thread-count="5" name="Regression Test for Class 3">
+		<classes>
 			<class name="publicisSapient.VerifyTitleTest" />
-			<class name="publicisSapient.VerifyNavBarPresentTest" />			
+		</classes>
+	</test> <!-- Test -->
+	<test thread-count="5" name="Regression Test for Class 2">
+		<classes>
+			<class name="publicisSapient.VerifyNavBarPresentTest" />
 		</classes>
 	</test> <!-- Test -->
 </suite> <!-- Suite -->

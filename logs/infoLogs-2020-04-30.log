@@ -1,0 +1,6 @@
+23:33:22.755 [main] INFO  publicisSapient.HomePageTest - Pop up not displayed and step skipped
+23:33:29.891 [main] INFO  publicisSapient.HomePageTest - Credentials are passed
+23:33:29.893 [main] INFO  publicisSapient.HomePageTest - Verification completed for class: publicisSapient.HomePageTest
+23:33:56.067 [main] INFO  publicisSapient.HomePageTest - Pop up displayed and closed
+23:33:56.199 [main] INFO  publicisSapient.VerifyNavBarPresentTest - Nav bar verified
+23:33:56.200 [main] INFO  publicisSapient.VerifyNavBarPresentTest - Verification completed for class: publicisSapient.VerifyNavBarPresentTest

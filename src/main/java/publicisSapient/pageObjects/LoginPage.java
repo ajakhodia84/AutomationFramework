@@ -10,11 +10,11 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 import publicisSapient.HomePageTest;
-import publicisSapient.resources.TestBase;
+import publicisSapient.helper.TestBase;
 
 public class LoginPage extends TestBase {
 
-	public static Logger log = LogManager.getLogger(HomePageTest.class.getName());
+	public static Logger log = LogManager.getLogger(LandingPage.class);
 
 	public WebDriver driver;
 

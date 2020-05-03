@@ -14,16 +14,16 @@ import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
 
 import publicisSapient.HomePageTest;
-import publicisSapient.resources.ExtentReportNG;
-import publicisSapient.resources.TestBase;
+import publicisSapient.helper.ExtentReportNG;
+import publicisSapient.helper.TestBase;
 
-public class listeners implements ITestListener {
+public class Listeners implements ITestListener {
 
 	ExtentReports extent = ExtentReportNG.extentReportGenerator();
 	ExtentTest test;
 	private static ThreadLocal<ExtentTest> threadLocal = new ThreadLocal<ExtentTest>();
 
-	public static Logger log = LogManager.getLogger(HomePageTest.class.getName());
+	public static Logger log = LogManager.getLogger(Listeners.class);
 	TestBase testBase = new TestBase();
 
 	public void onTestStart(ITestResult testname) {
@@ -59,12 +59,8 @@ public class listeners implements ITestListener {
 		threadLocal.get().log(Status.FATAL,
 				"Test Case with Name: " + testName.getMethod().getMethodName() + " is failed with FATAL status");
 		try {
-			if (testBase.getPropertyValue("viewPort").contains("Desktop")) {
-				path = testBase.getScreenshotsDesktop(testName.getName());
-				threadLocal.get().addScreenCaptureFromPath(path, testName.getMethod().getMethodName());
-			} else if (testBase.getPropertyValue("viewPort").contains("Mobile")) {
-				log.info("Framework is not able to capture screenshot for mobile");
-			}
+			path = testBase.getScreenshotsDesktop(testName.getName());
+			threadLocal.get().addScreenCaptureFromPath(path, testName.getMethod().getMethodName());
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			log.error("Application failed to take screenshot");
@@ -90,12 +86,8 @@ public class listeners implements ITestListener {
 		threadLocal.get().log(Status.SKIP,
 				"Test case with name: " + testName.getMethod().getMethodName() + " is skipped");
 		try {
-			if (testBase.getPropertyValue("viewPort").contains("Desktop")) {
-				path = testBase.getScreenshotsDesktop(testName.getName());
-				threadLocal.get().addScreenCaptureFromPath(path, testName.getMethod().getMethodName());
-			} else if (testBase.getPropertyValue("viewPort").contains("Mobile")) {
-				log.info("Framework is not able to capture screenshot for mobile");
-			}
+			path = testBase.getScreenshotsDesktop(testName.getName());
+			threadLocal.get().addScreenCaptureFromPath(path, testName.getMethod().getMethodName());
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			log.error("Application failed to take screenshot");
@@ -107,7 +99,7 @@ public class listeners implements ITestListener {
 
 	public void onTestFailedButWithinSuccessPercentage(ITestResult testName) {
 		threadLocal.get().fail(testName.getThrowable());
-		String path=null;
+		String path = null;
 		/*
 		 * WebDriver driver = null;
 		 * threadLocal.get().fail(testName.getThrowable()); Object
@@ -123,14 +115,7 @@ public class listeners implements ITestListener {
 		threadLocal.get().log(Status.FAIL, "Test case with name: " + testName.getMethod().getMethodName()
 				+ " is failed within success percentage");
 		try {
-			if (testBase.getPropertyValue("viewPort").contains("Desktop")) {
-				path = testBase.getScreenshotsDesktop(testName.getName());
-				
-			} else if (testBase.getPropertyValue("viewPort").contains("Mobile")) {
-				path = testBase.getScreenshotsMobile(testName.getName());
-				
-				log.info("Framework is not able to capture screenshot for mobile");
-			}
+			path = testBase.getScreenshotsDesktop(testName.getName());
 			threadLocal.get().addScreenCaptureFromPath(path, testName.getMethod().getMethodName());
 		} catch (IOException e) {
 			// TODO Auto-generated catch block

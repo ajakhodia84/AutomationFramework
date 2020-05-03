@@ -2,16 +2,16 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
   <listeners>
-    <listener class-name="publicisSapient.listeners.listeners"/>
+    <listener class-name="publicisSapient.listeners.Listeners"/>
   </listeners>
-  <test name="Regression Test(failed)">
+  <test name="Regression Test for Class 3(failed)">
     <classes>
-      <class name="publicisSapient.VerifyNavBarPresentTest">
+      <class name="publicisSapient.HomePageTest">
         <methods>
-          <include name="getUrl"/>
           <include name="closeBrowser"/>
+          <include name="getUrl"/>
         </methods>
-      </class> <!-- publicisSapient.VerifyNavBarPresentTest -->
+      </class> <!-- publicisSapient.HomePageTest -->
       <class name="publicisSapient.VerifyTitleTest">
         <methods>
           <include name="VerifyTitleHeader"/>
@@ -19,12 +19,12 @@
           <include name="closeBrowser"/>
         </methods>
       </class> <!-- publicisSapient.VerifyTitleTest -->
-      <class name="publicisSapient.HomePageTest">
+      <class name="publicisSapient.VerifyNavBarPresentTest">
         <methods>
-          <include name="closeBrowser"/>
           <include name="getUrl"/>
+          <include name="closeBrowser"/>
         </methods>
-      </class> <!-- publicisSapient.HomePageTest -->
+      </class> <!-- publicisSapient.VerifyNavBarPresentTest -->
     </classes>
-  </test> <!-- Regression Test(failed) -->
+  </test> <!-- Regression Test for Class 3(failed) -->
 </suite> <!-- Failed suite [Suite] -->

@@ -14,13 +14,13 @@ import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
 
 import publicisSapient.HomePageTest;
-import publicisSapient.resources.TestBase;
+import publicisSapient.helper.TestBase;
 
 
 
 public class LandingPage extends TestBase{
 	
-	public static Logger log=LogManager.getLogger(HomePageTest.class.getName());
+	public static Logger log=LogManager.getLogger(LandingPage.class);
 	
 	public WebDriver driver;
 	
@@ -46,8 +46,10 @@ public class LandingPage extends TestBase{
 		try{
 			click(popupClose);
 			log.info("Pop up displayed and closed");
+			System.out.println("Pop up displayed and closed");
 		}catch(Exception e){
 			log.info("Pop up not displayed and step skipped");
+			System.out.println("Pop up not displayed and step skipped");
 		}		
 	}
 	

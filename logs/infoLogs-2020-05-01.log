@@ -1,0 +1,5 @@
+13:54:30.486 [main] INFO  publicisSapient.HomePageTest - Verification completed for class: publicisSapient.HomePageTest
+13:55:15.974 [main] INFO  publicisSapient.pageObjects.LandingPage - Pop up displayed and closed
+13:56:42.238 [main] INFO  publicisSapient.pageObjects.LandingPage - Clicking on unavailable element to fail test case
+13:56:57.353 [main] INFO  publicisSapient.helper.JavaScriptHelper - JavaScriptHelper has been initialized
+13:57:12.420 [main] INFO  publicisSapient.helper.JavaScriptHelper - Proxy element for: DefaultElementLocator 'By.cssSelector: asdfs' is visible after scrolling
