@@ -1,5 +1,0 @@
-10:50:39.923 [main] INFO  publicisSapient.helper.JavaScriptHelper - JavaScriptHelper has been initialized
-10:50:54.943 [main] INFO  publicisSapient.helper.JavaScriptHelper - Proxy element for: DefaultElementLocator 'By.cssSelector: asdfs' is visible after scrolling
-10:51:10.091 [main] INFO  publicisSapient.VerifyTitleTest - Verification completed for class: publicisSapient.VerifyTitleTest
-10:51:31.932 [main] INFO  publicisSapient.pageObjects.LandingPage - Pop up displayed and closed
-10:51:32.006 [main] INFO  publicisSapient.VerifyNavBarPresentTest - Nav bar verified

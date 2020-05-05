@@ -9,8 +9,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import publicisSapient.HomePageTest;
 import publicisSapient.helper.TestBase;
+import publicisSapient.testScripts.HomePageTest;
 
 public class LoginPage extends TestBase {
 
@@ -36,7 +36,7 @@ public class LoginPage extends TestBase {
 		email.sendKeys(emailid);
 		password.sendKeys(passwordid);
 		click(submit);
-		System.out.println(userType);
+		log.info(userType);
 	}
 
 	public void toFail(){

@@ -65,9 +65,9 @@ public class JavaScriptHelper {
 	 * JavascriptExecutor function for scrolling into view
 	 * @param element
 	 */
-	public void scrollIntoView(WebElement element) {
-		log.info(element.toString() + " is visible after scrolling");
+	public void scrollIntoView(WebElement element) {		
 		executeScript("arguments[0].scrollIntoView()", element);
+		log.info(element.toString() + " is visible after scrolling");
 	}
 
 	/**

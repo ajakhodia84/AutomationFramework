@@ -13,8 +13,8 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
 
-import publicisSapient.HomePageTest;
 import publicisSapient.helper.TestBase;
+import publicisSapient.testScripts.HomePageTest;
 
 
 
@@ -39,22 +39,19 @@ public class LandingPage extends TestBase{
 	public void clickLogin() throws IOException{
 		String webElementName=loginLink.getText();
 		click(loginLink);
-		System.out.println(webElementName+" option is clicked");
+		log.info(webElementName+" option is clicked");
 	}
 
 	public void popupClose() throws IOException{
 		try{
 			click(popupClose);
 			log.info("Pop up displayed and closed");
-			System.out.println("Pop up displayed and closed");
 		}catch(Exception e){
 			log.info("Pop up not displayed and step skipped");
-			System.out.println("Pop up not displayed and step skipped");
 		}		
 	}
 	
 	public void verifyNavBar() throws IOException{
-		System.out.println(getPropertyValue("viewPort"));
 		if(getPropertyValue("viewPort").contains("Mobile")){
 			click(navButtonMobile);
 		}

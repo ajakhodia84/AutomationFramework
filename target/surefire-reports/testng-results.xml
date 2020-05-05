@@ -1,91 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" total="4" passed="3">
+<testng-results skipped="0" failed="1" total="2" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="195533" started-at="2020-05-03T05:18:21Z" finished-at="2020-05-03T05:21:37Z">
+  <suite name="Suite" duration-ms="108818" started-at="2020-05-05T07:24:59Z" finished-at="2020-05-05T07:26:48Z">
     <groups>
     </groups>
-    <test name="Regression Test for Class 1" duration-ms="92497" started-at="2020-05-03T05:18:21Z" finished-at="2020-05-03T05:19:54Z">
-      <class name="publicisSapient.HomePageTest">
-        <test-method status="PASS" signature="getUrl()[pri:0, instance:publicisSapient.HomePageTest@305ffe9e]" name="getUrl" is-config="true" duration-ms="11590" started-at="2020-05-03T10:48:21Z" finished-at="2020-05-03T10:48:33Z">
+    <test name="Smoke Test Class 2" duration-ms="62963" started-at="2020-05-05T07:24:59Z" finished-at="2020-05-05T07:26:02Z">
+      <class name="publicisSapient.testScripts.VerifyTitleTest">
+        <test-method status="PASS" signature="getUrl()[pri:0, instance:publicisSapient.testScripts.VerifyTitleTest@73eb439a]" name="getUrl" is-config="true" duration-ms="21539" started-at="2020-05-05T12:54:59Z" finished-at="2020-05-05T12:55:21Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getUrl -->
-        <test-method status="PASS" signature="verifyLogin(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:publicisSapient.HomePageTest@305ffe9e]" name="verifyLogin" duration-ms="24443" started-at="2020-05-03T10:48:33Z" data-provider="getData" finished-at="2020-05-03T10:48:57Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[nonrestricted@gmail.com]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[12344]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[nonrestricted]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyLogin -->
-        <test-method status="PASS" signature="verifyLogin(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:publicisSapient.HomePageTest@305ffe9e]" name="verifyLogin" duration-ms="53418" started-at="2020-05-03T10:48:57Z" data-provider="getData" finished-at="2020-05-03T10:49:50Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[restricted@gmail.com]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[232312344]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[restricted]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyLogin -->
-        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:publicisSapient.HomePageTest@305ffe9e]" name="closeBrowser" is-config="true" duration-ms="3011" started-at="2020-05-03T10:49:50Z" finished-at="2020-05-03T10:49:54Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeBrowser -->
-      </class> <!-- publicisSapient.HomePageTest -->
-    </test> <!-- Regression Test for Class 1 -->
-    <test name="Regression Test for Class 3" duration-ms="77548" started-at="2020-05-03T05:19:54Z" finished-at="2020-05-03T05:21:12Z">
-      <class name="publicisSapient.VerifyTitleTest">
-        <test-method status="PASS" signature="getUrl()[pri:0, instance:publicisSapient.VerifyTitleTest@72bc6553]" name="getUrl" is-config="true" duration-ms="11795" started-at="2020-05-03T10:49:54Z" finished-at="2020-05-03T10:50:06Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getUrl -->
-        <test-method status="FAIL" signature="VerifyTitleHeader()[pri:0, instance:publicisSapient.VerifyTitleTest@72bc6553]" name="VerifyTitleHeader" duration-ms="63483" started-at="2020-05-03T10:50:06Z" finished-at="2020-05-03T10:51:09Z">
+        <test-method status="FAIL" signature="VerifyTitleHeader()[pri:0, instance:publicisSapient.testScripts.VerifyTitleTest@73eb439a]" name="VerifyTitleHeader" duration-ms="37240" started-at="2020-05-05T12:55:21Z" finished-at="2020-05-05T12:55:58Z">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[Unable to locate element: asdfs
+              <![CDATA[Unable to locate element: [id='user_email']
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'WKWIN6024718', ip: '192.168.31.244', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_171'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 75.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200403170909, moz:geckodriverVersion: 0.26.0, moz:headless: false, moz:processID: 5724, moz:profile: C:\Users\anujakho\AppData\L..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 75f5888e-f195-474c-801a-dd61b2808779
-*** Element info: {Using=css selector, value=asdfs}]]>
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 75.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200403170909, moz:geckodriverVersion: 0.26.0, moz:headless: false, moz:processID: 7868, moz:profile: C:\Users\anujakho\AppData\L..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: e92f446c-a031-4ae9-832a-5fc3d885834c
+*** Element info: {Using=css selector, value=[id='user_email']}]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to locate element: asdfs
+              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to locate element: [id='user_email']
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'WKWIN6024718', ip: '192.168.31.244', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_171'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 75.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200403170909, moz:geckodriverVersion: 0.26.0, moz:headless: false, moz:processID: 5724, moz:profile: C:\Users\anujakho\AppData\L..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 75f5888e-f195-474c-801a-dd61b2808779
-*** Element info: {Using=css selector, value=asdfs}
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 75.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200403170909, moz:geckodriverVersion: 0.26.0, moz:headless: false, moz:processID: 7868, moz:profile: C:\Users\anujakho\AppData\L..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: e92f446c-a031-4ae9-832a-5fc3d885834c
+*** Element info: {Using=css selector, value=[id='user_email']}
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -102,22 +48,9 @@ Session ID: 75f5888e-f195-474c-801a-dd61b2808779
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy24.getWrappedElement(Unknown Source)
-	at org.openqa.selenium.remote.internal.WebElementToJsonConverter.apply(WebElementToJsonConverter.java:50)
-	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
-	at java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:948)
-	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:481)
-	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:471)
-	at java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:708)
-	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
-	at java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:499)
-	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:484)
-	at publicisSapient.helper.JavaScriptHelper.executeScript(JavaScriptHelper.java:41)
-	at publicisSapient.helper.JavaScriptHelper.scrollIntoView(JavaScriptHelper.java:70)
-	at publicisSapient.helper.JavaScriptHelper.scrollIntoViewAndClick(JavaScriptHelper.java:78)
-	at publicisSapient.helper.TestBase.click(TestBase.java:124)
-	at publicisSapient.pageObjects.LoginPage.toFail(LoginPage.java:44)
-	at publicisSapient.VerifyTitleTest.VerifyTitleHeader(VerifyTitleTest.java:39)
+	at com.sun.proxy.$Proxy23.sendKeys(Unknown Source)
+	at publicisSapient.pageObjects.LoginPage.login(LoginPage.java:36)
+	at publicisSapient.testScripts.VerifyTitleTest.VerifyTitleHeader(VerifyTitleTest.java:38)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -152,27 +85,27 @@ Session ID: 75f5888e-f195-474c-801a-dd61b2808779
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifyTitleHeader -->
-        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:publicisSapient.VerifyTitleTest@72bc6553]" name="closeBrowser" is-config="true" duration-ms="2136" started-at="2020-05-03T10:51:10Z" finished-at="2020-05-03T10:51:12Z">
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:publicisSapient.testScripts.VerifyTitleTest@73eb439a]" name="closeBrowser" is-config="true" duration-ms="4046" started-at="2020-05-05T12:55:58Z" finished-at="2020-05-05T12:56:02Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
-      </class> <!-- publicisSapient.VerifyTitleTest -->
-    </test> <!-- Regression Test for Class 3 -->
-    <test name="Regression Test for Class 2" duration-ms="24702" started-at="2020-05-03T05:21:12Z" finished-at="2020-05-03T05:21:37Z">
-      <class name="publicisSapient.VerifyNavBarPresentTest">
-        <test-method status="PASS" signature="getUrl()[pri:0, instance:publicisSapient.VerifyNavBarPresentTest@71075444]" name="getUrl" is-config="true" duration-ms="10468" started-at="2020-05-03T10:51:12Z" finished-at="2020-05-03T10:51:22Z">
+      </class> <!-- publicisSapient.testScripts.VerifyTitleTest -->
+    </test> <!-- Smoke Test Class 2 -->
+    <test name="Smoke Test Class 1" duration-ms="45466" started-at="2020-05-05T07:26:03Z" finished-at="2020-05-05T07:26:48Z">
+      <class name="publicisSapient.testScripts.VerifyNavBarPresentTest">
+        <test-method status="PASS" signature="getUrl()[pri:0, instance:publicisSapient.testScripts.VerifyNavBarPresentTest@312aa7c]" name="getUrl" is-config="true" duration-ms="13484" started-at="2020-05-05T12:56:03Z" finished-at="2020-05-05T12:56:16Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getUrl -->
-        <test-method status="PASS" signature="verifyNavBarIsPresent()[pri:0, instance:publicisSapient.VerifyNavBarPresentTest@71075444]" name="verifyNavBarIsPresent" duration-ms="9199" started-at="2020-05-03T10:51:22Z" finished-at="2020-05-03T10:51:32Z">
+        <test-method status="PASS" signature="verifyNavBarIsPresent()[pri:0, instance:publicisSapient.testScripts.VerifyNavBarPresentTest@312aa7c]" name="verifyNavBarIsPresent" duration-ms="25333" started-at="2020-05-05T12:56:16Z" finished-at="2020-05-05T12:56:42Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyNavBarIsPresent -->
-        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:publicisSapient.VerifyNavBarPresentTest@71075444]" name="closeBrowser" is-config="true" duration-ms="5035" started-at="2020-05-03T10:51:32Z" finished-at="2020-05-03T10:51:37Z">
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:publicisSapient.testScripts.VerifyNavBarPresentTest@312aa7c]" name="closeBrowser" is-config="true" duration-ms="6649" started-at="2020-05-05T12:56:42Z" finished-at="2020-05-05T12:56:48Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
-      </class> <!-- publicisSapient.VerifyNavBarPresentTest -->
-    </test> <!-- Regression Test for Class 2 -->
+      </class> <!-- publicisSapient.testScripts.VerifyNavBarPresentTest -->
+    </test> <!-- Smoke Test Class 1 -->
   </suite> <!-- Suite -->
 </testng-results>

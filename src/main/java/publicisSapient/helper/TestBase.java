@@ -14,6 +14,8 @@ import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
 import org.apache.commons.io.FileUtils;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
@@ -37,9 +39,11 @@ import io.appium.java_client.android.AndroidElement;
 import io.appium.java_client.remote.MobileCapabilityType;
 
 public class TestBase {
+	
+	public static Logger log=LogManager.getLogger(TestBase.class);
 
-	public static WebDriver driver=null;
-	public static AppiumDriver<MobileElement> appiumDriver=null;
+	public static WebDriver driver = null;
+	public static AppiumDriver<MobileElement> appiumDriver = null;
 	public String projectPath = System.getProperty("user.dir");
 
 	public WebDriver initializeDriver() throws IOException {
@@ -66,7 +70,7 @@ public class TestBase {
 		cap.setCapability(MobileCapabilityType.DEVICE_NAME, "Demo");
 		cap.setCapability(MobileCapabilityType.PLATFORM_NAME, "Android");
 		cap.setCapability(MobileCapabilityType.PLATFORM_VERSION, "9.0");
-		cap.setCapability("chromedriverExecutable", projectPath + "\\chromedriver239.exe");
+		cap.setCapability("chromedriverExecutable", projectPath + "\\Drivers\\chromedriver239.exe");
 		cap.setCapability(MobileCapabilityType.BROWSER_NAME, BrowserType.CHROME);
 		driver = new AppiumDriver<MobileElement>(new URL("http://127.0.0.1:4723/wd/hub"), cap);
 
@@ -95,7 +99,7 @@ public class TestBase {
 				chromeOptions.addArguments("--headless");
 			}
 
-			System.setProperty("webdriver.chrome.driver", projectPath + "\\chromedriver.exe");
+			System.setProperty("webdriver.chrome.driver", projectPath + "\\Drivers\\chromedriver.exe");
 			driver = new ChromeDriver(chromeOptions);
 		} else if (browserName.contains("Firefox")) {
 
@@ -104,11 +108,11 @@ public class TestBase {
 				fireFoxOptions.addArguments("--headless");
 			}
 
-			System.setProperty("webdriver.gecko.driver", projectPath + "\\geckodriver.exe");
+			System.setProperty("webdriver.gecko.driver", projectPath + "\\Drivers\\geckodriver.exe");
 			driver = new FirefoxDriver(fireFoxOptions);
 
 		} else if (browserName.contains("IE")) {
-			System.setProperty("webdriver.ie.driver", projectPath + "\\IEDriverServer.exe");
+			System.setProperty("webdriver.ie.driver", projectPath + "\\Drivers\\IEDriverServer.exe");
 			driver = new InternetExplorerDriver();
 
 		}
@@ -117,12 +121,18 @@ public class TestBase {
 	}
 
 	public void click(WebElement element) {
+		VerificationHelper verificationHelper=new VerificationHelper(driver);
+		if(verificationHelper.isDisplayed(element)){
 		try {
-			element.click();	
-			
+			element.click();
+			log.info(element.toString()+" is displayed and clicked with Click Method");
 		} catch (Exception e) {
 			JavaScriptHelper javaScriptHelper = new JavaScriptHelper(driver);
 			javaScriptHelper.scrollIntoViewAndClick(element);
+			log.info(element.toString()+" is displayed and clicked with JavaScriptExecutor Method");
+		}
+		}else{
+			log.info(element.toString()+" is not displayed on page: "+driver.getTitle()+" hence cannot be clicked");
 		}
 	}
 
@@ -130,8 +140,8 @@ public class TestBase {
 		File srcFile = null;
 		if (getPropertyValue("viewPort").contains("Desktop")) {
 			srcFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-			System.out.println("Screenshot taken for desktop");
-		} else if (getPropertyValue("viewPort").contains("Mobile")) {			
+			log.info("Screenshot taken for desktop");
+		} else if (getPropertyValue("viewPort").contains("Mobile")) {
 			srcFile = getMobileScreenshot();
 		}
 
@@ -141,16 +151,16 @@ public class TestBase {
 		return path;
 
 	}
-	
-	public File getMobileScreenshot(){
+
+	public File getMobileScreenshot() {
 		File srcFile;
-		
-			appiumDriver = (AppiumDriver<MobileElement>) driver;
-			System.out.println("Appium driver initialized for Mobile");
-			srcFile =appiumDriver.getScreenshotAs(OutputType.FILE);
-			//srcFile = appiumDriver.getScreenshotAs(OutputType.FILE);
-			System.out.println("Screenshot taken for Mobile");
-		
+
+		appiumDriver = (AppiumDriver<MobileElement>) driver;
+		log.info("Appium driver initialized for Mobile");
+		srcFile = appiumDriver.getScreenshotAs(OutputType.FILE);
+		// srcFile = appiumDriver.getScreenshotAs(OutputType.FILE);
+		log.info("Screenshot taken for Mobile");
+
 		return srcFile;
 	}
 

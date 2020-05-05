@@ -1,1 +1,31 @@
-10:51:32.007 [main] INFO  publicisSapient.VerifyNavBarPresentTest - Verification completed for class: publicisSapient.VerifyNavBarPresentTest
+12:39:12.584 [main] INFO  publicisSapient.helper.VerificationHelper -  element is Displayed..
+12:39:27.927 [main] INFO  publicisSapient.helper.TestBase - Proxy element for: DefaultElementLocator 'By.xpath: //div[contains(@class,'close-button')]' is displayed and clicked with Click Method
+12:39:27.927 [main] INFO  publicisSapient.pageObjects.LandingPage - Pop up displayed and closed
+12:39:28.029 [main] INFO  publicisSapient.helper.VerificationHelper - Login element is Displayed..Login
+12:40:08.423 [main] INFO  publicisSapient.helper.TestBase - Proxy element for: DefaultElementLocator 'By.cssSelector: a[href*='sign_in']' is displayed and clicked with Click Method
+12:40:08.424 [main] INFO  publicisSapient.pageObjects.LandingPage - Login option is clicked
+12:40:08.614 [main] INFO  publicisSapient.helper.VerificationHelper -  element is Displayed..
+12:40:12.937 [main] INFO  publicisSapient.helper.TestBase - [[FirefoxDriver: firefox on WINDOWS (ed75b272-3383-4906-91c2-584137d33f10)] -> css selector: [type='submit']] is displayed and clicked with Click Method
+12:40:12.937 [main] INFO  publicisSapient.pageObjects.LandingPage - waste
+12:40:12.937 [main] INFO  publicisSapient.pageObjects.LandingPage - Clicking on unavailable element to fail test case
+12:40:43.012 [main] ERROR publicisSapient.helper.VerificationHelper - Proxy element for: DefaultElementLocator 'By.cssSelector: asdfs' element is not Displayed..
+12:40:58.039 [main] INFO  publicisSapient.helper.TestBase - Proxy element for: DefaultElementLocator 'By.cssSelector: asdfs' is not displayed on page: Rahul Shetty Academy hence cannot be clicked
+12:40:58.048 [main] INFO  publicisSapient.testScripts.VerifyTitleTest - Verification completed for class: publicisSapient.testScripts.VerifyTitleTest
+12:41:20.413 [main] INFO  publicisSapient.helper.VerificationHelper -  element is Displayed..
+12:41:35.723 [main] INFO  publicisSapient.helper.TestBase - Proxy element for: DefaultElementLocator 'By.xpath: //div[contains(@class,'close-button')]' is displayed and clicked with Click Method
+12:41:35.723 [main] INFO  publicisSapient.pageObjects.LandingPage - Pop up displayed and closed
+12:41:35.782 [main] INFO  publicisSapient.testScripts.VerifyNavBarPresentTest - Nav bar verified
+12:41:35.783 [main] INFO  publicisSapient.testScripts.VerifyNavBarPresentTest - Verification completed for class: publicisSapient.testScripts.VerifyNavBarPresentTest
+12:55:22.925 [main] INFO  publicisSapient.helper.VerificationHelper -  element is Displayed..
+12:55:38.335 [main] INFO  publicisSapient.helper.TestBase - Proxy element for: DefaultElementLocator 'By.xpath: //div[contains(@class,'close-button')]' is displayed and clicked with Click Method
+12:55:38.336 [main] INFO  publicisSapient.pageObjects.LandingPage - Pop up displayed and closed
+12:55:38.441 [main] INFO  publicisSapient.helper.VerificationHelper - Login element is Displayed..Login
+12:55:43.684 [main] INFO  publicisSapient.helper.TestBase - [[FirefoxDriver: firefox on WINDOWS (e92f446c-a031-4ae9-832a-5fc3d885834c)] -> css selector: a[href*='sign_in']] is displayed and clicked with Click Method
+12:55:43.684 [main] INFO  publicisSapient.pageObjects.LandingPage - Login option is clicked
+12:55:58.808 [main] INFO  publicisSapient.helper.TestBase - Screenshot taken for desktop
+12:55:58.823 [main] INFO  publicisSapient.testScripts.VerifyTitleTest - Verification completed for class: publicisSapient.testScripts.VerifyTitleTest
+12:56:26.706 [main] INFO  publicisSapient.helper.VerificationHelper -  element is Displayed..
+12:56:42.023 [main] INFO  publicisSapient.helper.TestBase - Proxy element for: DefaultElementLocator 'By.xpath: //div[contains(@class,'close-button')]' is displayed and clicked with Click Method
+12:56:42.024 [main] INFO  publicisSapient.pageObjects.LandingPage - Pop up displayed and closed
+12:56:42.074 [main] INFO  publicisSapient.testScripts.VerifyNavBarPresentTest - Nav bar verified
+12:56:42.075 [main] INFO  publicisSapient.testScripts.VerifyNavBarPresentTest - Verification completed for class: publicisSapient.testScripts.VerifyNavBarPresentTest

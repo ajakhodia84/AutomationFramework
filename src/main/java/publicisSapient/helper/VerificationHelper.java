@@ -19,7 +19,7 @@ public class VerificationHelper {
 	public boolean isDisplayed(WebElement element){
 		try{
 			element.isDisplayed();
-			log.info(element.toString()+" element is Displayed.."+element.getText());			
+			log.info(element.getText()+" element is Displayed.."+element.getText());			
 			return true;
 		}
 		catch(Exception e){
@@ -31,7 +31,7 @@ public class VerificationHelper {
 	public boolean isNotDisplayed(WebElement element){
 		try{
 			element.isDisplayed();
-			log.info(element.toString()+" element is present.."+element.getText());			
+			log.info(element.getText()+" element is present.."+element.getText());			
 			return false;
 		}
 		catch(Exception e){

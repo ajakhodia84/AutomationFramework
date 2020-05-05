@@ -7,17 +7,17 @@
 	</listeners>
 	<test thread-count="5" name="Regression Test for Class 1">
 		<classes>
-			<class name="publicisSapient.HomePageTest" />
+			<class name="publicisSapient.testScripts.HomePageTest" />
 		</classes>
 	</test> <!-- Test -->
 	<test thread-count="5" name="Regression Test for Class 3">
 		<classes>
-			<class name="publicisSapient.VerifyTitleTest" />
+			<class name="publicisSapient.testScripts.VerifyTitleTest" />
 		</classes>
 	</test> <!-- Test -->
 	<test thread-count="5" name="Regression Test for Class 2">
 		<classes>
-			<class name="publicisSapient.VerifyNavBarPresentTest" />
+			<class name="publicisSapient.testScripts.VerifyNavBarPresentTest" />
 		</classes>
 	</test> <!-- Test -->
 </suite> <!-- Suite -->

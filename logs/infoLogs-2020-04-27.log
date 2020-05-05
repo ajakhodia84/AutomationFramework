@@ -1,7 +1,0 @@
-15:45:11.064 [main] INFO  publicisSapient.HomePageTest - Driver is Initialized
-15:45:26.105 [main] INFO  publicisSapient.HomePageTest - Pop up displayed and closed
-15:46:14.494 [main] INFO  publicisSapient.HomePageTest - Driver is Initialized
-15:47:10.162 [main] INFO  publicisSapient.HomePageTest - Pop up not displayed and step skipped
-15:47:10.238 [main] INFO  publicisSapient.HomePageTest - Nav bar verified
-18:34:50.761 [main] INFO  publicisSapient.HomePageTest - Driver is Initialized
-18:35:11.346 [main] INFO  publicisSapient.HomePageTest - Driver is Initialized
