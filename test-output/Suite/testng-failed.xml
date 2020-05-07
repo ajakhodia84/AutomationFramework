@@ -2,23 +2,28 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
   <listeners>
-    <listener class-name="publicisSapient.listeners.Listeners"/>
+    <listener class-name="publicisSapient.helper.listeners.Listeners"/>
   </listeners>
   <test name="Smoke Test Class 2(failed)">
     <classes>
-      <class name="publicisSapient.VerifyNavBarPresentTest">
+      <class name="publicisSapient.testScripts.VerifyTitleTest">
         <methods>
-          <include name="getUrl"/>
-          <include name="closeBrowser"/>
-        </methods>
-      </class> <!-- publicisSapient.VerifyNavBarPresentTest -->
-      <class name="publicisSapient.VerifyTitleTest">
-        <methods>
+          <include name="afterTest"/>
+          <include name="beforemethod"/>
+          <include name="beforeTest"/>
+          <include name="afterMethod"/>
           <include name="VerifyTitleHeader"/>
-          <include name="getUrl"/>
-          <include name="closeBrowser"/>
         </methods>
-      </class> <!-- publicisSapient.VerifyTitleTest -->
+      </class> <!-- publicisSapient.testScripts.VerifyTitleTest -->
+      <class name="publicisSapient.testScripts.VerifyNavBarPresentTest">
+        <methods>
+          <include name="beforeSuite"/>
+          <include name="afterTest"/>
+          <include name="beforemethod"/>
+          <include name="beforeTest"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- publicisSapient.testScripts.VerifyNavBarPresentTest -->
     </classes>
   </test> <!-- Smoke Test Class 2(failed) -->
 </suite> <!-- Failed suite [Suite] -->

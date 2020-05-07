@@ -1,10 +1,6 @@
 package publicisSapient.pageObjects;
 
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.io.IOException;
-import java.util.Properties;
-
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.WebDriver;
@@ -13,16 +9,17 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
 
-import publicisSapient.helper.TestBase;
-import publicisSapient.testScripts.HomePageTest;
+import publicisSapient.helper.WaitHelper;
+import publicisSapient.helper.testBase.TestBase;
 
 
 
-public class LandingPage extends TestBase{
+public class LandingPage{
 	
 	public static Logger log=LogManager.getLogger(LandingPage.class);
 	
-	public WebDriver driver;
+	private WebDriver driver;
+	WaitHelper waitHelper;
 	
 	@FindBy (css="a[href*='sign_in']") private WebElement loginLink;
 	@FindBy (xpath="//div[contains(@class,'close-button')]") private WebElement popupClose;
@@ -31,20 +28,23 @@ public class LandingPage extends TestBase{
 	
 	
 	public LandingPage(WebDriver driver) {           
-		this.driver = driver; 
+		this.driver = driver;
 		PageFactory.initElements(driver, this);
+		waitHelper = new WaitHelper(driver);
+		new TestBase().getNavigationScreen(driver);
+		TestBase.logExtentReport("Login Page Object Created");
 		}
 	
 
 	public void clickLogin() throws IOException{
 		String webElementName=loginLink.getText();
-		click(loginLink);
+		loginLink.click();;
 		log.info(webElementName+" option is clicked");
 	}
 
 	public void popupClose() throws IOException{
 		try{
-			click(popupClose);
+			popupClose.click();;
 			log.info("Pop up displayed and closed");
 		}catch(Exception e){
 			log.info("Pop up not displayed and step skipped");
@@ -52,9 +52,9 @@ public class LandingPage extends TestBase{
 	}
 	
 	public void verifyNavBar() throws IOException{
-		if(getPropertyValue("viewPort").contains("Mobile")){
-			click(navButtonMobile);
-		}
+/*		if(getPropertyValue("viewPort").contains("Mobile")){
+			navButtonMobile.click();;
+		}*/
 		Assert.assertTrue(navBar.isDisplayed());
 	}
 }

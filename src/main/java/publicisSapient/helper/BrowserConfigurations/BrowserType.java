@@ -1,9 +1,13 @@
-package publicisSapient.helper.BrowserConfigurations;
+package publicisSapient.helper.browserConfigurations;
 
 public enum BrowserType {
 	
 	Firefox,
 	IE,
-	Chrome
-
+	Chrome,
+	Firefoxheadless,
+	IEheadless,
+	Chromeheadless,
+	AndroidDevice,
+	IOSDevice
 }

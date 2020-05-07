@@ -1,31 +1,48 @@
-12:39:12.584 [main] INFO  publicisSapient.helper.VerificationHelper -  element is Displayed..
-12:39:27.927 [main] INFO  publicisSapient.helper.TestBase - Proxy element for: DefaultElementLocator 'By.xpath: //div[contains(@class,'close-button')]' is displayed and clicked with Click Method
-12:39:27.927 [main] INFO  publicisSapient.pageObjects.LandingPage - Pop up displayed and closed
-12:39:28.029 [main] INFO  publicisSapient.helper.VerificationHelper - Login element is Displayed..Login
-12:40:08.423 [main] INFO  publicisSapient.helper.TestBase - Proxy element for: DefaultElementLocator 'By.cssSelector: a[href*='sign_in']' is displayed and clicked with Click Method
-12:40:08.424 [main] INFO  publicisSapient.pageObjects.LandingPage - Login option is clicked
-12:40:08.614 [main] INFO  publicisSapient.helper.VerificationHelper -  element is Displayed..
-12:40:12.937 [main] INFO  publicisSapient.helper.TestBase - [[FirefoxDriver: firefox on WINDOWS (ed75b272-3383-4906-91c2-584137d33f10)] -> css selector: [type='submit']] is displayed and clicked with Click Method
-12:40:12.937 [main] INFO  publicisSapient.pageObjects.LandingPage - waste
-12:40:12.937 [main] INFO  publicisSapient.pageObjects.LandingPage - Clicking on unavailable element to fail test case
-12:40:43.012 [main] ERROR publicisSapient.helper.VerificationHelper - Proxy element for: DefaultElementLocator 'By.cssSelector: asdfs' element is not Displayed..
-12:40:58.039 [main] INFO  publicisSapient.helper.TestBase - Proxy element for: DefaultElementLocator 'By.cssSelector: asdfs' is not displayed on page: Rahul Shetty Academy hence cannot be clicked
-12:40:58.048 [main] INFO  publicisSapient.testScripts.VerifyTitleTest - Verification completed for class: publicisSapient.testScripts.VerifyTitleTest
-12:41:20.413 [main] INFO  publicisSapient.helper.VerificationHelper -  element is Displayed..
-12:41:35.723 [main] INFO  publicisSapient.helper.TestBase - Proxy element for: DefaultElementLocator 'By.xpath: //div[contains(@class,'close-button')]' is displayed and clicked with Click Method
-12:41:35.723 [main] INFO  publicisSapient.pageObjects.LandingPage - Pop up displayed and closed
-12:41:35.782 [main] INFO  publicisSapient.testScripts.VerifyNavBarPresentTest - Nav bar verified
-12:41:35.783 [main] INFO  publicisSapient.testScripts.VerifyNavBarPresentTest - Verification completed for class: publicisSapient.testScripts.VerifyNavBarPresentTest
-12:55:22.925 [main] INFO  publicisSapient.helper.VerificationHelper -  element is Displayed..
-12:55:38.335 [main] INFO  publicisSapient.helper.TestBase - Proxy element for: DefaultElementLocator 'By.xpath: //div[contains(@class,'close-button')]' is displayed and clicked with Click Method
-12:55:38.336 [main] INFO  publicisSapient.pageObjects.LandingPage - Pop up displayed and closed
-12:55:38.441 [main] INFO  publicisSapient.helper.VerificationHelper - Login element is Displayed..Login
-12:55:43.684 [main] INFO  publicisSapient.helper.TestBase - [[FirefoxDriver: firefox on WINDOWS (e92f446c-a031-4ae9-832a-5fc3d885834c)] -> css selector: a[href*='sign_in']] is displayed and clicked with Click Method
-12:55:43.684 [main] INFO  publicisSapient.pageObjects.LandingPage - Login option is clicked
-12:55:58.808 [main] INFO  publicisSapient.helper.TestBase - Screenshot taken for desktop
-12:55:58.823 [main] INFO  publicisSapient.testScripts.VerifyTitleTest - Verification completed for class: publicisSapient.testScripts.VerifyTitleTest
-12:56:26.706 [main] INFO  publicisSapient.helper.VerificationHelper -  element is Displayed..
-12:56:42.023 [main] INFO  publicisSapient.helper.TestBase - Proxy element for: DefaultElementLocator 'By.xpath: //div[contains(@class,'close-button')]' is displayed and clicked with Click Method
-12:56:42.024 [main] INFO  publicisSapient.pageObjects.LandingPage - Pop up displayed and closed
-12:56:42.074 [main] INFO  publicisSapient.testScripts.VerifyNavBarPresentTest - Nav bar verified
-12:56:42.075 [main] INFO  publicisSapient.testScripts.VerifyNavBarPresentTest - Verification completed for class: publicisSapient.testScripts.VerifyNavBarPresentTest
+11:22:43.153 [main] INFO  publicisSapient.helper.testBase.TestBase - Screenshot started for mobile
+11:22:43.193 [main] INFO  publicisSapient.helper.testBase.TestBase - Screenshot taken for mobile
+11:22:43.200 [main] INFO  publicisSapient.helper.testBase.TestBase - **************verifyNavBarIsPresentFinished***************
+11:22:46.044 [main] INFO  publicisSapient.helper.listeners.Listeners - Smoke Test Class 1 Test Finished..
+11:23:13.070 [main] INFO  publicisSapient.helper.listeners.Listeners - Smoke Test Class 2 Class Started..
+11:23:16.722 [main] INFO  publicisSapient.helper.testBase.TestBase - Initialize Web driver: 1166230227
+11:23:16.723 [main] INFO  publicisSapient.helper.WaitHelper - WaitHelper object created..
+11:23:16.728 [main] INFO  publicisSapient.helper.WaitHelper - Implicit Wait has been set to: 30
+11:23:16.735 [main] INFO  publicisSapient.helper.WaitHelper - waiting for page to load for : SECONDS seconds
+11:23:16.751 [main] INFO  publicisSapient.helper.WaitHelper -  page is loaded
+11:23:16.768 [main] INFO  publicisSapient.helper.testBase.TestBase - **************VerifyTitleHeaderStarted***************
+11:23:16.773 [main] INFO  publicisSapient.helper.listeners.Listeners - VerifyTitleHeader Test Started..
+11:23:19.369 [main] INFO  publicisSapient.helper.WaitHelper - WaitHelper object created..
+11:23:19.369 [main] INFO  publicisSapient.helper.testBase.TestBase - capturing ui navigation screen...
+11:23:19.370 [main] INFO  publicisSapient.helper.JavaScriptHelper - JavaScriptHelper has been initialized
+11:23:20.034 [main] INFO  publicisSapient.helper.JavaScriptHelper - JavaScriptHelper has been initialized
+11:23:50.168 [main] INFO  publicisSapient.pageObjects.LandingPage - Pop up not displayed and step skipped
+11:23:56.659 [main] INFO  publicisSapient.pageObjects.LandingPage - Login option is clicked
+11:24:00.489 [main] INFO  publicisSapient.pageObjects.LandingPage - waste
+11:24:00.490 [main] INFO  publicisSapient.pageObjects.LandingPage - Clicking on unavailable element to fail test case
+11:24:30.565 [main] ERROR publicisSapient.helper.listeners.Listeners - VerifyTitleHeader Test Failed..org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"asdfs"}
+  (Session info: chrome=81.0.4044.129)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'WKWIN6024718', ip: '192.168.31.244', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_251'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 81.0.4044.129, chrome: {chromedriverVersion: 81.0.4044.69 (6813546031a4b..., userDataDir: C:\Users\anujakho\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:59853}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: b384e00d201930c9471b00a54f9b6cae
+*** Element info: {Using=css selector, value=asdfs}
+11:24:30.856 [main] INFO  publicisSapient.helper.testBase.TestBase - **************VerifyTitleHeaderFinished***************
+11:24:32.906 [main] INFO  publicisSapient.helper.listeners.Listeners - Smoke Test Class 2 Test Finished..
+11:24:32.910 [main] INFO  publicisSapient.helper.listeners.Listeners - Smoke Test Class 1 Class Started..
+11:24:35.395 [main] INFO  publicisSapient.helper.testBase.TestBase - Initialize Web driver: 828447060
+11:24:35.395 [main] INFO  publicisSapient.helper.WaitHelper - WaitHelper object created..
+11:24:35.395 [main] INFO  publicisSapient.helper.WaitHelper - Implicit Wait has been set to: 30
+11:24:35.400 [main] INFO  publicisSapient.helper.WaitHelper - waiting for page to load for : SECONDS seconds
+11:24:35.417 [main] INFO  publicisSapient.helper.WaitHelper -  page is loaded
+11:24:35.418 [main] INFO  publicisSapient.helper.testBase.TestBase - **************verifyNavBarIsPresentStarted***************
+11:24:35.419 [main] INFO  publicisSapient.helper.listeners.Listeners - verifyNavBarIsPresent Test Started..
+11:24:39.688 [main] INFO  publicisSapient.helper.WaitHelper - WaitHelper object created..
+11:24:39.688 [main] INFO  publicisSapient.helper.testBase.TestBase - capturing ui navigation screen...
+11:24:39.688 [main] INFO  publicisSapient.helper.JavaScriptHelper - JavaScriptHelper has been initialized
+11:24:40.404 [main] INFO  publicisSapient.helper.JavaScriptHelper - JavaScriptHelper has been initialized
+11:25:10.528 [main] INFO  publicisSapient.pageObjects.LandingPage - Pop up not displayed and step skipped
+11:25:10.595 [main] INFO  publicisSapient.testScripts.VerifyNavBarPresentTest - Nav bar verified
+11:25:10.597 [main] INFO  publicisSapient.helper.listeners.Listeners - verifyNavBarIsPresent Test Passed..
+11:25:11.110 [main] INFO  publicisSapient.helper.testBase.TestBase - **************verifyNavBarIsPresentFinished***************
+11:25:11.983 [main] INFO  publicisSapient.helper.listeners.Listeners - Smoke Test Class 1 Test Finished..

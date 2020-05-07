@@ -1,4 +1,4 @@
-package publicisSapient.helper.BrowserConfigurations;
+package publicisSapient.helper.browserConfigurations;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;

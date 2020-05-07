@@ -9,10 +9,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import publicisSapient.helper.TestBase;
 import publicisSapient.testScripts.HomePageTest;
 
-public class LoginPage extends TestBase {
+public class LoginPage {
 
 	public static Logger log = LogManager.getLogger(LandingPage.class);
 
@@ -35,13 +34,13 @@ public class LoginPage extends TestBase {
 	public void login(String emailid, String passwordid, String userType) throws IOException {
 		email.sendKeys(emailid);
 		password.sendKeys(passwordid);
-		click(submit);
+		submit.click();;
 		log.info(userType);
 	}
 
 	public void toFail(){
 		log.info("Clicking on unavailable element to fail test case");
-		click(toFail);
+		toFail.click();;
 	}
 
 }

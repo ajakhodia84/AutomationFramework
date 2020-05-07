@@ -2,23 +2,96 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [Suite]">
   <listeners>
-    <listener class-name="publicisSapient.listeners.Listeners"/>
+    <listener class-name="publicisSapient.helper.listeners.Listeners"/>
   </listeners>
-  <test name="Smoke Test Class 2(failed)">
+  <test name="Regression Test for Class 1(failed)">
     <classes>
+      <class name="publicisSapient.testScripts.HomePageTest">
+        <methods>
+          <include name="afterTest"/>
+          <include name="beforemethod"/>
+          <include name="afterMethod"/>
+          <include name="beforeTest"/>
+          <include name="verifyLogin" invocation-numbers="0 1"/>
+        </methods>
+      </class> <!-- publicisSapient.testScripts.HomePageTest -->
+      <class name="publicisSapient.testScripts.VerifyNavBarPresentTest">
+        <methods>
+          <include name="beforeSuite"/>
+          <include name="afterTest"/>
+          <include name="beforemethod"/>
+          <include name="afterMethod"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- publicisSapient.testScripts.VerifyNavBarPresentTest -->
       <class name="publicisSapient.testScripts.VerifyTitleTest">
         <methods>
-          <include name="getUrl"/>
-          <include name="closeBrowser"/>
+          <include name="afterTest"/>
+          <include name="beforemethod"/>
+          <include name="afterMethod"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- publicisSapient.testScripts.VerifyTitleTest -->
+    </classes>
+  </test> <!-- Regression Test for Class 1(failed) -->
+  <test name="Regression Test for Class 3(failed)">
+    <classes>
+      <class name="publicisSapient.testScripts.HomePageTest">
+        <methods>
+          <include name="afterTest"/>
+          <include name="beforemethod"/>
+          <include name="afterMethod"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- publicisSapient.testScripts.HomePageTest -->
+      <class name="publicisSapient.testScripts.VerifyNavBarPresentTest">
+        <methods>
+          <include name="beforeSuite"/>
+          <include name="afterTest"/>
+          <include name="beforemethod"/>
+          <include name="afterMethod"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- publicisSapient.testScripts.VerifyNavBarPresentTest -->
+      <class name="publicisSapient.testScripts.VerifyTitleTest">
+        <methods>
+          <include name="afterTest"/>
+          <include name="beforemethod"/>
+          <include name="afterMethod"/>
+          <include name="beforeTest"/>
           <include name="VerifyTitleHeader"/>
         </methods>
       </class> <!-- publicisSapient.testScripts.VerifyTitleTest -->
+    </classes>
+  </test> <!-- Regression Test for Class 3(failed) -->
+  <test name="Regression Test for Class 2(failed)">
+    <classes>
+      <class name="publicisSapient.testScripts.HomePageTest">
+        <methods>
+          <include name="afterTest"/>
+          <include name="beforemethod"/>
+          <include name="afterMethod"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- publicisSapient.testScripts.HomePageTest -->
       <class name="publicisSapient.testScripts.VerifyNavBarPresentTest">
         <methods>
-          <include name="getUrl"/>
-          <include name="closeBrowser"/>
+          <include name="beforeSuite"/>
+          <include name="afterTest"/>
+          <include name="beforemethod"/>
+          <include name="afterMethod"/>
+          <include name="beforeTest"/>
+          <include name="verifyNavBarIsPresent"/>
         </methods>
       </class> <!-- publicisSapient.testScripts.VerifyNavBarPresentTest -->
+      <class name="publicisSapient.testScripts.VerifyTitleTest">
+        <methods>
+          <include name="afterTest"/>
+          <include name="beforemethod"/>
+          <include name="afterMethod"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- publicisSapient.testScripts.VerifyTitleTest -->
     </classes>
-  </test> <!-- Smoke Test Class 2(failed) -->
+  </test> <!-- Regression Test for Class 2(failed) -->
 </suite> <!-- Failed suite [Suite] -->
