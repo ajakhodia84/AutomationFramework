@@ -11,7 +11,7 @@ import org.openqa.selenium.WebElement;
 public class JavaScriptHelper {
 
 	private WebDriver driver;
-	public static Logger log = LogManager.getLogger(JavaScriptHelper.class);
+	private static Logger log = LogManager.getLogger(JavaScriptHelper.class);
 
 	public JavaScriptHelper(WebDriver driver) {
 		this.driver = driver;

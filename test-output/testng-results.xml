@@ -11,24 +11,30 @@
       <![CDATA[captureScreen method called]]>
     </line>
     <line>
-      <![CDATA[<a href='C:\Users\anujakho\Desktop\Gore Automation\GoreB2BAutomation\screenshots\blank_07_05_2020_11_23_19.png'><img src='C:\Users\anujakho\Desktop\Gore Automation\GoreB2BAutomation\screenshots\blank_07_05_2020_11_23_19.png'height='100' width='100'/></a>]]>
+      <![CDATA[<a href='C:\Users\anujakho\Desktop\Gore Automation\GoreB2BAutomation\screenshots\blank_08_05_2020_10_37_46.png'><img src='C:\Users\anujakho\Desktop\Gore Automation\GoreB2BAutomation\screenshots\blank_08_05_2020_10_37_46.png'height='100' width='100'/></a>]]>
+    </line>
+    <line>
+      <![CDATA[captureScreen method called]]>
+    </line>
+    <line>
+      <![CDATA[<a href='C:\Users\anujakho\Desktop\Gore Automation\GoreB2BAutomation\screenshots\blank_08_05_2020_10_37_47.png'><img src='C:\Users\anujakho\Desktop\Gore Automation\GoreB2BAutomation\screenshots\blank_08_05_2020_10_37_47.png'height='100' width='100'/></a>]]>
     </line>
     <line>
       <![CDATA[VerifyTitleHeader Test Failed..org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"asdfs"}
   (Session info: chrome=81.0.4044.129)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'WKWIN6024718', ip: '192.168.31.244', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_251'
+System info: host: 'WKWIN6024718', ip: '10.102.118.235', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_251'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 81.0.4044.129, chrome: {chromedriverVersion: 81.0.4044.69 (6813546031a4b..., userDataDir: C:\Users\anujakho\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:59853}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: b384e00d201930c9471b00a54f9b6cae
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 81.0.4044.129, chrome: {chromedriverVersion: 81.0.4044.69 (6813546031a4b..., userDataDir: C:\Users\anujakho\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:65491}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 6ab41758f26f533d8ba50451709cdcde
 *** Element info: {Using=css selector, value=asdfs}]]>
     </line>
     <line>
       <![CDATA[captureScreen method called]]>
     </line>
     <line>
-      <![CDATA[<a href='C:\Users\anujakho\Desktop\Gore Automation\GoreB2BAutomation\screenshots\VerifyTitleHeader_07_05_2020_11_24_30.png'><img src='C:\Users\anujakho\Desktop\Gore Automation\GoreB2BAutomation\screenshots\VerifyTitleHeader_07_05_2020_11_24_30.png'height='100' width='100'/></a>]]>
+      <![CDATA[<a href='C:\Users\anujakho\Desktop\Gore Automation\GoreB2BAutomation\screenshots\VerifyTitleHeader_08_05_2020_10_38_38.png'><img src='C:\Users\anujakho\Desktop\Gore Automation\GoreB2BAutomation\screenshots\VerifyTitleHeader_08_05_2020_10_38_38.png'height='100' width='100'/></a>]]>
     </line>
     <line>
       <![CDATA[Smoke Test Class 2 Test Finished..]]>
@@ -43,7 +49,7 @@ Session ID: b384e00d201930c9471b00a54f9b6cae
       <![CDATA[captureScreen method called]]>
     </line>
     <line>
-      <![CDATA[<a href='C:\Users\anujakho\Desktop\Gore Automation\GoreB2BAutomation\screenshots\blank_07_05_2020_11_24_39.png'><img src='C:\Users\anujakho\Desktop\Gore Automation\GoreB2BAutomation\screenshots\blank_07_05_2020_11_24_39.png'height='100' width='100'/></a>]]>
+      <![CDATA[<a href='C:\Users\anujakho\Desktop\Gore Automation\GoreB2BAutomation\screenshots\blank_08_05_2020_10_38_46.png'><img src='C:\Users\anujakho\Desktop\Gore Automation\GoreB2BAutomation\screenshots\blank_08_05_2020_10_38_46.png'height='100' width='100'/></a>]]>
     </line>
     <line>
       <![CDATA[verifyNavBarIsPresent Test Passed..]]>
@@ -52,19 +58,19 @@ Session ID: b384e00d201930c9471b00a54f9b6cae
       <![CDATA[captureScreen method called]]>
     </line>
     <line>
-      <![CDATA[<a href='C:\Users\anujakho\Desktop\Gore Automation\GoreB2BAutomation\screenshots\verifyNavBarIsPresent_07_05_2020_11_25_10.png'><img src='C:\Users\anujakho\Desktop\Gore Automation\GoreB2BAutomation\screenshots\verifyNavBarIsPresent_07_05_2020_11_25_10.png'height='100' width='100'/></a>]]>
+      <![CDATA[<a href='C:\Users\anujakho\Desktop\Gore Automation\GoreB2BAutomation\screenshots\verifyNavBarIsPresent_08_05_2020_10_38_56.png'><img src='C:\Users\anujakho\Desktop\Gore Automation\GoreB2BAutomation\screenshots\verifyNavBarIsPresent_08_05_2020_10_38_56.png'height='100' width='100'/></a>]]>
     </line>
   </reporter-output>
-  <suite name="Suite" duration-ms="118911" started-at="2020-05-07T05:53:13Z" finished-at="2020-05-07T05:55:11Z">
+  <suite name="Suite" duration-ms="78928" started-at="2020-05-08T05:07:38Z" finished-at="2020-05-08T05:08:57Z">
     <groups>
     </groups>
-    <test name="Smoke Test Class 2" duration-ms="79787" started-at="2020-05-07T05:53:13Z" finished-at="2020-05-07T05:54:32Z">
+    <test name="Smoke Test Class 2" duration-ms="60985" started-at="2020-05-08T05:07:38Z" finished-at="2020-05-08T05:08:39Z">
       <class name="publicisSapient.testScripts.VerifyTitleTest">
-        <test-method status="PASS" signature="beforeTest()[pri:0, instance:publicisSapient.testScripts.VerifyTitleTest@6283d8b8]" name="beforeTest" is-config="true" duration-ms="3677" started-at="2020-05-07T11:23:13Z" finished-at="2020-05-07T11:23:16Z">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:publicisSapient.testScripts.VerifyTitleTest@6283d8b8]" name="beforeTest" is-config="true" duration-ms="4355" started-at="2020-05-08T10:37:38Z" finished-at="2020-05-08T10:37:43Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="beforemethod(java.lang.reflect.Method)[pri:0, instance:publicisSapient.testScripts.VerifyTitleTest@6283d8b8]" name="beforemethod" is-config="true" duration-ms="5" started-at="2020-05-07T11:23:16Z" finished-at="2020-05-07T11:23:16Z">
+        <test-method status="PASS" signature="beforemethod(java.lang.reflect.Method)[pri:0, instance:publicisSapient.testScripts.VerifyTitleTest@6283d8b8]" name="beforemethod" is-config="true" duration-ms="4" started-at="2020-05-08T10:37:43Z" finished-at="2020-05-08T10:37:43Z">
           <params>
             <param index="0">
               <value>
@@ -75,17 +81,17 @@ Session ID: b384e00d201930c9471b00a54f9b6cae
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforemethod -->
-        <test-method status="FAIL" signature="VerifyTitleHeader()[pri:0, instance:publicisSapient.testScripts.VerifyTitleTest@6283d8b8]" name="VerifyTitleHeader" duration-ms="73787" started-at="2020-05-07T11:23:16Z" finished-at="2020-05-07T11:24:30Z">
+        <test-method status="FAIL" signature="VerifyTitleHeader()[pri:0, instance:publicisSapient.testScripts.VerifyTitleTest@6283d8b8]" name="VerifyTitleHeader" duration-ms="54919" started-at="2020-05-08T10:37:43Z" finished-at="2020-05-08T10:38:38Z">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
               <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"asdfs"}
   (Session info: chrome=81.0.4044.129)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'WKWIN6024718', ip: '192.168.31.244', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_251'
+System info: host: 'WKWIN6024718', ip: '10.102.118.235', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_251'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 81.0.4044.129, chrome: {chromedriverVersion: 81.0.4044.69 (6813546031a4b..., userDataDir: C:\Users\anujakho\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:59853}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: b384e00d201930c9471b00a54f9b6cae
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 81.0.4044.129, chrome: {chromedriverVersion: 81.0.4044.69 (6813546031a4b..., userDataDir: C:\Users\anujakho\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:65491}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 6ab41758f26f533d8ba50451709cdcde
 *** Element info: {Using=css selector, value=asdfs}]]>
             </message>
             <full-stacktrace>
@@ -93,10 +99,10 @@ Session ID: b384e00d201930c9471b00a54f9b6cae
   (Session info: chrome=81.0.4044.129)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'WKWIN6024718', ip: '192.168.31.244', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_251'
+System info: host: 'WKWIN6024718', ip: '10.102.118.235', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_251'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 81.0.4044.129, chrome: {chromedriverVersion: 81.0.4044.69 (6813546031a4b..., userDataDir: C:\Users\anujakho\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:59853}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: b384e00d201930c9471b00a54f9b6cae
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 81.0.4044.129, chrome: {chromedriverVersion: 81.0.4044.69 (6813546031a4b..., userDataDir: C:\Users\anujakho\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:65491}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 6ab41758f26f533d8ba50451709cdcde
 *** Element info: {Using=css selector, value=asdfs}
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
@@ -115,7 +121,7 @@ Session ID: b384e00d201930c9471b00a54f9b6cae
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
 	at com.sun.proxy.$Proxy28.click(Unknown Source)
-	at publicisSapient.pageObjects.LoginPage.toFail(LoginPage.java:43)
+	at publicisSapient.pageObjects.LoginPage.toFail(LoginPage.java:48)
 	at publicisSapient.testScripts.VerifyTitleTest.VerifyTitleHeader(VerifyTitleTest.java:33)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
@@ -149,22 +155,28 @@ Session ID: b384e00d201930c9471b00a54f9b6cae
               <![CDATA[captureScreen method called]]>
             </line>
             <line>
-              <![CDATA[<a href='C:\Users\anujakho\Desktop\Gore Automation\GoreB2BAutomation\screenshots\blank_07_05_2020_11_23_19.png'><img src='C:\Users\anujakho\Desktop\Gore Automation\GoreB2BAutomation\screenshots\blank_07_05_2020_11_23_19.png'height='100' width='100'/></a>]]>
+              <![CDATA[<a href='C:\Users\anujakho\Desktop\Gore Automation\GoreB2BAutomation\screenshots\blank_08_05_2020_10_37_46.png'><img src='C:\Users\anujakho\Desktop\Gore Automation\GoreB2BAutomation\screenshots\blank_08_05_2020_10_37_46.png'height='100' width='100'/></a>]]>
+            </line>
+            <line>
+              <![CDATA[captureScreen method called]]>
+            </line>
+            <line>
+              <![CDATA[<a href='C:\Users\anujakho\Desktop\Gore Automation\GoreB2BAutomation\screenshots\blank_08_05_2020_10_37_47.png'><img src='C:\Users\anujakho\Desktop\Gore Automation\GoreB2BAutomation\screenshots\blank_08_05_2020_10_37_47.png'height='100' width='100'/></a>]]>
             </line>
             <line>
               <![CDATA[VerifyTitleHeader Test Failed..org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"asdfs"}
   (Session info: chrome=81.0.4044.129)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'WKWIN6024718', ip: '192.168.31.244', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_251'
+System info: host: 'WKWIN6024718', ip: '10.102.118.235', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_251'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 81.0.4044.129, chrome: {chromedriverVersion: 81.0.4044.69 (6813546031a4b..., userDataDir: C:\Users\anujakho\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:59853}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: b384e00d201930c9471b00a54f9b6cae
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 81.0.4044.129, chrome: {chromedriverVersion: 81.0.4044.69 (6813546031a4b..., userDataDir: C:\Users\anujakho\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:65491}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 6ab41758f26f533d8ba50451709cdcde
 *** Element info: {Using=css selector, value=asdfs}]]>
             </line>
           </reporter-output>
         </test-method> <!-- VerifyTitleHeader -->
-        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:publicisSapient.testScripts.VerifyTitleTest@6283d8b8]" name="afterMethod" is-config="true" duration-ms="833" started-at="2020-05-07T11:24:30Z" finished-at="2020-05-07T11:24:31Z">
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:publicisSapient.testScripts.VerifyTitleTest@6283d8b8]" name="afterMethod" is-config="true" duration-ms="735" started-at="2020-05-08T10:38:38Z" finished-at="2020-05-08T10:38:38Z">
           <params>
             <param index="0">
               <value>
@@ -177,40 +189,40 @@ Session ID: b384e00d201930c9471b00a54f9b6cae
               <![CDATA[captureScreen method called]]>
             </line>
             <line>
-              <![CDATA[<a href='C:\Users\anujakho\Desktop\Gore Automation\GoreB2BAutomation\screenshots\VerifyTitleHeader_07_05_2020_11_24_30.png'><img src='C:\Users\anujakho\Desktop\Gore Automation\GoreB2BAutomation\screenshots\VerifyTitleHeader_07_05_2020_11_24_30.png'height='100' width='100'/></a>]]>
+              <![CDATA[<a href='C:\Users\anujakho\Desktop\Gore Automation\GoreB2BAutomation\screenshots\VerifyTitleHeader_08_05_2020_10_38_38.png'><img src='C:\Users\anujakho\Desktop\Gore Automation\GoreB2BAutomation\screenshots\VerifyTitleHeader_08_05_2020_10_38_38.png'height='100' width='100'/></a>]]>
             </line>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="afterTest()[pri:0, instance:publicisSapient.testScripts.VerifyTitleTest@6283d8b8]" name="afterTest" is-config="true" duration-ms="1450" started-at="2020-05-07T11:24:31Z" finished-at="2020-05-07T11:24:32Z">
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:publicisSapient.testScripts.VerifyTitleTest@6283d8b8]" name="afterTest" is-config="true" duration-ms="937" started-at="2020-05-08T10:38:38Z" finished-at="2020-05-08T10:38:39Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
       </class> <!-- publicisSapient.testScripts.VerifyTitleTest -->
     </test> <!-- Smoke Test Class 2 -->
-    <test name="Smoke Test Class 1" duration-ms="39067" started-at="2020-05-07T05:54:32Z" finished-at="2020-05-07T05:55:11Z">
+    <test name="Smoke Test Class 1" duration-ms="17893" started-at="2020-05-08T05:08:39Z" finished-at="2020-05-08T05:08:57Z">
       <class name="publicisSapient.testScripts.VerifyNavBarPresentTest">
-        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:publicisSapient.testScripts.VerifyNavBarPresentTest@58d75e99]" name="beforeSuite" is-config="true" duration-ms="253" started-at="2020-05-07T11:23:12Z" finished-at="2020-05-07T11:23:13Z">
+        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:publicisSapient.testScripts.VerifyNavBarPresentTest@58d75e99]" name="beforeSuite" is-config="true" duration-ms="156" started-at="2020-05-08T10:37:38Z" finished-at="2020-05-08T10:37:38Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeSuite -->
-        <test-method status="PASS" signature="beforeTest()[pri:0, instance:publicisSapient.testScripts.VerifyNavBarPresentTest@58d75e99]" name="beforeTest" is-config="true" duration-ms="2507" started-at="2020-05-07T11:24:32Z" finished-at="2020-05-07T11:24:35Z">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:publicisSapient.testScripts.VerifyNavBarPresentTest@58d75e99]" name="beforeTest" is-config="true" duration-ms="3464" started-at="2020-05-08T10:38:39Z" finished-at="2020-05-08T10:38:43Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="verifyNavBarIsPresent()[pri:0, instance:publicisSapient.testScripts.VerifyNavBarPresentTest@58d75e99]" name="verifyNavBarIsPresent" duration-ms="35177" started-at="2020-05-07T11:24:35Z" finished-at="2020-05-07T11:25:10Z">
+        <test-method status="PASS" signature="verifyNavBarIsPresent()[pri:0, instance:publicisSapient.testScripts.VerifyNavBarPresentTest@58d75e99]" name="verifyNavBarIsPresent" duration-ms="13062" started-at="2020-05-08T10:38:43Z" finished-at="2020-05-08T10:38:56Z">
           <reporter-output>
             <line>
               <![CDATA[captureScreen method called]]>
             </line>
             <line>
-              <![CDATA[<a href='C:\Users\anujakho\Desktop\Gore Automation\GoreB2BAutomation\screenshots\blank_07_05_2020_11_24_39.png'><img src='C:\Users\anujakho\Desktop\Gore Automation\GoreB2BAutomation\screenshots\blank_07_05_2020_11_24_39.png'height='100' width='100'/></a>]]>
+              <![CDATA[<a href='C:\Users\anujakho\Desktop\Gore Automation\GoreB2BAutomation\screenshots\blank_08_05_2020_10_38_46.png'><img src='C:\Users\anujakho\Desktop\Gore Automation\GoreB2BAutomation\screenshots\blank_08_05_2020_10_38_46.png'height='100' width='100'/></a>]]>
             </line>
             <line>
               <![CDATA[verifyNavBarIsPresent Test Passed..]]>
             </line>
           </reporter-output>
         </test-method> <!-- verifyNavBarIsPresent -->
-        <test-method status="PASS" signature="beforemethod(java.lang.reflect.Method)[pri:0, instance:publicisSapient.testScripts.VerifyNavBarPresentTest@58d75e99]" name="beforemethod" is-config="true" duration-ms="0" started-at="2020-05-07T11:24:35Z" finished-at="2020-05-07T11:24:35Z">
+        <test-method status="PASS" signature="beforemethod(java.lang.reflect.Method)[pri:0, instance:publicisSapient.testScripts.VerifyNavBarPresentTest@58d75e99]" name="beforemethod" is-config="true" duration-ms="0" started-at="2020-05-08T10:38:43Z" finished-at="2020-05-08T10:38:43Z">
           <params>
             <param index="0">
               <value>
@@ -221,7 +233,7 @@ Session ID: b384e00d201930c9471b00a54f9b6cae
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforemethod -->
-        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:publicisSapient.testScripts.VerifyNavBarPresentTest@58d75e99]" name="afterMethod" is-config="true" duration-ms="546" started-at="2020-05-07T11:25:10Z" finished-at="2020-05-07T11:25:11Z">
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:publicisSapient.testScripts.VerifyNavBarPresentTest@58d75e99]" name="afterMethod" is-config="true" duration-ms="543" started-at="2020-05-08T10:38:56Z" finished-at="2020-05-08T10:38:56Z">
           <params>
             <param index="0">
               <value>
@@ -234,11 +246,11 @@ Session ID: b384e00d201930c9471b00a54f9b6cae
               <![CDATA[captureScreen method called]]>
             </line>
             <line>
-              <![CDATA[<a href='C:\Users\anujakho\Desktop\Gore Automation\GoreB2BAutomation\screenshots\verifyNavBarIsPresent_07_05_2020_11_25_10.png'><img src='C:\Users\anujakho\Desktop\Gore Automation\GoreB2BAutomation\screenshots\verifyNavBarIsPresent_07_05_2020_11_25_10.png'height='100' width='100'/></a>]]>
+              <![CDATA[<a href='C:\Users\anujakho\Desktop\Gore Automation\GoreB2BAutomation\screenshots\verifyNavBarIsPresent_08_05_2020_10_38_56.png'><img src='C:\Users\anujakho\Desktop\Gore Automation\GoreB2BAutomation\screenshots\verifyNavBarIsPresent_08_05_2020_10_38_56.png'height='100' width='100'/></a>]]>
             </line>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="afterTest()[pri:0, instance:publicisSapient.testScripts.VerifyNavBarPresentTest@58d75e99]" name="afterTest" is-config="true" duration-ms="832" started-at="2020-05-07T11:25:11Z" finished-at="2020-05-07T11:25:11Z">
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:publicisSapient.testScripts.VerifyNavBarPresentTest@58d75e99]" name="afterTest" is-config="true" duration-ms="819" started-at="2020-05-08T10:38:56Z" finished-at="2020-05-08T10:38:57Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->

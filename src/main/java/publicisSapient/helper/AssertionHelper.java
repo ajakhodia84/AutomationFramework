@@ -6,7 +6,7 @@ import org.testng.Assert;
 
 public class AssertionHelper {
 
-	public static Logger log = LogManager.getLogger(AssertionHelper.class);
+	private static Logger log = LogManager.getLogger(AssertionHelper.class);
 
 	public static void verifyText(String s1, String s2) {
 		log.info("veryfing test: " + s1 + " with " + s2);

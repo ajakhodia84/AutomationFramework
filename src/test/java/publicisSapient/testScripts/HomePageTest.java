@@ -16,7 +16,7 @@ import publicisSapient.pageObjects.LoginPage;
 
 public class HomePageTest extends TestBase {
 
-	public static Logger log = LogManager.getLogger(HomePageTest.class);
+	private static Logger log = LogManager.getLogger(HomePageTest.class);
 	LandingPage landingPage;
 	LoginPage loginPage;
 	

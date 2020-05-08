@@ -10,7 +10,7 @@ import org.apache.logging.log4j.Logger;
 public class VerificationHelper {
 	
 	private WebDriver driver;
-	public static Logger log=LogManager.getLogger(VerificationHelper.class);
+	private static Logger log=LogManager.getLogger(VerificationHelper.class);
 	
 	public VerificationHelper(WebDriver driver){
 		this.driver=driver;

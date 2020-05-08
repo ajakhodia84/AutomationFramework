@@ -145,10 +145,10 @@
   (Session info: chrome=81.0.4044.129)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;WKWIN6024718&apos;, ip: &apos;192.168.31.244&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_251&apos;
+System info: host: &apos;WKWIN6024718&apos;, ip: &apos;10.102.118.235&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_251&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 81.0.4044.129, chrome: {chromedriverVersion: 81.0.4044.69 (6813546031a4b..., userDataDir: C:\Users\anujakho\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:59853}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: b384e00d201930c9471b00a54f9b6cae
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 81.0.4044.129, chrome: {chromedriverVersion: 81.0.4044.69 (6813546031a4b..., userDataDir: C:\Users\anujakho\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:65491}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 6ab41758f26f533d8ba50451709cdcde
 *** Element info: {Using=css selector, value=asdfs}
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
@@ -163,7 +163,7 @@ Session ID: b384e00d201930c9471b00a54f9b6cae
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
 	at com.sun.proxy.$Proxy28.click(Unknown Source)
-	at publicisSapient.pageObjects.LoginPage.toFail(LoginPage.java:43)
+	at publicisSapient.pageObjects.LoginPage.toFail(LoginPage.java:48)
 	at publicisSapient.testScripts.VerifyTitleTest.VerifyTitleHeader(VerifyTitleTest.java:33)
 ... Removed 28 stack frames
 </div> <!-- stack-trace -->
@@ -253,11 +253,11 @@ data.addRows(2);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'VerifyTitleHeader')
 data.setCell(0, 2, 'publicisSapient.testScripts.VerifyTitleTest')
-data.setCell(0, 3, 73787);
+data.setCell(0, 3, 54919);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'verifyNavBarIsPresent')
 data.setCell(1, 2, 'publicisSapient.testScripts.VerifyNavBarPresentTest')
-data.setCell(1, 3, 35177);
+data.setCell(1, 3, 13062);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
@@ -277,15 +277,17 @@ return data;
               <span class="reporter-method-name">VerifyTitleHeader</span>
               <div class="reporter-method-output-div">
                 <span class="reporter-method-output">captureScreen method called</span>
-                <span class="reporter-method-output"><a href='C:\Users\anujakho\Desktop\Gore Automation\GoreB2BAutomation\screenshots\blank_07_05_2020_11_23_19.png'><img src='C:\Users\anujakho\Desktop\Gore Automation\GoreB2BAutomation\screenshots\blank_07_05_2020_11_23_19.png'height='100' width='100'/></a></span>
+                <span class="reporter-method-output"><a href='C:\Users\anujakho\Desktop\Gore Automation\GoreB2BAutomation\screenshots\blank_08_05_2020_10_37_46.png'><img src='C:\Users\anujakho\Desktop\Gore Automation\GoreB2BAutomation\screenshots\blank_08_05_2020_10_37_46.png'height='100' width='100'/></a></span>
+                <span class="reporter-method-output">captureScreen method called</span>
+                <span class="reporter-method-output"><a href='C:\Users\anujakho\Desktop\Gore Automation\GoreB2BAutomation\screenshots\blank_08_05_2020_10_37_47.png'><img src='C:\Users\anujakho\Desktop\Gore Automation\GoreB2BAutomation\screenshots\blank_08_05_2020_10_37_47.png'height='100' width='100'/></a></span>
                 <span class="reporter-method-output">VerifyTitleHeader Test Failed..org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"asdfs"}
   (Session info: chrome=81.0.4044.129)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'WKWIN6024718', ip: '192.168.31.244', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_251'
+System info: host: 'WKWIN6024718', ip: '10.102.118.235', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_251'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 81.0.4044.129, chrome: {chromedriverVersion: 81.0.4044.69 (6813546031a4b..., userDataDir: C:\Users\anujakho\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:59853}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: b384e00d201930c9471b00a54f9b6cae
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 81.0.4044.129, chrome: {chromedriverVersion: 81.0.4044.69 (6813546031a4b..., userDataDir: C:\Users\anujakho\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:65491}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 6ab41758f26f533d8ba50451709cdcde
 *** Element info: {Using=css selector, value=asdfs}</span>
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
@@ -293,7 +295,7 @@ Session ID: b384e00d201930c9471b00a54f9b6cae
               <span class="reporter-method-name">verifyNavBarIsPresent</span>
               <div class="reporter-method-output-div">
                 <span class="reporter-method-output">captureScreen method called</span>
-                <span class="reporter-method-output"><a href='C:\Users\anujakho\Desktop\Gore Automation\GoreB2BAutomation\screenshots\blank_07_05_2020_11_24_39.png'><img src='C:\Users\anujakho\Desktop\Gore Automation\GoreB2BAutomation\screenshots\blank_07_05_2020_11_24_39.png'height='100' width='100'/></a></span>
+                <span class="reporter-method-output"><a href='C:\Users\anujakho\Desktop\Gore Automation\GoreB2BAutomation\screenshots\blank_08_05_2020_10_38_46.png'><img src='C:\Users\anujakho\Desktop\Gore Automation\GoreB2BAutomation\screenshots\blank_08_05_2020_10_38_46.png'height='100' width='100'/></a></span>
                 <span class="reporter-method-output">verifyNavBarIsPresent Test Passed..</span>
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
@@ -322,48 +324,48 @@ Session ID: b384e00d201930c9471b00a54f9b6cae
               <div class="chronological-class-name">publicisSapient.testScripts.VerifyTitleTest</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">beforeTest</span>
-                <span class="method-start">267 ms</span>
+                <span class="method-start">174 ms</span>
               </div> <!-- configuration-test before -->
               <div class="configuration-method before">
                 <span class="method-name">beforemethod(public void publicisSapient.testScripts.VerifyTitleTest.VerifyTitleHeader() throws java.io.IOExcepti...)</span>
-                <span class="method-start">3953 ms</span>
+                <span class="method-start">4538 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">VerifyTitleHeader</span>
-                <span class="method-start">3958 ms</span>
+                <span class="method-start">4542 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod([TestResult name=VerifyTitleHeader status=FAILURE method=VerifyTitleTest.VerifyTitleHeader()[pri:0, ...)</span>
-                <span class="method-start">77755 ms</span>
+                <span class="method-start">59468 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-test after">
                 <span class="method-name">afterTest</span>
-                <span class="method-start">78590 ms</span>
+                <span class="method-start">60205 ms</span>
               </div> <!-- configuration-test after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">publicisSapient.testScripts.VerifyNavBarPresentTest</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">beforeTest</span>
-                <span class="method-start">80099 ms</span>
+                <span class="method-start">61193 ms</span>
               </div> <!-- configuration-test before -->
               <div class="configuration-method before">
                 <span class="method-name">beforemethod(public void publicisSapient.testScripts.VerifyNavBarPresentTest.verifyNavBarIsPresent() throws java....)</span>
-                <span class="method-start">82607 ms</span>
+                <span class="method-start">64658 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyNavBarIsPresent</span>
-                <span class="method-start">82607 ms</span>
+                <span class="method-start">64658 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod([TestResult name=verifyNavBarIsPresent status=SUCCESS method=VerifyNavBarPresentTest.verifyNavBarIsP...)</span>
-                <span class="method-start">117786 ms</span>
+                <span class="method-start">77722 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-test after">
                 <span class="method-name">afterTest</span>
-                <span class="method-start">118332 ms</span>
+                <span class="method-start">78266 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

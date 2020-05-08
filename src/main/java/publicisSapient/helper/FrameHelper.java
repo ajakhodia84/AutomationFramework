@@ -9,7 +9,7 @@ import org.openqa.selenium.WebElement;
 public class FrameHelper {
 	
 	private WebDriver driver;
-	public static Logger log = LogManager.getLogger(FrameHelper.class);
+	private static Logger log = LogManager.getLogger(FrameHelper.class);
 	
 	public FrameHelper(WebDriver driver){
 		this.driver = driver;

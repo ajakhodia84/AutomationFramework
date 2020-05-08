@@ -9,7 +9,7 @@ import org.apache.logging.log4j.Logger;
 public class WindowsHelper {
 	
 	private WebDriver driver;
-	public static Logger log = LogManager.getLogger(WindowsHelper.class);
+	private static Logger log = LogManager.getLogger(WindowsHelper.class);
 
 	public WindowsHelper(WebDriver driver) {
 		this.driver = driver;

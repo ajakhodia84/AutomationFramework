@@ -49,7 +49,7 @@ public class TestBase {
 	public static ExtentReports extent;
 	public static ExtentTest test;
 	public WebDriver driver;
-	public static Logger log = LogManager.getLogger(TestBase.class);
+	private static Logger log = LogManager.getLogger(TestBase.class);
 	public static File reportDirectery;
 
 	@BeforeSuite
@@ -139,7 +139,9 @@ public class TestBase {
 		WaitHelper wait = new WaitHelper(driver);
 		wait.setImplicitWait(ObjectReader.reader.getImplicitWait(), TimeUnit.SECONDS);
 		wait.pageLoadTime(ObjectReader.reader.getPageLoadTime(), TimeUnit.SECONDS);
-		//driver.manage().window().maximize();
+		if(!ObjectReader.reader.getBrowserType().toString().contains("Device")){
+		driver.manage().window().maximize();
+		}
 	}
 
 	public String captureScreen(String fileName, WebDriver driver) {
@@ -177,7 +179,8 @@ public class TestBase {
 	}
 
 	public void getNavigationScreen(WebDriver driver) {
-		log.info("capturing ui navigation screen...");
+		log.info("capturing ui navigation screen for title..."+driver.getTitle());
+		logExtentReportInfo("capturing ui navigation screen for title..."+driver.getTitle());
 		new JavaScriptHelper(driver).zoomInByGivenPercent(60);
 		String screen = captureScreen("", driver);
 		new JavaScriptHelper(driver).zoomInByGivenPercent(100);
@@ -188,13 +191,33 @@ public class TestBase {
 		}
 	}
 
-	public static void logExtentReport(String s1) {
+	public static void logExtentReportInfo(String s1) {
 		test.log(Status.INFO, s1);
 	}
+	
+	public static void logExtentReportPass(String s1) {
+		test.log(Status.PASS, s1);
+	}
+	
+	public static void logExtentReportFail(String s1) {
+		test.log(Status.PASS, s1);
+	}
+	
+	public static void logExtentReportWarn(String s1) {
+		test.log(Status.WARNING, s1);
+	}
 
+	public static void logExtentReportSkip(String s1) {
+		test.log(Status.SKIP, s1);
+	}
+	
+	public static void logExtentReportFatal(String s1) {
+		test.log(Status.FATAL, s1);
+	}
+	
 	public void getApplicationUrl(String url) {
 		driver.get(url);
-		logExtentReport("navigating to ..." + url);
+		logExtentReportInfo("navigating to ..." + url);
 	}
 
 	public Object[][] getExcelData(String excelName, String sheetName) {

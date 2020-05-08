@@ -9,13 +9,15 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import publicisSapient.testScripts.HomePageTest;
+import publicisSapient.helper.WaitHelper;
+import publicisSapient.helper.testBase.TestBase;
 
 public class LoginPage {
 
-	public static Logger log = LogManager.getLogger(LandingPage.class);
+	private static Logger log = LogManager.getLogger(LandingPage.class);
 
-	public WebDriver driver;
+	private WebDriver driver;
+	WaitHelper waitHelper;
 
 	@FindBy(css = "[id='user_email']")
 	private WebElement email;
@@ -29,6 +31,9 @@ public class LoginPage {
 	public LoginPage(WebDriver driver) {
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
+		waitHelper = new WaitHelper(driver);
+		new TestBase().getNavigationScreen(driver);
+		TestBase.logExtentReportInfo("Login Page Object Created");
 	}
 
 	public void login(String emailid, String passwordid, String userType) throws IOException {

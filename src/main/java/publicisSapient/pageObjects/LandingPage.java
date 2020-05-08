@@ -9,6 +9,8 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
 
+import com.aventstack.extentreports.Status;
+
 import publicisSapient.helper.WaitHelper;
 import publicisSapient.helper.testBase.TestBase;
 
@@ -16,7 +18,7 @@ import publicisSapient.helper.testBase.TestBase;
 
 public class LandingPage{
 	
-	public static Logger log=LogManager.getLogger(LandingPage.class);
+	private static Logger log=LogManager.getLogger(LandingPage.class);
 	
 	private WebDriver driver;
 	WaitHelper waitHelper;
@@ -32,7 +34,7 @@ public class LandingPage{
 		PageFactory.initElements(driver, this);
 		waitHelper = new WaitHelper(driver);
 		new TestBase().getNavigationScreen(driver);
-		TestBase.logExtentReport("Login Page Object Created");
+		TestBase.logExtentReportInfo("Landing Page Object Created");		
 		}
 	
 
@@ -51,10 +53,14 @@ public class LandingPage{
 		}		
 	}
 	
+	public void clickMobNavBar(String browserType){
+		if(browserType.contains("Device")){
+			navButtonMobile.click();
+		}
+	}
+	
 	public void verifyNavBar() throws IOException{
-/*		if(getPropertyValue("viewPort").contains("Mobile")){
-			navButtonMobile.click();;
-		}*/
+
 		Assert.assertTrue(navBar.isDisplayed());
 	}
 }

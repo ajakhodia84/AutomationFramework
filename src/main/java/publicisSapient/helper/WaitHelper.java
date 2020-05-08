@@ -24,7 +24,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 public class WaitHelper {
 	
 	private WebDriver driver;
-	public static Logger log = LogManager.getLogger(WaitHelper.class);
+	private static Logger log = LogManager.getLogger(WaitHelper.class);
 	
 	public WaitHelper(WebDriver driver) {
 		this.driver = driver;

@@ -16,7 +16,7 @@ import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
 public class ExcelHelper {
 
-	public static Logger log = LogManager.getLogger(ExcelHelper.class);
+	private static Logger log = LogManager.getLogger(ExcelHelper.class);
 
 	/***
 	 * Pass the excelName without any extension and place the Excel file under

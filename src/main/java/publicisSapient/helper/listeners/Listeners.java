@@ -12,7 +12,7 @@ import com.aventstack.extentreports.ExtentTest;
 
 public class Listeners implements ITestListener {
 
-	public static Logger log = LogManager.getLogger(Listeners.class);
+	private static Logger log = LogManager.getLogger(Listeners.class);
 	public static ExtentReports extent;
 	public static ExtentTest test;
 

@@ -13,7 +13,7 @@ import publicisSapient.pageObjects.LandingPage;
 
 public class VerifyNavBarPresentTest extends TestBase {
 
-	public static Logger log = LogManager.getLogger(VerifyNavBarPresentTest.class);
+	private static Logger log = LogManager.getLogger(VerifyNavBarPresentTest.class);
 	LandingPage landingPage;
 	
 	@Test
@@ -24,6 +24,7 @@ public class VerifyNavBarPresentTest extends TestBase {
 		String actualTitle = driver.getTitle();
 		Assert.assertEquals(actualTitle, expectedTitle);
 		landingPage.popupClose();
+		landingPage.clickMobNavBar(ObjectReader.reader.getBrowserType().toString());
 		landingPage.verifyNavBar();
 		System.out.println("VerifynavigationTestPassed");
 		log.info("Nav bar verified");

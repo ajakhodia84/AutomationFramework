@@ -15,7 +15,7 @@ import publicisSapient.pageObjects.LoginPage;
 
 public class VerifyTitleTest extends TestBase {
 
-	public static Logger log = LogManager.getLogger(VerifyTitleTest.class);
+	private static Logger log = LogManager.getLogger(VerifyTitleTest.class);
 	LandingPage landingPage;
 	LoginPage loginPage;
 	
