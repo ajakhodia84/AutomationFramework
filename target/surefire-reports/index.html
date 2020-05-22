@@ -115,12 +115,12 @@
                     <div class="method-list-content passed suite-Suite">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="publicisSapient.testScripts.HomePageTest" hash-for-method="verifyLogin(nonrestricted@gmail.com, 12344, nonrestricted)">verifyLogin(nonrestricted@gmail.com, 12344, nonrestricted)</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="publicisSapient.testScripts.HomePageTest" hash-for-method="verifyLogin(1nonrestricted@gmail.com, 12344, pass)">verifyLogin(1nonrestricted@gmail.com, 12344, pass)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="publicisSapient.testScripts.HomePageTest" hash-for-method="verifyLogin(restricted@gmail.com, 232312344, restricted)">verifyLogin(restricted@gmail.com, 232312344, restricted)</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="publicisSapient.testScripts.HomePageTest" hash-for-method="verifyLogin(2restricted@gmail.com, 232312344, pass)">verifyLogin(2restricted@gmail.com, 232312344, pass)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -151,60 +151,15 @@
                   <a name="VerifyTitleHeader">
                   </a> <!-- VerifyTitleHeader -->
                   <span class="method-name">VerifyTitleHeader</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;asdfs&quot;}
-  (Session info: chrome=81.0.4044.129)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;WKWIN6024718&apos;, ip: &apos;10.102.118.235&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_171&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 81.0.4044.129, chrome: {chromedriverVersion: 81.0.4044.69 (6813546031a4b..., userDataDir: C:\Users\anujakho\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:60586}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 8db1050ee1b413e23739136bc63fdbde
-*** Element info: {Using=css selector, value=asdfs}
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:420)
-	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:431)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy28.click(Unknown Source)
-	at publicisSapient.pageObjects.LoginPage.toFail(LoginPage.java:48)
-	at publicisSapient.testScripts.VerifyTitleTest.VerifyTitleHeader(VerifyTitleTest.java:33)
+                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
+	at publicisSapient.pageObjects.LoginPage.login(LoginPage.java:56)
+	at publicisSapient.testScripts.VerifyTitleTest.VerifyTitleHeader(VerifyTitleTest.java:34)
 ... Removed 32 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Suite-class-failed -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">publicisSapient.testScripts.HomePageTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifyLogin(nonrestricted@gmail.com, 12344, nonrestricted)">
-                  </a> <!-- verifyLogin(nonrestricted@gmail.com, 12344, nonrestricted) -->
-                  <span class="method-name">verifyLogin</span>
-                  <span class="parameters">(nonrestricted@gmail.com, 12344, nonrestricted)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifyLogin(restricted@gmail.com, 232312344, restricted)">
-                  </a> <!-- verifyLogin(restricted@gmail.com, 232312344, restricted) -->
-                  <span class="method-name">verifyLogin</span>
-                  <span class="parameters">(restricted@gmail.com, 232312344, restricted)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -216,6 +171,30 @@ Session ID: 8db1050ee1b413e23739136bc63fdbde
                   <a name="verifyNavBarIsPresent">
                   </a> <!-- verifyNavBarIsPresent -->
                   <span class="method-name">verifyNavBarIsPresent</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">publicisSapient.testScripts.HomePageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyLogin(1nonrestricted@gmail.com, 12344, pass)">
+                  </a> <!-- verifyLogin(1nonrestricted@gmail.com, 12344, pass) -->
+                  <span class="method-name">verifyLogin</span>
+                  <span class="parameters">(1nonrestricted@gmail.com, 12344, pass)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyLogin(2restricted@gmail.com, 232312344, pass)">
+                  </a> <!-- verifyLogin(2restricted@gmail.com, 232312344, pass) -->
+                  <span class="method-name">verifyLogin</span>
+                  <span class="parameters">(2restricted@gmail.com, 232312344, pass)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -293,26 +272,26 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(4);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'VerifyTitleHeader')
-data.setCell(0, 2, 'publicisSapient.testScripts.VerifyTitleTest')
-data.setCell(0, 3, 53831);
+data.setCell(0, 1, 'verifyLogin')
+data.setCell(0, 2, 'publicisSapient.testScripts.HomePageTest')
+data.setCell(0, 3, 40003);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'verifyLogin')
 data.setCell(1, 2, 'publicisSapient.testScripts.HomePageTest')
-data.setCell(1, 3, 39010);
+data.setCell(1, 3, 22685);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'verifyLogin')
-data.setCell(2, 2, 'publicisSapient.testScripts.HomePageTest')
-data.setCell(2, 3, 22931);
+data.setCell(2, 1, 'VerifyTitleHeader')
+data.setCell(2, 2, 'publicisSapient.testScripts.VerifyTitleTest')
+data.setCell(2, 3, 19942);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'verifyNavBarIsPresent')
 data.setCell(3, 2, 'publicisSapient.testScripts.VerifyNavBarPresentTest')
-data.setCell(3, 3, 13225);
+data.setCell(3, 3, 11646);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 2 minutes</span>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -324,22 +303,22 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="reporter-method-div">
-              <span class="reporter-method-name">verifyLogin(nonrestricted@gmail.com, 12344, nonrestricted)</span>
+              <span class="reporter-method-name">verifyLogin(1nonrestricted@gmail.com, 12344, pass)</span>
               <div class="reporter-method-output-div">
                 <span class="reporter-method-output">captureScreen method called</span>
-                <span class="reporter-method-output"><a href='C:\Users\anujakho\Desktop\Gore Automation\GoreB2BAutomation\screenshots\blank_08_05_2020_10_49_53.png'><img src='C:\Users\anujakho\Desktop\Gore Automation\GoreB2BAutomation\screenshots\blank_08_05_2020_10_49_53.png'height='100' width='100'/></a></span>
+                <span class="reporter-method-output"><a href='C:\Users\anujakho\Desktop\Gore Automation\GoreB2BAutomation\screenshots\blank_21_05_2020_06_47_36.png'><img src='C:\Users\anujakho\Desktop\Gore Automation\GoreB2BAutomation\screenshots\blank_21_05_2020_06_47_36.png'height='100' width='100'/></a></span>
                 <span class="reporter-method-output">captureScreen method called</span>
-                <span class="reporter-method-output"><a href='C:\Users\anujakho\Desktop\Gore Automation\GoreB2BAutomation\screenshots\blank_08_05_2020_10_49_54.png'><img src='C:\Users\anujakho\Desktop\Gore Automation\GoreB2BAutomation\screenshots\blank_08_05_2020_10_49_54.png'height='100' width='100'/></a></span>
+                <span class="reporter-method-output"><a href='C:\Users\anujakho\Desktop\Gore Automation\GoreB2BAutomation\screenshots\blank_21_05_2020_06_47_37.png'><img src='C:\Users\anujakho\Desktop\Gore Automation\GoreB2BAutomation\screenshots\blank_21_05_2020_06_47_37.png'height='100' width='100'/></a></span>
                 <span class="reporter-method-output">verifyLogin Test Passed..</span>
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
             <div class="reporter-method-div">
-              <span class="reporter-method-name">verifyLogin(restricted@gmail.com, 232312344, restricted)</span>
+              <span class="reporter-method-name">verifyLogin(2restricted@gmail.com, 232312344, pass)</span>
               <div class="reporter-method-output-div">
                 <span class="reporter-method-output">captureScreen method called</span>
-                <span class="reporter-method-output"><a href='C:\Users\anujakho\Desktop\Gore Automation\GoreB2BAutomation\screenshots\blank_08_05_2020_10_50_16.png'><img src='C:\Users\anujakho\Desktop\Gore Automation\GoreB2BAutomation\screenshots\blank_08_05_2020_10_50_16.png'height='100' width='100'/></a></span>
+                <span class="reporter-method-output"><a href='C:\Users\anujakho\Desktop\Gore Automation\GoreB2BAutomation\screenshots\blank_21_05_2020_06_47_59.png'><img src='C:\Users\anujakho\Desktop\Gore Automation\GoreB2BAutomation\screenshots\blank_21_05_2020_06_47_59.png'height='100' width='100'/></a></span>
                 <span class="reporter-method-output">captureScreen method called</span>
-                <span class="reporter-method-output"><a href='C:\Users\anujakho\Desktop\Gore Automation\GoreB2BAutomation\screenshots\blank_08_05_2020_10_50_17.png'><img src='C:\Users\anujakho\Desktop\Gore Automation\GoreB2BAutomation\screenshots\blank_08_05_2020_10_50_17.png'height='100' width='100'/></a></span>
+                <span class="reporter-method-output"><a href='C:\Users\anujakho\Desktop\Gore Automation\GoreB2BAutomation\screenshots\blank_21_05_2020_06_47_59.png'><img src='C:\Users\anujakho\Desktop\Gore Automation\GoreB2BAutomation\screenshots\blank_21_05_2020_06_47_59.png'height='100' width='100'/></a></span>
                 <span class="reporter-method-output">verifyLogin Test Passed..</span>
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
@@ -347,25 +326,17 @@ return data;
               <span class="reporter-method-name">VerifyTitleHeader</span>
               <div class="reporter-method-output-div">
                 <span class="reporter-method-output">captureScreen method called</span>
-                <span class="reporter-method-output"><a href='C:\Users\anujakho\Desktop\Gore Automation\GoreB2BAutomation\screenshots\blank_08_05_2020_10_51_01.png'><img src='C:\Users\anujakho\Desktop\Gore Automation\GoreB2BAutomation\screenshots\blank_08_05_2020_10_51_01.png'height='100' width='100'/></a></span>
+                <span class="reporter-method-output"><a href='C:\Users\anujakho\Desktop\Gore Automation\GoreB2BAutomation\screenshots\blank_21_05_2020_06_48_44.png'><img src='C:\Users\anujakho\Desktop\Gore Automation\GoreB2BAutomation\screenshots\blank_21_05_2020_06_48_44.png'height='100' width='100'/></a></span>
                 <span class="reporter-method-output">captureScreen method called</span>
-                <span class="reporter-method-output"><a href='C:\Users\anujakho\Desktop\Gore Automation\GoreB2BAutomation\screenshots\blank_08_05_2020_10_51_02.png'><img src='C:\Users\anujakho\Desktop\Gore Automation\GoreB2BAutomation\screenshots\blank_08_05_2020_10_51_02.png'height='100' width='100'/></a></span>
-                <span class="reporter-method-output">VerifyTitleHeader Test Failed..org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"asdfs"}
-  (Session info: chrome=81.0.4044.129)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'WKWIN6024718', ip: '10.102.118.235', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_171'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 81.0.4044.129, chrome: {chromedriverVersion: 81.0.4044.69 (6813546031a4b..., userDataDir: C:\Users\anujakho\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:60586}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 8db1050ee1b413e23739136bc63fdbde
-*** Element info: {Using=css selector, value=asdfs}</span>
+                <span class="reporter-method-output"><a href='C:\Users\anujakho\Desktop\Gore Automation\GoreB2BAutomation\screenshots\blank_21_05_2020_06_48_44.png'><img src='C:\Users\anujakho\Desktop\Gore Automation\GoreB2BAutomation\screenshots\blank_21_05_2020_06_48_44.png'height='100' width='100'/></a></span>
+                <span class="reporter-method-output">VerifyTitleHeader Test Failed..java.lang.AssertionError: expected [true] but found [false]</span>
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
             <div class="reporter-method-div">
               <span class="reporter-method-name">verifyNavBarIsPresent</span>
               <div class="reporter-method-output-div">
                 <span class="reporter-method-output">captureScreen method called</span>
-                <span class="reporter-method-output"><a href='C:\Users\anujakho\Desktop\Gore Automation\GoreB2BAutomation\screenshots\blank_08_05_2020_10_52_00.png'><img src='C:\Users\anujakho\Desktop\Gore Automation\GoreB2BAutomation\screenshots\blank_08_05_2020_10_52_00.png'height='100' width='100'/></a></span>
+                <span class="reporter-method-output"><a href='C:\Users\anujakho\Desktop\Gore Automation\GoreB2BAutomation\screenshots\blank_21_05_2020_06_49_08.png'><img src='C:\Users\anujakho\Desktop\Gore Automation\GoreB2BAutomation\screenshots\blank_21_05_2020_06_49_08.png'height='100' width='100'/></a></span>
                 <span class="reporter-method-output">verifyNavBarIsPresent Test Passed..</span>
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
@@ -394,83 +365,83 @@ Session ID: 8db1050ee1b413e23739136bc63fdbde
               <div class="chronological-class-name">publicisSapient.testScripts.HomePageTest</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">beforeTest</span>
-                <span class="method-start">162 ms</span>
+                <span class="method-start">287 ms</span>
               </div> <!-- configuration-test before -->
               <div class="configuration-method before">
                 <span class="method-name">beforemethod(public void publicisSapient.testScripts.HomePageTest.verifyLogin(java.lang.String,java.lang.String,j...)</span>
-                <span class="method-start">4589 ms</span>
+                <span class="method-start">4027 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">verifyLogin(nonrestricted@gmail.com, 12344, nonrestricted)</span>
-                <span class="method-start">4593 ms</span>
+                <span class="method-name">verifyLogin(1nonrestricted@gmail.com, 12344, pass)</span>
+                <span class="method-start">4031 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod([TestResult name=verifyLogin status=SUCCESS method=HomePageTest.verifyLogin(java.lang.String, java.l...)</span>
-                <span class="method-start">27524 ms</span>
+                <span class="method-start">26717 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">beforemethod(public void publicisSapient.testScripts.HomePageTest.verifyLogin(java.lang.String,java.lang.String,j...)</span>
-                <span class="method-start">28614 ms</span>
+                <span class="method-start">27482 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">verifyLogin(restricted@gmail.com, 232312344, restricted)</span>
-                <span class="method-start">28615 ms</span>
+                <span class="method-name">verifyLogin(2restricted@gmail.com, 232312344, pass)</span>
+                <span class="method-start">27484 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod([TestResult name=verifyLogin status=SUCCESS method=HomePageTest.verifyLogin(java.lang.String, java.l...)</span>
-                <span class="method-start">67626 ms</span>
+                <span class="method-start">67488 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-test after">
                 <span class="method-name">afterTest</span>
-                <span class="method-start">68379 ms</span>
+                <span class="method-start">67873 ms</span>
               </div> <!-- configuration-test after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">publicisSapient.testScripts.VerifyTitleTest</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">beforeTest</span>
-                <span class="method-start">69306 ms</span>
+                <span class="method-start">68900 ms</span>
               </div> <!-- configuration-test before -->
               <div class="configuration-method before">
                 <span class="method-name">beforemethod(public void publicisSapient.testScripts.VerifyTitleTest.VerifyTitleHeader() throws java.io.IOExcepti...)</span>
-                <span class="method-start">72868 ms</span>
+                <span class="method-start">71494 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">VerifyTitleHeader</span>
-                <span class="method-start">72872 ms</span>
+                <span class="method-start">71494 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod([TestResult name=VerifyTitleHeader status=FAILURE method=VerifyTitleTest.VerifyTitleHeader()[pri:0, ...)</span>
-                <span class="method-start">126712 ms</span>
+                <span class="method-start">91451 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-test after">
                 <span class="method-name">afterTest</span>
-                <span class="method-start">127113 ms</span>
+                <span class="method-start">92712 ms</span>
               </div> <!-- configuration-test after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">publicisSapient.testScripts.VerifyNavBarPresentTest</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">beforeTest</span>
-                <span class="method-start">128086 ms</span>
+                <span class="method-start">93726 ms</span>
               </div> <!-- configuration-test before -->
               <div class="configuration-method before">
                 <span class="method-name">beforemethod(public void publicisSapient.testScripts.VerifyNavBarPresentTest.verifyNavBarIsPresent() throws java....)</span>
-                <span class="method-start">131523 ms</span>
+                <span class="method-start">96086 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyNavBarIsPresent</span>
-                <span class="method-start">131524 ms</span>
+                <span class="method-start">96095 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod([TestResult name=verifyNavBarIsPresent status=SUCCESS method=VerifyNavBarPresentTest.verifyNavBarIsP...)</span>
-                <span class="method-start">144750 ms</span>
+                <span class="method-start">107741 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-test after">
                 <span class="method-name">afterTest</span>
-                <span class="method-start">145305 ms</span>
+                <span class="method-start">108253 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

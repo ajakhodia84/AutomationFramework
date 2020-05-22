@@ -22,6 +22,8 @@ public class HomePageTest extends TestBase {
 	
 	@Test(dataProvider = "getData")
 	public void verifyLogin(String email, String password, String text) throws IOException {
+		test.assignAuthor("Anupam Jakhodia new");
+		test.assignCategory("Sanity test");
 		getApplicationUrl(ObjectReader.reader.getUrl());
 		landingPage = new LandingPage(driver);
 		loginPage = new LoginPage(driver);
@@ -33,19 +35,18 @@ public class HomePageTest extends TestBase {
 		landingPage.clickLogin();
 		loginPage.login(email, password, text);
 		log.info("Credentials are passed");
-
 	}
 
 	@DataProvider
 	public Object[][] getData() {
 		Object[][] data = new Object[2][3];
-		data[0][0] = "nonrestricted@gmail.com";
+		data[0][0] = "1nonrestricted@gmail.com";
 		data[0][1] = "12344";
-		data[0][2] = "nonrestricted";
+		data[0][2] = "pass";
 
-		data[1][0] = "restricted@gmail.com";
+		data[1][0] = "2restricted@gmail.com";
 		data[1][1] = "232312344";
-		data[1][2] = "restricted";
+		data[1][2] = "pass";
 		return data;
 	}
 

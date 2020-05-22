@@ -56,7 +56,7 @@
           </li>
             <li class="m-r-10">
                 <a href="#">
-                    <span class="badge badge-primary">May 8, 2020 10:49:46 AM</span>
+                    <span class="badge badge-primary">May 21, 2020 11:22:55 AM</span>
                 </a>
             </li>
         </ul>
@@ -72,7 +72,15 @@
           <span class="title">Tests</span>
         </a>
       </li>
-            <li class="nav-item dropdown" onclick="toggleView('exception-view')">
+            <li class="nav-item dropdown" onclick="toggleView('tag-view')">
+        <a id="nav-tag" class="dropdown-toggle" href="tag.html">
+          <span class="icon-holder">
+            <i class="fa fa-tag"></i>
+          </span>
+          <span class="title">Tags</span>
+        </a>
+      </li>
+      <li class="nav-item dropdown" onclick="toggleView('exception-view')">
         <a id="nav-ex" class="dropdown-toggle" href="exception.html">
           <span class="icon-holder">
             <i class="fa fa-bug"></i>
@@ -118,13 +126,32 @@
 						<a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
 					</ul>
 				</li>
+				<li class="user-profile dropdown dropdown-animated scale-left">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+					<i class="fa fa-user"></i>
+					</a>
+					<ul id="author-toggle" class="dropdown-menu dropdown-md p-v-0">
+						<a class="dropdown-item" href="#">AnupamJakhodianew</a>
+						<a class="dropdown-item" href="#">AnupamJakhodianew2</a>
+					</ul>
+				</li>
+				<li class="user-profile dropdown dropdown-animated scale-left">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+					<i class="fa fa-tag"></i>
+					</a>
+					<ul id="tag-toggle" class="dropdown-menu dropdown-md p-v-0">
+						<a class="dropdown-item" href="#">Sanitytest</a>
+						<a class="dropdown-item" href="#">Smoketestdevicetest</a>
+						<a class="dropdown-item" href="#">Regressiontest</a>
+					</ul>
+				</li>
 			</ul>
 		</div>
 		<div class="test-list-wrapper scrollable">
 			<ul class="test-list-item">
 				<li class="test-item"  status="pass" test-id="1"
-					author=""
-					tag=""
+					author="AnupamJakhodianew AnupamJakhodianew"
+					tag="Sanitytest Sanitytest"
 					device="">
 					<div class="status-avatar pass-bg">
 						<i class="fa fa-check text-white"></i>
@@ -132,8 +159,8 @@
 					<div class="open-test">
 						<div class="test-detail">
 							<p class="name">HomePageTest</p>
-							<p class="duration text-sm">0h 1m 3s+49ms</p>
-							<span class="datetime">10:49:50 AM</span>
+							<p class="duration text-sm">0h 1m 17s+783ms</p>
+							<span class="datetime">11:23:05 AM</span>
 						</div>
 					</div>
 					<div class="test-contents d-none">
@@ -141,9 +168,15 @@
 							<div class="p-v-10 d-inline-block">
 								<div class="info">
 									<h5 class="test-status text-pass">HomePageTest</h5>
-									<span class='badge badge-success'>05.08.2020 10:49:50</span>
-									<span class='badge badge-danger'>05.08.2020 10:50:53</span>
-									<span class='badge badge-default'>0h 1m 3s+49ms</span>
+									<span class='badge badge-success'>05.21.2020 11:23:05</span>
+									<span class='badge badge-danger'>05.21.2020 11:24:23</span>
+									<span class='badge badge-default'>0h 1m 17s+783ms</span>
+								</div>
+								<div class="m-t-15">
+			<span class="badge badge-pill badge-default"><i class="fa fa-user-o"></i> AnupamJakhodianew</span>
+			<span class="badge badge-pill badge-default"><i class="fa fa-user-o"></i> AnupamJakhodianew</span>
+			<span class="badge badge-pill badge-default"><i class="fa fa-tag"></i> Sanitytest</span>
+			<span class="badge badge-pill badge-default"><i class="fa fa-tag"></i> Sanitytest</span>
 								</div>
 								<div class="m-t-10 m-l-5">
 									
@@ -160,98 +193,196 @@
 	<tbody>
 			<tr class="event-row">
 				<td><i class="fa fa-info text-info"></i></td>
-				<td>10:49:50 AM</td>
+				<td>11:23:05 AM</td>
 				<td>
 						verifyLogin**************test started***************
 				</td>
 			</tr>
 			<tr class="event-row">
 				<td><i class="fa fa-info text-info"></i></td>
-				<td>10:49:53 AM</td>
+				<td>11:23:09 AM</td>
 				<td>
 						navigating to ...http://www.qaclickacademy.com
 				</td>
 			</tr>
 			<tr class="event-row">
 				<td><i class="fa fa-info text-info"></i></td>
-				<td>10:49:53 AM</td>
+				<td>11:23:10 AM</td>
 				<td>
 						capturing ui navigation screen for title...QA Click Academy | Selenium,Jmeter,SoapUI,Appium,Database testing,QA Training Academy
 				</td>
 			</tr>
 			<tr class="event-row">
 				<td><i class="fa fa-info text-info"></i></td>
-				<td>10:49:54 AM</td>
+				<td>11:23:11 AM</td>
 				<td>
 						Landing Page Object Created
 				</td>
 			</tr>
 			<tr class="event-row">
 				<td><i class="fa fa-info text-info"></i></td>
-				<td>10:49:54 AM</td>
+				<td>11:23:11 AM</td>
 				<td>
 						capturing ui navigation screen for title...QA Click Academy | Selenium,Jmeter,SoapUI,Appium,Database testing,QA Training Academy
 				</td>
 			</tr>
 			<tr class="event-row">
 				<td><i class="fa fa-info text-info"></i></td>
-				<td>10:49:55 AM</td>
+				<td>11:23:13 AM</td>
 				<td>
 						Login Page Object Created
 				</td>
 			</tr>
 			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>11:23:29 AM</td>
+				<td>
+						Email Id passed is: 1nonrestricted@gmail.com
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>11:23:29 AM</td>
+				<td>
+						passwordid Id passed is: 12344
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>11:23:31 AM</td>
+				<td>
+						userType Id passed is: pass
+				</td>
+			</tr>
+			<tr class="event-row">
 				<td><i class="fa fa-check text-pass"></i></td>
-				<td>10:50:13 AM</td>
+				<td>11:23:31 AM</td>
+				<td>
+						Assert is passed
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>11:23:31 AM</td>
+				<td>
+						Assert is passed
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>11:23:32 AM</td>
+				<td>
+						Test Case is passed. Allert si displayed
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>11:23:32 AM</td>
+				<td>
+						Test Case is passed. Allert si displayed
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>11:23:32 AM</td>
 				<td>
 						verifyLogin is pass
 				</td>
 			</tr>
 			<tr class="event-row">
 				<td><i class="fa fa-info text-info"></i></td>
-				<td>10:50:14 AM</td>
+				<td>11:23:36 AM</td>
 				<td>
 						verifyLogin**************test started***************
 				</td>
 			</tr>
 			<tr class="event-row">
 				<td><i class="fa fa-info text-info"></i></td>
-				<td>10:50:16 AM</td>
+				<td>11:23:39 AM</td>
 				<td>
 						navigating to ...http://www.qaclickacademy.com
 				</td>
 			</tr>
 			<tr class="event-row">
 				<td><i class="fa fa-info text-info"></i></td>
-				<td>10:50:16 AM</td>
+				<td>11:23:39 AM</td>
 				<td>
 						capturing ui navigation screen for title...QA Click Academy | Selenium,Jmeter,SoapUI,Appium,Database testing,QA Training Academy
 				</td>
 			</tr>
 			<tr class="event-row">
 				<td><i class="fa fa-info text-info"></i></td>
-				<td>10:50:17 AM</td>
+				<td>11:23:41 AM</td>
 				<td>
 						Landing Page Object Created
 				</td>
 			</tr>
 			<tr class="event-row">
 				<td><i class="fa fa-info text-info"></i></td>
-				<td>10:50:17 AM</td>
+				<td>11:23:41 AM</td>
 				<td>
 						capturing ui navigation screen for title...QA Click Academy | Selenium,Jmeter,SoapUI,Appium,Database testing,QA Training Academy
 				</td>
 			</tr>
 			<tr class="event-row">
 				<td><i class="fa fa-info text-info"></i></td>
-				<td>10:50:17 AM</td>
+				<td>11:23:42 AM</td>
 				<td>
 						Login Page Object Created
 				</td>
 			</tr>
 			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>11:24:18 AM</td>
+				<td>
+						Email Id passed is: 2restricted@gmail.com
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>11:24:19 AM</td>
+				<td>
+						passwordid Id passed is: 232312344
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>11:24:21 AM</td>
+				<td>
+						userType Id passed is: pass
+				</td>
+			</tr>
+			<tr class="event-row">
 				<td><i class="fa fa-check text-pass"></i></td>
-				<td>10:50:53 AM</td>
+				<td>11:24:21 AM</td>
+				<td>
+						Assert is passed
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>11:24:21 AM</td>
+				<td>
+						Assert is passed
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>11:24:23 AM</td>
+				<td>
+						Test Case is passed. Allert si displayed
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>11:24:23 AM</td>
+				<td>
+						Test Case is passed. Allert si displayed
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>11:24:23 AM</td>
 				<td>
 						verifyLogin is pass
 				</td>
@@ -261,19 +392,19 @@
 </div>
 <div class="detail-foot">
 	<ul class="attachments">
-			<img class='r-img' onerror='this.style.display="none"' data-featherlight='C:\Users\anujakho\Desktop\Gore Automation\GoreB2BAutomation\screenshots\blank_08_05_2020_10_49_53.png' src='C:\Users\anujakho\Desktop\Gore Automation\GoreB2BAutomation\screenshots\blank_08_05_2020_10_49_53.png'>
-			<img class='r-img' onerror='this.style.display="none"' data-featherlight='C:\Users\anujakho\Desktop\Gore Automation\GoreB2BAutomation\screenshots\blank_08_05_2020_10_49_54.png' src='C:\Users\anujakho\Desktop\Gore Automation\GoreB2BAutomation\screenshots\blank_08_05_2020_10_49_54.png'>
-			<img class='r-img' onerror='this.style.display="none"' data-featherlight='C:\Users\anujakho\Desktop\Gore Automation\GoreB2BAutomation\screenshots\verifyLogin_08_05_2020_10_50_13.png' src='C:\Users\anujakho\Desktop\Gore Automation\GoreB2BAutomation\screenshots\verifyLogin_08_05_2020_10_50_13.png'>
-			<img class='r-img' onerror='this.style.display="none"' data-featherlight='C:\Users\anujakho\Desktop\Gore Automation\GoreB2BAutomation\screenshots\blank_08_05_2020_10_50_16.png' src='C:\Users\anujakho\Desktop\Gore Automation\GoreB2BAutomation\screenshots\blank_08_05_2020_10_50_16.png'>
-			<img class='r-img' onerror='this.style.display="none"' data-featherlight='C:\Users\anujakho\Desktop\Gore Automation\GoreB2BAutomation\screenshots\blank_08_05_2020_10_50_17.png' src='C:\Users\anujakho\Desktop\Gore Automation\GoreB2BAutomation\screenshots\blank_08_05_2020_10_50_17.png'>
-			<img class='r-img' onerror='this.style.display="none"' data-featherlight='C:\Users\anujakho\Desktop\Gore Automation\GoreB2BAutomation\screenshots\verifyLogin_08_05_2020_10_50_53.png' src='C:\Users\anujakho\Desktop\Gore Automation\GoreB2BAutomation\screenshots\verifyLogin_08_05_2020_10_50_53.png'>
+			<img class='r-img' onerror='this.style.display="none"' data-featherlight='C:\Users\anujakho\Desktop\Gore Automation\GoreB2BAutomation\screenshots\blank_21_05_2020_11_23_10.png' src='C:\Users\anujakho\Desktop\Gore Automation\GoreB2BAutomation\screenshots\blank_21_05_2020_11_23_10.png'>
+			<img class='r-img' onerror='this.style.display="none"' data-featherlight='C:\Users\anujakho\Desktop\Gore Automation\GoreB2BAutomation\screenshots\blank_21_05_2020_11_23_11.png' src='C:\Users\anujakho\Desktop\Gore Automation\GoreB2BAutomation\screenshots\blank_21_05_2020_11_23_11.png'>
+			<img class='r-img' onerror='this.style.display="none"' data-featherlight='C:\Users\anujakho\Desktop\Gore Automation\GoreB2BAutomation\screenshots\verifyLogin_21_05_2020_11_23_32.png' src='C:\Users\anujakho\Desktop\Gore Automation\GoreB2BAutomation\screenshots\verifyLogin_21_05_2020_11_23_32.png'>
+			<img class='r-img' onerror='this.style.display="none"' data-featherlight='C:\Users\anujakho\Desktop\Gore Automation\GoreB2BAutomation\screenshots\blank_21_05_2020_11_23_39.png' src='C:\Users\anujakho\Desktop\Gore Automation\GoreB2BAutomation\screenshots\blank_21_05_2020_11_23_39.png'>
+			<img class='r-img' onerror='this.style.display="none"' data-featherlight='C:\Users\anujakho\Desktop\Gore Automation\GoreB2BAutomation\screenshots\blank_21_05_2020_11_23_41.png' src='C:\Users\anujakho\Desktop\Gore Automation\GoreB2BAutomation\screenshots\blank_21_05_2020_11_23_41.png'>
+			<img class='r-img' onerror='this.style.display="none"' data-featherlight='C:\Users\anujakho\Desktop\Gore Automation\GoreB2BAutomation\screenshots\verifyLogin_21_05_2020_11_24_23.png' src='C:\Users\anujakho\Desktop\Gore Automation\GoreB2BAutomation\screenshots\verifyLogin_21_05_2020_11_24_23.png'>
 	</ul>
 </div>
 					</div>
 				</li>
 				<li class="test-item"  status="fail" test-id="2"
-					author=""
-					tag=""
+					author="AnupamJakhodianew"
+					tag="Smoketestdevicetest"
 					device="">
 					<div class="status-avatar fail-bg">
 						<i class="fa fa-times text-white"></i>
@@ -281,8 +412,8 @@
 					<div class="open-test">
 						<div class="test-detail">
 							<p class="name">VerifyTitleTest</p>
-							<p class="duration text-sm">0h 0m 53s+848ms</p>
-							<span class="datetime">10:50:58 AM</span>
+							<p class="duration text-sm">0h 0m 23s+277ms</p>
+							<span class="datetime">11:24:30 AM</span>
 						</div>
 					</div>
 					<div class="test-contents d-none">
@@ -290,9 +421,13 @@
 							<div class="p-v-10 d-inline-block">
 								<div class="info">
 									<h5 class="test-status text-fail">VerifyTitleTest</h5>
-									<span class='badge badge-success'>05.08.2020 10:50:58</span>
-									<span class='badge badge-danger'>05.08.2020 10:51:52</span>
-									<span class='badge badge-default'>0h 0m 53s+848ms</span>
+									<span class='badge badge-success'>05.21.2020 11:24:30</span>
+									<span class='badge badge-danger'>05.21.2020 11:24:53</span>
+									<span class='badge badge-default'>0h 0m 23s+277ms</span>
+								</div>
+								<div class="m-t-15">
+			<span class="badge badge-pill badge-default"><i class="fa fa-user-o"></i> AnupamJakhodianew</span>
+			<span class="badge badge-pill badge-default"><i class="fa fa-tag"></i> Smoketestdevicetest</span>
 								</div>
 								<div class="m-t-10 m-l-5">
 									
@@ -309,78 +444,78 @@
 	<tbody>
 			<tr class="event-row">
 				<td><i class="fa fa-info text-info"></i></td>
-				<td>10:50:58 AM</td>
+				<td>11:24:30 AM</td>
 				<td>
 						VerifyTitleHeader**************test started***************
 				</td>
 			</tr>
 			<tr class="event-row">
 				<td><i class="fa fa-info text-info"></i></td>
-				<td>10:51:01 AM</td>
+				<td>11:24:33 AM</td>
 				<td>
 						navigating to ...http://www.qaclickacademy.com
 				</td>
 			</tr>
 			<tr class="event-row">
 				<td><i class="fa fa-info text-info"></i></td>
-				<td>10:51:01 AM</td>
+				<td>11:24:34 AM</td>
 				<td>
 						capturing ui navigation screen for title...QA Click Academy | Selenium,Jmeter,SoapUI,Appium,Database testing,QA Training Academy
 				</td>
 			</tr>
 			<tr class="event-row">
 				<td><i class="fa fa-info text-info"></i></td>
-				<td>10:51:02 AM</td>
+				<td>11:24:35 AM</td>
 				<td>
 						Landing Page Object Created
 				</td>
 			</tr>
 			<tr class="event-row">
 				<td><i class="fa fa-info text-info"></i></td>
-				<td>10:51:02 AM</td>
+				<td>11:24:35 AM</td>
 				<td>
 						capturing ui navigation screen for title...QA Click Academy | Selenium,Jmeter,SoapUI,Appium,Database testing,QA Training Academy
 				</td>
 			</tr>
 			<tr class="event-row">
 				<td><i class="fa fa-info text-info"></i></td>
-				<td>10:51:02 AM</td>
+				<td>11:24:36 AM</td>
 				<td>
 						Login Page Object Created
 				</td>
 			</tr>
 			<tr class="event-row">
-				<td><i class="fa fa-times text-fail"></i></td>
-				<td>10:51:52 AM</td>
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>11:24:51 AM</td>
 				<td>
-						<textarea disabled class="code-block">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"asdfs"}
-  (Session info: chrome=81.0.4044.129)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'WKWIN6024718', ip: '10.102.118.235', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_171'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 81.0.4044.129, chrome: {chromedriverVersion: 81.0.4044.69 (6813546031a4b..., userDataDir: C:\Users\anujakho\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:60586}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 8db1050ee1b413e23739136bc63fdbde
-*** Element info: {Using=css selector, value=asdfs}
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:420)
-	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:431)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy28.click(Unknown Source)
-	at publicisSapient.pageObjects.LoginPage.toFail(LoginPage.java:48)
-	at publicisSapient.testScripts.VerifyTitleTest.VerifyTitleHeader(VerifyTitleTest.java:33)
+						Email Id passed is: sasdf@gmail.com
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>11:24:51 AM</td>
+				<td>
+						passwordid Id passed is: asdf
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>11:24:53 AM</td>
+				<td>
+						userType Id passed is: waste
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-times text-fail"></i></td>
+				<td>11:24:53 AM</td>
+				<td>
+						<textarea disabled class="code-block">java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:496)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at org.testng.Assert.assertTrue(Assert.java:52)
+	at publicisSapient.pageObjects.LoginPage.login(LoginPage.java:56)
+	at publicisSapient.testScripts.VerifyTitleTest.VerifyTitleHeader(VerifyTitleTest.java:34)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -417,16 +552,16 @@ Session ID: 8db1050ee1b413e23739136bc63fdbde
 </div>
 <div class="detail-foot">
 	<ul class="attachments">
-			<img class='r-img' onerror='this.style.display="none"' data-featherlight='C:\Users\anujakho\Desktop\Gore Automation\GoreB2BAutomation\screenshots\blank_08_05_2020_10_51_01.png' src='C:\Users\anujakho\Desktop\Gore Automation\GoreB2BAutomation\screenshots\blank_08_05_2020_10_51_01.png'>
-			<img class='r-img' onerror='this.style.display="none"' data-featherlight='C:\Users\anujakho\Desktop\Gore Automation\GoreB2BAutomation\screenshots\blank_08_05_2020_10_51_02.png' src='C:\Users\anujakho\Desktop\Gore Automation\GoreB2BAutomation\screenshots\blank_08_05_2020_10_51_02.png'>
-			<img class='r-img' onerror='this.style.display="none"' data-featherlight='C:\Users\anujakho\Desktop\Gore Automation\GoreB2BAutomation\screenshots\VerifyTitleHeader_08_05_2020_10_51_52.png' src='C:\Users\anujakho\Desktop\Gore Automation\GoreB2BAutomation\screenshots\VerifyTitleHeader_08_05_2020_10_51_52.png'>
+			<img class='r-img' onerror='this.style.display="none"' data-featherlight='C:\Users\anujakho\Desktop\Gore Automation\GoreB2BAutomation\screenshots\blank_21_05_2020_11_24_34.png' src='C:\Users\anujakho\Desktop\Gore Automation\GoreB2BAutomation\screenshots\blank_21_05_2020_11_24_34.png'>
+			<img class='r-img' onerror='this.style.display="none"' data-featherlight='C:\Users\anujakho\Desktop\Gore Automation\GoreB2BAutomation\screenshots\blank_21_05_2020_11_24_35.png' src='C:\Users\anujakho\Desktop\Gore Automation\GoreB2BAutomation\screenshots\blank_21_05_2020_11_24_35.png'>
+			<img class='r-img' onerror='this.style.display="none"' data-featherlight='C:\Users\anujakho\Desktop\Gore Automation\GoreB2BAutomation\screenshots\VerifyTitleHeader_21_05_2020_11_24_53.png' src='C:\Users\anujakho\Desktop\Gore Automation\GoreB2BAutomation\screenshots\VerifyTitleHeader_21_05_2020_11_24_53.png'>
 	</ul>
 </div>
 					</div>
 				</li>
 				<li class="test-item"  status="pass" test-id="3"
-					author=""
-					tag=""
+					author="AnupamJakhodianew2"
+					tag="Regressiontest"
 					device="">
 					<div class="status-avatar pass-bg">
 						<i class="fa fa-check text-white"></i>
@@ -434,8 +569,8 @@ Session ID: 8db1050ee1b413e23739136bc63fdbde
 					<div class="open-test">
 						<div class="test-detail">
 							<p class="name">VerifyNavBarPresentTest</p>
-							<p class="duration text-sm">0h 0m 13s+228ms</p>
-							<span class="datetime">10:51:57 AM</span>
+							<p class="duration text-sm">0h 0m 11s+581ms</p>
+							<span class="datetime">11:25:00 AM</span>
 						</div>
 					</div>
 					<div class="test-contents d-none">
@@ -443,9 +578,13 @@ Session ID: 8db1050ee1b413e23739136bc63fdbde
 							<div class="p-v-10 d-inline-block">
 								<div class="info">
 									<h5 class="test-status text-pass">VerifyNavBarPresentTest</h5>
-									<span class='badge badge-success'>05.08.2020 10:51:57</span>
-									<span class='badge badge-danger'>05.08.2020 10:52:10</span>
-									<span class='badge badge-default'>0h 0m 13s+228ms</span>
+									<span class='badge badge-success'>05.21.2020 11:25:00</span>
+									<span class='badge badge-danger'>05.21.2020 11:25:12</span>
+									<span class='badge badge-default'>0h 0m 11s+581ms</span>
+								</div>
+								<div class="m-t-15">
+			<span class="badge badge-pill badge-default"><i class="fa fa-user-o"></i> AnupamJakhodianew2</span>
+			<span class="badge badge-pill badge-default"><i class="fa fa-tag"></i> Regressiontest</span>
 								</div>
 								<div class="m-t-10 m-l-5">
 									
@@ -462,35 +601,35 @@ Session ID: 8db1050ee1b413e23739136bc63fdbde
 	<tbody>
 			<tr class="event-row">
 				<td><i class="fa fa-info text-info"></i></td>
-				<td>10:51:57 AM</td>
+				<td>11:25:00 AM</td>
 				<td>
 						verifyNavBarIsPresent**************test started***************
 				</td>
 			</tr>
 			<tr class="event-row">
 				<td><i class="fa fa-info text-info"></i></td>
-				<td>10:52:00 AM</td>
+				<td>11:25:03 AM</td>
 				<td>
 						navigating to ...http://www.qaclickacademy.com
 				</td>
 			</tr>
 			<tr class="event-row">
 				<td><i class="fa fa-info text-info"></i></td>
-				<td>10:52:00 AM</td>
+				<td>11:25:03 AM</td>
 				<td>
 						capturing ui navigation screen for title...QA Click Academy | Selenium,Jmeter,SoapUI,Appium,Database testing,QA Training Academy
 				</td>
 			</tr>
 			<tr class="event-row">
 				<td><i class="fa fa-info text-info"></i></td>
-				<td>10:52:00 AM</td>
+				<td>11:25:03 AM</td>
 				<td>
 						Landing Page Object Created
 				</td>
 			</tr>
 			<tr class="event-row">
 				<td><i class="fa fa-check text-pass"></i></td>
-				<td>10:52:10 AM</td>
+				<td>11:25:12 AM</td>
 				<td>
 						verifyNavBarIsPresent is pass
 				</td>
@@ -500,10 +639,182 @@ Session ID: 8db1050ee1b413e23739136bc63fdbde
 </div>
 <div class="detail-foot">
 	<ul class="attachments">
-			<img class='r-img' onerror='this.style.display="none"' data-featherlight='C:\Users\anujakho\Desktop\Gore Automation\GoreB2BAutomation\screenshots\blank_08_05_2020_10_52_00.png' src='C:\Users\anujakho\Desktop\Gore Automation\GoreB2BAutomation\screenshots\blank_08_05_2020_10_52_00.png'>
-			<img class='r-img' onerror='this.style.display="none"' data-featherlight='C:\Users\anujakho\Desktop\Gore Automation\GoreB2BAutomation\screenshots\verifyNavBarIsPresent_08_05_2020_10_52_10.png' src='C:\Users\anujakho\Desktop\Gore Automation\GoreB2BAutomation\screenshots\verifyNavBarIsPresent_08_05_2020_10_52_10.png'>
+			<img class='r-img' onerror='this.style.display="none"' data-featherlight='C:\Users\anujakho\Desktop\Gore Automation\GoreB2BAutomation\screenshots\blank_21_05_2020_11_25_03.png' src='C:\Users\anujakho\Desktop\Gore Automation\GoreB2BAutomation\screenshots\blank_21_05_2020_11_25_03.png'>
+			<img class='r-img' onerror='this.style.display="none"' data-featherlight='C:\Users\anujakho\Desktop\Gore Automation\GoreB2BAutomation\screenshots\verifyNavBarIsPresent_21_05_2020_11_25_12.png' src='C:\Users\anujakho\Desktop\Gore Automation\GoreB2BAutomation\screenshots\verifyNavBarIsPresent_21_05_2020_11_25_12.png'>
 	</ul>
 </div>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class="test-content scrollable">
+		<div class="test-content-tools">
+			<ul>
+				<li>
+					<a class="back-to-test" href="javascript:void(0)">
+					<i class="fa fa-arrow-left"></i>
+					</a>
+				</li>
+			</ul>
+		</div>
+		<div class="test-content-detail">
+			<div class="detail-body"></div>
+		</div>
+	</div>
+</div><div class="test-wrapper row tag-view attributes-view">
+	<div class="test-list">
+		<div class="test-list-tools">
+			<ul class="tools pull-left">
+				<li>
+					<a href="">
+					<span class="font-size-14">Tags</span>
+					</a>
+				</li>
+			</ul>
+			<ul class="tools text-right">
+				<li>
+					<a href="#">
+					<span class="badge badge-primary">3</span>
+					</a>
+				</li>
+			</ul>
+		</div>
+		<div class="test-list-wrapper scrollable">
+			<ul class="test-list-item">
+				<li class="test-item">
+					<div class="open-test">
+						<div class="test-detail">
+							<p class="name">Sanitytest</p>
+							<p class="duration text-sm">1 tests</p>
+							<span class="datetime">
+							<span class='badge badge-success'>1</span>
+							
+							
+							
+							</span>
+						</div>
+					</div>
+					<div class="test-contents d-none">
+						<div class="info">
+							<h4>Sanitytest</h4>
+							<span status="pass" class='badge badge-success'>1 passed</span>
+							
+							
+							
+						</div>
+						<table class='table table-sm mt-4'>
+							<thead>
+								<tr>
+									<th class="status-col">Status</th>
+									<th class="timestamp-col">Timestamp</th>
+									<th>TestName</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr class="tag-test-status" status="pass">
+									<td>
+										<div class='status-avatar pass-bg'>
+											<i class="fa fa-check text-white"></i>
+										</div>
+									</td>
+									<td>11:23:05 AM</td>
+									<td class='linked' test-id='1'>
+										HomePageTest
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</li>
+				<li class="test-item">
+					<div class="open-test">
+						<div class="test-detail">
+							<p class="name">Smoketestdevicetest</p>
+							<p class="duration text-sm">1 tests</p>
+							<span class="datetime">
+							
+							<span class='badge badge-danger'>1</span>
+							
+							
+							</span>
+						</div>
+					</div>
+					<div class="test-contents d-none">
+						<div class="info">
+							<h4>Smoketestdevicetest</h4>
+							
+							<span status="fail" class='badge badge-danger'>1 failed</span>
+							
+							
+						</div>
+						<table class='table table-sm mt-4'>
+							<thead>
+								<tr>
+									<th class="status-col">Status</th>
+									<th class="timestamp-col">Timestamp</th>
+									<th>TestName</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr class="tag-test-status" status="fail">
+									<td>
+										<div class='status-avatar fail-bg'>
+											<i class="fa fa-times text-white"></i>
+										</div>
+									</td>
+									<td>11:24:30 AM</td>
+									<td class='linked' test-id='2'>
+										VerifyTitleTest
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</li>
+				<li class="test-item">
+					<div class="open-test">
+						<div class="test-detail">
+							<p class="name">Regressiontest</p>
+							<p class="duration text-sm">1 tests</p>
+							<span class="datetime">
+							<span class='badge badge-success'>1</span>
+							
+							
+							
+							</span>
+						</div>
+					</div>
+					<div class="test-contents d-none">
+						<div class="info">
+							<h4>Regressiontest</h4>
+							<span status="pass" class='badge badge-success'>1 passed</span>
+							
+							
+							
+						</div>
+						<table class='table table-sm mt-4'>
+							<thead>
+								<tr>
+									<th class="status-col">Status</th>
+									<th class="timestamp-col">Timestamp</th>
+									<th>TestName</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr class="tag-test-status" status="pass">
+									<td>
+										<div class='status-avatar pass-bg'>
+											<i class="fa fa-check text-white"></i>
+										</div>
+									</td>
+									<td>11:25:00 AM</td>
+									<td class='linked' test-id='3'>
+										VerifyNavBarPresentTest
+									</td>
+								</tr>
+							</tbody>
+						</table>
 					</div>
 				</li>
 			</ul>
@@ -546,13 +857,13 @@ Session ID: 8db1050ee1b413e23739136bc63fdbde
 				<li class="test-item">
 					<div class="open-test">
 						<div class="test-detail">
-							<p class="name">org.openqa.selenium.NoSuchElementException</p>
+							<p class="name">java.lang.AssertionError</p>
 							<p class="duration text-sm">1 tests</p>
 						</div>
 					</div>
 					<div class="test-contents d-none">
 						<div class="info">
-							<h4>org.openqa.selenium.NoSuchElementException</h4>
+							<h4>java.lang.AssertionError</h4>
 						</div>
 						<table class='table table-sm mt-4'>
 							<thead>
@@ -569,7 +880,7 @@ Session ID: 8db1050ee1b413e23739136bc63fdbde
 											<i class="fa fa-times text-white"></i>
 										</div>
 									</td>
-									<td>10:50:58 AM</td>
+									<td>11:24:30 AM</td>
 									<td class='linked' test-id='2'>
 										VerifyTitleTest
 									</td>
@@ -632,10 +943,10 @@ Session ID: 8db1050ee1b413e23739136bc63fdbde
 					</div>
 				</div>
 				<div class="card-footer">
-					<div><small data-tooltip='11.538%'><b>3</b> events passed</small></div>
+					<div><small data-tooltip='25.581%'><b>11</b> events passed</small></div>
 					<div>
-						<small data-tooltip='3.846%'><b>1</b> events failed, 
-						<b data-tooltip='84.615%'>22</b> others
+						<small data-tooltip='2.326%'><b>1</b> events failed, 
+						<b data-tooltip='72.093%'>31</b> others
 						</small>
 					</div>
 				</div>
@@ -668,7 +979,7 @@ Session ID: 8db1050ee1b413e23739136bc63fdbde
 					<div class="media justify-content-between">
 						<div class="card-header">
 							<h6 class="card-title">Start</h6>
-							<h4 class="font-weight-light mt-4">May 8, 2020 10:49:46 AM</h4>
+							<h4 class="font-weight-light mt-4">May 21, 2020 11:22:55 AM</h4>
 							<span class="text-semibold text-success font-size-15">
 						</div>
 						<div class="align-self-end">
@@ -684,7 +995,7 @@ Session ID: 8db1050ee1b413e23739136bc63fdbde
 					<div class="media justify-content-between">
 						<div class="card-header">
 							<h6 class="card-title">Duration</h6>
-							<h4 class="font-weight-light mt-4">0h 2m 25s+237ms</h4>
+							<h4 class="font-weight-light mt-4">0h 2m 17s+939ms</h4>
 							<span class="text-semibold font-size-15">
 						</div>
 						<div class="align-self-end">
@@ -710,6 +1021,95 @@ Session ID: 8db1050ee1b413e23739136bc63fdbde
 		</div>
 	</div>
 	<div class="row">
+		<div class="col-md-6">
+			<div class="card">
+				<div class="card-header">
+					<h6 class="card-title">Author</h6>
+				</div>
+				<div class="table-overflow">
+					<table class="table table-sm">
+						<thead>
+							<tr class="bg-gray">
+								<th>Name</th>
+								<th>Passed</th>
+								<th>Failed</th>
+								<th>Others</th>
+								<th>Passed %</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>AnupamJakhodianew</td>
+								<td>1</td>
+								<td>1</td>
+								<td>0</td>
+								<td>
+									50%
+								</td>
+							</tr>
+							<tr>
+								<td>AnupamJakhodianew2</td>
+								<td>1</td>
+								<td>0</td>
+								<td>0</td>
+								<td>
+									100%
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-6">
+			<div class="card">
+				<div class="card-header">
+					<h6 class="card-title">Tags</h6>
+				</div>
+				<div class="table-overflow">
+					<table class="table table-sm">
+						<thead>
+							<tr class="bg-gray">
+								<th>Name</th>
+								<th>Passed</th>
+								<th>Failed</th>
+								<th>Others</th>
+								<th>Passed %</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>Sanitytest</td>
+								<td>1</td>
+								<td>0</td>
+								<td>0</td>
+								<td>
+									100%
+								</td>
+							</tr>
+							<tr>
+								<td>Smoketestdevicetest</td>
+								<td>0</td>
+								<td>1</td>
+								<td>0</td>
+								<td>
+									0%
+								</td>
+							</tr>
+							<tr>
+								<td>Regressiontest</td>
+								<td>1</td>
+								<td>0</td>
+								<td>0</td>
+								<td>
+									100%
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
 		<div class="col-md-4">
 			<div class="card">
 				<div class="card-header">
@@ -765,21 +1165,21 @@ Session ID: 8db1050ee1b413e23739136bc63fdbde
 		infoGrandChild: 0,
 		debugGrandChild: 0,
 		exceptionsGrandChild: 0,
-		eventsCount: 26,
-		passEvents: 3,
+		eventsCount: 43,
+		passEvents: 11,
 		failEvents: 1,
 		fatalEvents: 0,
 		errorEvents: 0,
 		warningEvents: 0,
 		skipEvents: 0,
-		infoEvents: 22,
+		infoEvents: 31,
 		debugEvents: 0,
 		exceptionsEvents: 0
 	};
 </script>
 <script>
 	var timeline = {
-	        "HomePageTest":63.049,"VerifyTitleTest":53.848,"VerifyNavBarPresentTest":13.228
+	        "HomePageTest":77.783,"VerifyTitleTest":23.277,"VerifyNavBarPresentTest":11.581
 	};
 </script>
                 </div>

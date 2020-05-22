@@ -6,14 +6,6 @@
   </listeners>
   <test name="Regression Test for Class 3(failed)">
     <classes>
-      <class name="publicisSapient.testScripts.HomePageTest">
-        <methods>
-          <include name="afterTest"/>
-          <include name="beforemethod"/>
-          <include name="afterMethod"/>
-          <include name="beforeTest"/>
-        </methods>
-      </class> <!-- publicisSapient.testScripts.HomePageTest -->
       <class name="publicisSapient.testScripts.VerifyNavBarPresentTest">
         <methods>
           <include name="beforeSuite"/>
@@ -23,6 +15,14 @@
           <include name="beforeTest"/>
         </methods>
       </class> <!-- publicisSapient.testScripts.VerifyNavBarPresentTest -->
+      <class name="publicisSapient.testScripts.HomePageTest">
+        <methods>
+          <include name="afterTest"/>
+          <include name="beforemethod"/>
+          <include name="afterMethod"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- publicisSapient.testScripts.HomePageTest -->
       <class name="publicisSapient.testScripts.VerifyTitleTest">
         <methods>
           <include name="afterTest"/>

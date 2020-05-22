@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Regression Test for Class 1</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>2/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>0/2/0</td>
 </tr><tr>
-<td>Started on:</td><td>Fri May 08 10:32:26 IST 2020</td>
+<td>Started on:</td><td>Thu May 21 10:57:55 IST 2020</td>
 </tr>
-<tr><td>Total time:</td><td>88 seconds (88364 ms)</td>
+<tr><td>Total time:</td><td>86 seconds (86408 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,45 +67,113 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-passed'>
-<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
 <td width="30%"><b>Exception</b></td>
 <td width="10%"><b>Time (seconds)</b></td>
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='publicisSapient.testScripts.HomePageTest.verifyLogin()'><b>verifyLogin</b><br>Test class: publicisSapient.testScripts.HomePageTest<br>Parameters: nonrestricted@gmail.com, 12344, nonrestricted<br/>
-<a href="#Output-1497268815" onClick='toggleBox("Output-1497268815", this, "Show output", "Hide output");'>Show output</a>
+<td title='publicisSapient.testScripts.HomePageTest.verifyLogin()'><b>verifyLogin</b><br>Test class: publicisSapient.testScripts.HomePageTest<br>Parameters: 1nonrestricted@gmail.com, 12344, pass<br/>
+<a href="#Output-663466110" onClick='toggleBox("Output-663466110", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-1497268815" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1497268815">
+<a href="#Output-663466110" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-663466110">
 captureScreen method called<br/>
-<a href='C:\Users\anujakho\Desktop\Gore Automation\GoreB2BAutomation\screenshots\blank_08_05_2020_10_32_50.png'><img src='C:\Users\anujakho\Desktop\Gore Automation\GoreB2BAutomation\screenshots\blank_08_05_2020_10_32_50.png'height='100' width='100'/></a><br/>
+<a href='C:\Users\anujakho\Desktop\Gore Automation\GoreB2BAutomation\screenshots\blank_21_05_2020_10_58_12.png'><img src='C:\Users\anujakho\Desktop\Gore Automation\GoreB2BAutomation\screenshots\blank_21_05_2020_10_58_12.png'height='100' width='100'/></a><br/>
 captureScreen method called<br/>
-<a href='C:\Users\anujakho\Desktop\Gore Automation\GoreB2BAutomation\screenshots\blank_08_05_2020_10_32_51.png'><img src='C:\Users\anujakho\Desktop\Gore Automation\GoreB2BAutomation\screenshots\blank_08_05_2020_10_32_51.png'height='100' width='100'/></a><br/>
-verifyLogin Test Passed..<br/>
+<a href='C:\Users\anujakho\Desktop\Gore Automation\GoreB2BAutomation\screenshots\blank_21_05_2020_10_58_13.png'><img src='C:\Users\anujakho\Desktop\Gore Automation\GoreB2BAutomation\screenshots\blank_21_05_2020_10_58_13.png'height='100' width='100'/></a><br/>
+verifyLogin Test Failed..java.lang.AssertionError: expected [fail] but found [pass]<br/>
 </div>
 </td>
-<td></td>
-<td>23</td>
-<td>publicisSapient.testScripts.HomePageTest@3f6b0be5</td></tr>
+<td><div><pre>java.lang.AssertionError: expected [fail] but found [pass]
+	at publicisSapient.testScripts.HomePageTest.verifyLogin(HomePageTest.java:38)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace663466110", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace663466110'><pre>java.lang.AssertionError: expected [fail] but found [pass]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:496)
+	at org.testng.Assert.assertEquals(Assert.java:125)
+	at org.testng.Assert.assertEquals(Assert.java:178)
+	at org.testng.Assert.assertEquals(Assert.java:188)
+	at publicisSapient.testScripts.HomePageTest.verifyLogin(HomePageTest.java:38)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1191)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)
+	at org.testng.TestNG.run(TestNG.java:1024)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>37</td>
+<td>publicisSapient.testScripts.HomePageTest@1623b78d</td></tr>
 <tr>
-<td title='publicisSapient.testScripts.HomePageTest.verifyLogin()'><b>verifyLogin</b><br>Test class: publicisSapient.testScripts.HomePageTest<br>Parameters: restricted@gmail.com, 232312344, restricted<br/>
-<a href="#Output-585074510" onClick='toggleBox("Output-585074510", this, "Show output", "Hide output");'>Show output</a>
+<td title='publicisSapient.testScripts.HomePageTest.verifyLogin()'><b>verifyLogin</b><br>Test class: publicisSapient.testScripts.HomePageTest<br>Parameters: 2restricted@gmail.com, 232312344, pass<br/>
+<a href="#Output-226586078" onClick='toggleBox("Output-226586078", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-585074510" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-585074510">
+<a href="#Output-226586078" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-226586078">
 captureScreen method called<br/>
-<a href='C:\Users\anujakho\Desktop\Gore Automation\GoreB2BAutomation\screenshots\blank_08_05_2020_10_33_12.png'><img src='C:\Users\anujakho\Desktop\Gore Automation\GoreB2BAutomation\screenshots\blank_08_05_2020_10_33_12.png'height='100' width='100'/></a><br/>
+<a href='C:\Users\anujakho\Desktop\Gore Automation\GoreB2BAutomation\screenshots\blank_21_05_2020_10_58_39.png'><img src='C:\Users\anujakho\Desktop\Gore Automation\GoreB2BAutomation\screenshots\blank_21_05_2020_10_58_39.png'height='100' width='100'/></a><br/>
 captureScreen method called<br/>
-<a href='C:\Users\anujakho\Desktop\Gore Automation\GoreB2BAutomation\screenshots\blank_08_05_2020_10_33_13.png'><img src='C:\Users\anujakho\Desktop\Gore Automation\GoreB2BAutomation\screenshots\blank_08_05_2020_10_33_13.png'height='100' width='100'/></a><br/>
-verifyLogin Test Passed..<br/>
+<a href='C:\Users\anujakho\Desktop\Gore Automation\GoreB2BAutomation\screenshots\blank_21_05_2020_10_58_40.png'><img src='C:\Users\anujakho\Desktop\Gore Automation\GoreB2BAutomation\screenshots\blank_21_05_2020_10_58_40.png'height='100' width='100'/></a><br/>
+verifyLogin Test Failed..java.lang.AssertionError: expected [fail] but found [pass]<br/>
 </div>
 </td>
-<td></td>
-<td>40</td>
-<td>publicisSapient.testScripts.HomePageTest@3f6b0be5</td></tr>
+<td><div><pre>java.lang.AssertionError: expected [fail] but found [pass]
+	at publicisSapient.testScripts.HomePageTest.verifyLogin(HomePageTest.java:38)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace226586078", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace226586078'><pre>java.lang.AssertionError: expected [fail] but found [pass]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:496)
+	at org.testng.Assert.assertEquals(Assert.java:125)
+	at org.testng.Assert.assertEquals(Assert.java:178)
+	at org.testng.Assert.assertEquals(Assert.java:188)
+	at publicisSapient.testScripts.HomePageTest.verifyLogin(HomePageTest.java:38)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1191)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)
+	at org.testng.TestNG.run(TestNG.java:1024)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>42</td>
+<td>publicisSapient.testScripts.HomePageTest@1623b78d</td></tr>
 </table><p>
 </body>
 </html>

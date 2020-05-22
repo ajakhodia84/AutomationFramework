@@ -18,6 +18,8 @@ public class VerifyNavBarPresentTest extends TestBase {
 	
 	@Test
 	public void verifyNavBarIsPresent() throws IOException {
+		test.assignAuthor("Anupam Jakhodia new 2");
+		test.assignCategory("Regression test");
 		getApplicationUrl(ObjectReader.reader.getUrl());
 		landingPage = new LandingPage(driver);
 		String expectedTitle = "QA Click Academy | Selenium,Jmeter,SoapUI,Appium,Database testing,QA Training Academy";

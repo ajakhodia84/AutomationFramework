@@ -48,7 +48,7 @@ public class TestBase {
 
 	public static ExtentReports extent;
 	public static ExtentTest test;
-	public WebDriver driver;
+	public static WebDriver driver;
 	private static Logger log = LogManager.getLogger(TestBase.class);
 	public static File reportDirectery;
 
@@ -140,7 +140,7 @@ public class TestBase {
 		wait.setImplicitWait(ObjectReader.reader.getImplicitWait(), TimeUnit.SECONDS);
 		wait.pageLoadTime(ObjectReader.reader.getPageLoadTime(), TimeUnit.SECONDS);
 		if(!ObjectReader.reader.getBrowserType().toString().contains("Device")){
-		driver.manage().window().maximize();
+		//driver.manage().window().maximize();
 		}
 	}
 
@@ -224,5 +224,18 @@ public class TestBase {
 		ExcelHelper excelHelper = new ExcelHelper();
 		Object[][] data = excelHelper.getExcelData(excelName, sheetName);
 		return data;
+	}
+	
+	public void verifyPageTitle(WebDriver driver,String expPageTitle){
+		
+		String actPageTitle=driver.getTitle();
+		if(actPageTitle.equals(expPageTitle)){
+			log.info("Page title displayed correctly for page: "+expPageTitle);
+			TestBase.logExtentReportPass("Page title displayed correctly for page: "+expPageTitle);
+		}else{
+			log.info("Page title not displayed correctly for page: "+expPageTitle+". Actual title displayed is: "+actPageTitle);
+			TestBase.logExtentReportFail("Page title not displayed correctly for page: "+expPageTitle+". Actual title displayed is: "+actPageTitle);
+		}
+		
 	}
 }

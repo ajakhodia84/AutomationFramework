@@ -1,0 +1,90 @@
+12:14:24.134 [main] INFO  publicisSapient.pageObjects.LandingPage - Pop up displayed and closed
+12:14:25.183 [main] INFO  publicisSapient.testScripts.VerifyNavBarPresentTest - Nav bar verified
+12:14:25.184 [main] INFO  publicisSapient.helper.listeners.Listeners - verifyNavBarIsPresent Test Passed..
+12:14:25.185 [main] INFO  publicisSapient.helper.testBase.TestBase - Screenshot started for mobile
+12:14:25.186 [main] INFO  publicisSapient.helper.testBase.TestBase - Screenshot taken for mobile
+12:14:25.190 [main] INFO  publicisSapient.helper.testBase.TestBase - **************verifyNavBarIsPresentFinished***************
+12:14:27.165 [main] INFO  publicisSapient.helper.listeners.Listeners - Smoke Test Class 1 Test Finished..
+13:09:43.874 [main] INFO  publicisSapient.helper.listeners.Listeners - Smoke Test Class 2 Class Started..
+13:09:49.838 [main] INFO  publicisSapient.helper.testBase.TestBase - Initialize Web driver: 1274247563
+13:09:49.842 [main] INFO  publicisSapient.helper.WaitHelper - WaitHelper object created..
+13:09:49.842 [main] INFO  publicisSapient.helper.WaitHelper - Implicit Wait has been set to: 30
+13:09:49.856 [main] INFO  publicisSapient.helper.WaitHelper - waiting for page to load for : SECONDS seconds
+13:09:49.869 [main] INFO  publicisSapient.helper.WaitHelper -  page is loaded
+13:09:49.886 [main] INFO  publicisSapient.helper.testBase.TestBase - **************VerifyTitleHeaderStarted***************
+13:09:49.892 [main] INFO  publicisSapient.helper.listeners.Listeners - VerifyTitleHeader Test Started..
+13:10:12.619 [main] INFO  publicisSapient.helper.WaitHelper - WaitHelper object created..
+13:10:12.625 [main] INFO  publicisSapient.helper.testBase.TestBase - capturing ui navigation screen for title...QA Click Academy | Selenium,Jmeter,SoapUI,Appium,Database testing,QA Training Academy
+13:10:12.634 [main] INFO  publicisSapient.helper.JavaScriptHelper - JavaScriptHelper has been initialized
+13:10:13.583 [main] INFO  publicisSapient.helper.JavaScriptHelper - JavaScriptHelper has been initialized
+13:10:13.596 [main] INFO  publicisSapient.helper.WaitHelper - WaitHelper object created..
+13:10:13.601 [main] INFO  publicisSapient.helper.testBase.TestBase - capturing ui navigation screen for title...QA Click Academy | Selenium,Jmeter,SoapUI,Appium,Database testing,QA Training Academy
+13:10:13.607 [main] INFO  publicisSapient.helper.JavaScriptHelper - JavaScriptHelper has been initialized
+13:10:14.167 [main] INFO  publicisSapient.helper.JavaScriptHelper - JavaScriptHelper has been initialized
+13:10:14.492 [main] INFO  publicisSapient.pageObjects.LandingPage - Pop up displayed and closed
+13:10:31.550 [main] INFO  publicisSapient.pageObjects.LandingPage - Login option is clicked
+13:10:35.214 [main] INFO  publicisSapient.pageObjects.LandingPage - waste
+13:10:35.220 [main] ERROR publicisSapient.helper.listeners.Listeners - VerifyTitleHeader Test Failed..java.lang.AssertionError: expected [true] but found [false]
+13:10:35.359 [main] INFO  publicisSapient.helper.testBase.TestBase - **************VerifyTitleHeaderFinished***************
+18:47:30.069 [main] INFO  publicisSapient.helper.listeners.Listeners - Regression Test for Class 1 Class Started..
+18:47:33.831 [main] INFO  publicisSapient.helper.testBase.TestBase - Initialize Web driver: 333693383
+18:47:33.841 [main] INFO  publicisSapient.helper.WaitHelper - WaitHelper object created..
+18:47:33.841 [main] INFO  publicisSapient.helper.WaitHelper - Implicit Wait has been set to: 30
+18:47:33.854 [main] INFO  publicisSapient.helper.WaitHelper - waiting for page to load for : SECONDS seconds
+18:47:33.873 [main] INFO  publicisSapient.helper.WaitHelper -  page is loaded
+18:47:33.889 [main] INFO  publicisSapient.helper.testBase.TestBase - **************verifyLoginStarted***************
+18:47:33.890 [main] INFO  publicisSapient.helper.listeners.Listeners - verifyLogin Test Started..
+18:47:36.589 [main] INFO  publicisSapient.helper.WaitHelper - WaitHelper object created..
+18:47:36.608 [main] INFO  publicisSapient.helper.testBase.TestBase - capturing ui navigation screen for title...QA Click Academy | Selenium,Jmeter,SoapUI,Appium,Database testing,QA Training Academy
+18:47:36.626 [main] INFO  publicisSapient.helper.JavaScriptHelper - JavaScriptHelper has been initialized
+18:47:37.253 [main] INFO  publicisSapient.helper.JavaScriptHelper - JavaScriptHelper has been initialized
+18:47:37.274 [main] INFO  publicisSapient.helper.WaitHelper - WaitHelper object created..
+18:47:37.336 [main] INFO  publicisSapient.helper.testBase.TestBase - capturing ui navigation screen for title...QA Click Academy | Selenium,Jmeter,SoapUI,Appium,Database testing,QA Training Academy
+18:47:37.345 [main] INFO  publicisSapient.helper.JavaScriptHelper - JavaScriptHelper has been initialized
+18:47:37.824 [main] INFO  publicisSapient.helper.JavaScriptHelper - JavaScriptHelper has been initialized
+18:47:37.838 [main] INFO  publicisSapient.testScripts.HomePageTest - Navigated to homepage
+18:47:46.865 [main] INFO  publicisSapient.pageObjects.LandingPage - Pop up displayed and closed
+18:47:52.792 [main] INFO  publicisSapient.pageObjects.LandingPage - Login option is clicked
+18:47:56.421 [main] INFO  publicisSapient.pageObjects.LandingPage - pass
+18:47:56.574 [main] INFO  publicisSapient.testScripts.HomePageTest - Credentials are passed
+18:47:56.575 [main] INFO  publicisSapient.helper.listeners.Listeners - verifyLogin Test Passed..
+18:47:56.879 [main] INFO  publicisSapient.helper.testBase.TestBase - **************verifyLoginFinished***************
+18:47:57.341 [main] INFO  publicisSapient.helper.testBase.TestBase - **************verifyLoginStarted***************
+18:47:57.342 [main] INFO  publicisSapient.helper.listeners.Listeners - verifyLogin Test Started..
+18:47:58.933 [main] INFO  publicisSapient.helper.WaitHelper - WaitHelper object created..
+18:47:58.977 [main] INFO  publicisSapient.helper.testBase.TestBase - capturing ui navigation screen for title...QA Click Academy | Selenium,Jmeter,SoapUI,Appium,Database testing,QA Training Academy
+18:47:59.017 [main] INFO  publicisSapient.helper.JavaScriptHelper - JavaScriptHelper has been initialized
+18:47:59.534 [main] INFO  publicisSapient.helper.JavaScriptHelper - JavaScriptHelper has been initialized
+18:47:59.551 [main] INFO  publicisSapient.helper.WaitHelper - WaitHelper object created..
+18:47:59.613 [main] INFO  publicisSapient.helper.testBase.TestBase - capturing ui navigation screen for title...QA Click Academy | Selenium,Jmeter,SoapUI,Appium,Database testing,QA Training Academy
+18:47:59.625 [main] INFO  publicisSapient.helper.JavaScriptHelper - JavaScriptHelper has been initialized
+18:48:00.278 [main] INFO  publicisSapient.helper.JavaScriptHelper - JavaScriptHelper has been initialized
+18:48:00.348 [main] INFO  publicisSapient.testScripts.HomePageTest - Navigated to homepage
+18:48:30.451 [main] INFO  publicisSapient.pageObjects.LandingPage - Pop up not displayed and step skipped
+18:48:33.916 [main] INFO  publicisSapient.pageObjects.LandingPage - Login option is clicked
+18:48:37.207 [main] INFO  publicisSapient.pageObjects.LandingPage - pass
+18:48:37.345 [main] INFO  publicisSapient.testScripts.HomePageTest - Credentials are passed
+18:48:37.346 [main] INFO  publicisSapient.helper.listeners.Listeners - verifyLogin Test Passed..
+18:48:37.685 [main] INFO  publicisSapient.helper.testBase.TestBase - **************verifyLoginFinished***************
+18:48:38.752 [main] INFO  publicisSapient.helper.listeners.Listeners - Regression Test for Class 1 Test Finished..
+18:48:38.757 [main] INFO  publicisSapient.helper.listeners.Listeners - Regression Test for Class 3 Class Started..
+18:48:41.319 [main] INFO  publicisSapient.helper.testBase.TestBase - Initialize Web driver: 516413619
+18:48:41.319 [main] INFO  publicisSapient.helper.WaitHelper - WaitHelper object created..
+18:48:41.319 [main] INFO  publicisSapient.helper.WaitHelper - Implicit Wait has been set to: 30
+18:48:41.325 [main] INFO  publicisSapient.helper.WaitHelper - waiting for page to load for : SECONDS seconds
+18:48:41.351 [main] INFO  publicisSapient.helper.WaitHelper -  page is loaded
+18:48:41.352 [main] INFO  publicisSapient.helper.testBase.TestBase - **************VerifyTitleHeaderStarted***************
+18:48:41.353 [main] INFO  publicisSapient.helper.listeners.Listeners - VerifyTitleHeader Test Started..
+18:48:44.090 [main] INFO  publicisSapient.helper.WaitHelper - WaitHelper object created..
+18:48:44.119 [main] INFO  publicisSapient.helper.testBase.TestBase - capturing ui navigation screen for title...QA Click Academy | Selenium,Jmeter,SoapUI,Appium,Database testing,QA Training Academy
+18:48:44.136 [main] INFO  publicisSapient.helper.JavaScriptHelper - JavaScriptHelper has been initialized
+18:48:44.670 [main] INFO  publicisSapient.helper.JavaScriptHelper - JavaScriptHelper has been initialized
+18:48:44.687 [main] INFO  publicisSapient.helper.WaitHelper - WaitHelper object created..
+18:48:44.767 [main] INFO  publicisSapient.helper.testBase.TestBase - capturing ui navigation screen for title...QA Click Academy | Selenium,Jmeter,SoapUI,Appium,Database testing,QA Training Academy
+18:48:44.781 [main] INFO  publicisSapient.helper.JavaScriptHelper - JavaScriptHelper has been initialized
+18:48:45.242 [main] INFO  publicisSapient.helper.JavaScriptHelper - JavaScriptHelper has been initialized
+18:48:53.090 [main] INFO  publicisSapient.pageObjects.LandingPage - Pop up displayed and closed
+18:48:58.861 [main] INFO  publicisSapient.pageObjects.LandingPage - Login option is clicked
+18:49:01.292 [main] INFO  publicisSapient.pageObjects.LandingPage - waste
+18:49:01.309 [main] ERROR publicisSapient.helper.listeners.Listeners - VerifyTitleHeader Test Failed..java.lang.AssertionError: expected [true] but found [false]
+18:49:02.499 [main] INFO  publicisSapient.helper.testBase.TestBase - **************VerifyTitleHeaderFinished***************

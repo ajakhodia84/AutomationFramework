@@ -21,6 +21,8 @@ public class VerifyTitleTest extends TestBase {
 	
 	@Test
 	public void VerifyTitleHeader() throws IOException {
+		test.assignAuthor("Anupam Jakhodia new");
+		test.assignCategory("Smoke test device test");
 		getApplicationUrl(ObjectReader.reader.getUrl());
 		landingPage = new LandingPage(driver);
 		loginPage = new LoginPage(driver);
